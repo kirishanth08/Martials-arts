@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KAI Martial Arts Academy | Training Services & Curriculum Directory</title>
+  <meta name="description" content="Explore comprehensive martial arts services at KAI. Detailed curriculum, class formats, coach ratios, and deliverable breakdowns for Karate, Taekwondo, Self-Defense, and Youth classes.">
+  <meta name="keywords" content="martial arts services, karate curriculum, taekwondo training syllabus, private martial arts coaching, corporate self-defense, kids martial arts classes">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <!-- Custom Combat Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+  <!-- ==================== GLOBAL NAVBAR ==================== -->
+  <nav class="navbar navbar-expand-lg combat-navbar sticky-top" id="mainNavbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/images/logo.svg" alt="KAI Martial Arts Logo" width="44" height="44" class="brand-logo-img">
+        <div>
+          <span>KAI</span>
+          <span class="brand-sub">MARTIAL ARTS</span>
+        </div>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#combatNavContent" aria-controls="combatNavContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list fs-2"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="combatNavContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <!-- Home Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-house-door-fill me-1"></i> Home
+            </a>
+            <ul class="dropdown-menu combat-dropdown-menu" aria-labelledby="homeDropdown">
+              <li>
+                <a class="dropdown-item" href="index.html">
+                  <div class="fw-bold"><i class="bi bi-heart-fill text-danger me-2"></i>Home 1 &mdash; Academy &amp; Community</div>
+                  <small class="text-secondary d-block ps-4">Welcoming photo-rich flagship</small>
+                </a>
+              </li>
+              <li><hr class="dropdown-divider border-secondary border-opacity-25 my-1"></li>
+              <li>
+                <a class="dropdown-item active" href="home-2.html">
+                  <div class="fw-bold"><i class="bi bi-grid-3x3-gap-fill text-warning me-2"></i>Home 2 &mdash; Services &amp; Curriculum</div>
+                  <small class="text-secondary d-block ps-4">Detailed training directory</small>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- About -->
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+
+          <!-- Programs Dropdown (Includes Programs, Schedule, Instructors, Gallery) -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="programsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-shield-shaded me-1"></i> Programs
+            </a>
+            <ul class="dropdown-menu combat-dropdown-menu" aria-labelledby="programsDropdown">
+              <li>
+                <a class="dropdown-item" href="programs.html">
+                  <div class="fw-bold"><i class="bi bi-grid-fill text-danger me-2"></i>All Disciplines &amp; Programs</div>
+                  <small class="text-secondary d-block ps-4">Karate, Taekwondo &amp; Self-Defense</small>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="program-details.html">
+                  <div class="fw-bold"><i class="bi bi-journal-bookmark-fill text-warning me-2"></i>Curriculum &amp; Syllabus</div>
+                  <small class="text-secondary d-block ps-4">Kihon, Kata &amp; Kumite breakdown</small>
+                </a>
+              </li>
+              <li><hr class="dropdown-divider border-secondary border-opacity-25 my-1"></li>
+              <li>
+                <a class="dropdown-item" href="schedule.html">
+                  <div class="fw-bold"><i class="bi bi-calendar3 text-info me-2"></i>Class Schedule &amp; Timetable</div>
+                  <small class="text-secondary d-block ps-4">Weekly timetable &amp; age brackets</small>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="instructors.html">
+                  <div class="fw-bold"><i class="bi bi-person-badge-fill text-danger me-2"></i>Grandmasters &amp; Faculty</div>
+                  <small class="text-secondary d-block ps-4">Certified 5th Dan instructor bios</small>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="gallery.html">
+                  <div class="fw-bold"><i class="bi bi-images text-warning me-2"></i>Action Gallery</div>
+                  <small class="text-secondary d-block ps-4">Tatami sparring &amp; tournament photos</small>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- Pricing -->
+          <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+
+          <!-- Blog -->
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+
+          <!-- Contact -->
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-util-group">
+          <!-- Dark/Light Mode Toggle -->
+          <button class="theme-toggle-btn" type="button" aria-label="Toggle Light/Dark Theme">
+            <i class="bi bi-sun-fill text-warning"></i> <span class="d-none d-sm-inline">Light</span>
+          </button>
+          
+          <!-- LTR/RTL Toggle -->
+          <button class="rtl-toggle-btn" type="button" aria-label="Toggle Text Direction">
+            <span class="fw-bold">LTR | RTL</span>
+          </button>
+
+          <!-- Primary Strong CTA -->
+          <a href="contact.html" class="btn-combat btn-combat-sm ms-lg-2">Book a Trial</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==================== MAIN CONTENT ==================== -->
+  <main>
+    <!-- SECTION 01: SERVICE-ORIENTED HERO -->
+    <section class="py-combat position-relative overflow-hidden border-bottom border-dark">
+      <div class="container">
+        <div class="combat-panel hero-services-banner p-4 p-md-5 position-relative overflow-hidden">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-7">
+              <div class="d-flex align-items-center gap-2 mb-3">
+                <span class="badge-combat jade"><i class="bi bi-grid-3x3-gap-fill me-1"></i> SERVICE CATALOG & CURRICULUM</span>
+                <span class="badge-combat gold">STRUCTURED DAN SYLLABUS</span>
+              </div>
+              <h1 class="hero-combat-title mb-3">
+                Professional Martial Arts Services & Training Disciplines
+              </h1>
+              <p class="section-desc mb-4">
+                Explore our full spectrum of specialized instruction. Every service at KAI includes certified black belt coaching, structured belt eligibility, low coach-to-student ratios, and transparent deliverables tailored to your personal goals.
+              </p>
+
+              <!-- Interactive Quick Jump Filter Pills -->
+              <div class="d-flex flex-wrap gap-2 mb-4">
+                <a href="#service-karate" class="service-pill"><i class="bi bi-shield-shaded text-danger me-1"></i> Shotokan Karate</a>
+                <a href="#service-taekwondo" class="service-pill"><i class="bi bi-lightning-charge text-warning me-1"></i> Olympic Taekwondo</a>
+                <a href="#service-defense" class="service-pill"><i class="bi bi-lock text-info me-1"></i> Women's Self-Defense</a>
+                <a href="#service-youth" class="service-pill"><i class="bi bi-stars text-danger me-1"></i> Youth Academy</a>
+                <a href="#service-fitness" class="service-pill"><i class="bi bi-fire text-warning me-1"></i> Combat Conditioning</a>
+                <a href="#service-private" class="service-pill"><i class="bi bi-award text-info me-1"></i> 1-on-1 Mentorship</a>
+              </div>
+
+              <div class="d-flex flex-wrap gap-3">
+                <a href="contact.html" class="btn-combat">Schedule Skills Assessment <i class="bi bi-arrow-right"></i></a>
+                <a href="#serviceComparison" class="btn-combat-outline">Compare Service Tiers</a>
+              </div>
+            </div>
+
+            <div class="col-lg-5">
+              <div class="combat-panel p-2 shadow-sm position-relative hero-media-panel">
+                <img src="assets/images/unique/home2-hero.jpg" alt="Martial Arts Technical Instruction" class="img-fluid w-100 rounded-3 hero-media-img" style="height: 420px; object-fit: cover;">
+                <div class="p-3 bg-surface border-top border-secondary border-opacity-25 text-center hero-media-caption">
+                  <span class="hero-accreditation-tag fw-bold small text-uppercase">// ACCREDITED BY JKA & KUKKIWON</span>
+                  <div class="hero-caption-title fw-bold mt-1">Authentic Traditional Lineage &bull; Modern Biomechanics</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 02: IN-DEPTH SERVICE PORTFOLIO (6 DETAILED SERVICES) -->
+    <section class="py-combat bg-surface border-bottom border-dark" id="servicesDirectory">
+      <div class="container">
+        <div class="row align-items-end mb-5">
+          <div class="col-lg-8">
+            <div class="section-marker">// DETAILED SERVICES</div>
+            <h2 class="section-title">Comprehensive Service Breakdown</h2>
+            <p class="section-desc mb-0">
+              Each discipline is delivered with specific curriculum deliverables, standardized equipment, student tracking, and official examination pathways.
+            </p>
+          </div>
+          <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+            <span class="text-secondary small">Looking for private bookings? <a href="#service-private" class="text-danger fw-bold">Jump to 1-on-1</a></span>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <!-- Service 1: Traditional Karate -->
+          <div class="col-lg-6" id="service-karate">
+            <div class="service-deep-card">
+              <div class="service-deep-header">
+                <img src="assets/images/unique/home2-svc-karate.jpg" alt="Traditional Shotokan Karate Service">
+                <span class="service-badge-float">SERVICE #01 &bull; KARATE</span>
+              </div>
+              <div class="service-deep-body">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                  <h4 class="mb-0">Traditional Shotokan Karate-Do</h4>
+                  <span class="badge-combat jade">Ages 13+ to Adults</span>
+                </div>
+                <p class="text-secondary mb-3">
+                  Our flagship Japanese karate program focusing on the three classical pillars: Kihon (fundamental kinetics & biomechanics), Kata (formal sequence mastery), and Kumite (controlled tactical distance sparring).
+                </p>
+
+                <!-- Detailed Service Metrics -->
+                <div class="row g-2 mb-3 bg-subtle p-3 rounded-3 border border-secondary border-opacity-25">
+                  <div class="col-4">
+                    <small class="text-muted d-block text-uppercase">Frequency</small>
+                    <strong  class="small">3x Weekly (60m)</strong>
+                  </div>
+                  <div class="col-4">
+                    <small class="text-muted d-block text-uppercase">Coach Ratio</small>
+                    <strong  class="small">Max 1:8 Ratio</strong>
+                  </div>
+                  <div class="col-4">
+                    <small class="text-muted d-block text-uppercase">Belt Testing</small>
+                    <strong class="text-danger small">Every 90 Days</strong>
+                  </div>
+                </div>
+
+                <h6  class="mb-2 fs-6">What's Included in This Service:</h6>
+                <ul class="list-unstyled small text-secondary mb-4">
+                  <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i> Complimentary 12oz Heavyweight Dogi Uniform upon enrollment</li>
+                  <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i> Official Japan Karate Association (JKA) Dan testing eligibility</li>
+                  <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i> 24/7 access to our online Video Kata Syllabus Portal</li>
+                  <li><i class="bi bi-check-circle-fill text-danger me-2"></i> Monthly posture and kinetic alignment checks with Master Arjun</li>
+                </ul>
+
+                <div class="mt-auto pt-3 border-top border-secondary border-opacity-25 d-flex justify-content-between align-items-center">
+                  <span class="text-secondary small">Prerequisite: <strong >None (Beginner Friendly)</strong></span>
+                  <a href="program-details.html?id=shotokan" class="btn-combat btn-combat-sm">View Full Syllabus <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 2: Olympic Taekwondo -->
+          <div class="col-lg-6" id="service-taekwondo">
+            <div class="service-deep-card">
+              <div class="service-deep-header">
+                <img src="assets/images/unique/home2-svc-taekwondo.jpg" alt="Olympic Taekwondo Service">
+                <span class="service-badge-float">SERVICE #02 &bull; TAEKWONDO</span>
+              </div>
+              <div class="service-deep-body">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                  <h4 class="mb-0">Olympic Taekwondo & Kicking Dynamics</h4>
+                  <span class="badge-combat gold">Ages 8+ to Adults</span>
+                </div>
+                <p class="text-secondary mb-3">
+                  A high-velocity combat sport curriculum recognized by World Taekwondo. Develop lightning-fast 360-degree kicks, millisecond reaction timing, footwork agility, and Olympic point tournament readiness.
+                </p>
+
+                <!-- Detailed Service Metrics -->
+                <div class="row g-2 mb-3 bg-subtle p-3 rounded-3 border border-secondary border-opacity-25">
+                  <div class="col-4">
+                    <small class="text-muted d-block text-uppercase">Frequency</small>
+                    <strong  class="small">3x Weekly (60m)</strong>
+                  </div>
+                  <div class="col-4">
+                    <small class="text-muted d-block text-uppercase">Coach Ratio</small>
+                    <strong  class="small">Max 1:8 Ratio</strong>
+                  </div>
+                  <div class="col-4">
+                    <small class="text-muted d-block text-uppercase">Certification</small>
+                    <strong class="text-warning small">Kukkiwon Dan</strong>
+                  </div>
+                </div>
+
+                <h6  class="mb-2 fs-6">What's Included in This Service:</h6>
+                <ul class="list-unstyled small text-secondary mb-4">
+                  <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i> Certified electronic hogu (chest protector) sparring gear usage</li>
+                  <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i> Poomsae forms and fast-twitch foot speed conditioning drills</li>
+                  <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i> State and national tournament team tryout eligibility</li>
+                  <li><i class="bi bi-check-circle-fill text-danger me-2"></i> Agility sensor speed evaluations recorded quarterly</li>
+                </ul>
+
+                <div class="mt-auto pt-3 border-top border-secondary border-opacity-25 d-flex justify-content-between align-items-center">
+                  <span class="text-secondary small">Prerequisite: <strong >None (Graded by experience)</strong></span>
+                  <a href="program-details.html?id=taekwondo" class="btn-combat btn-combat-sm">View Full Syllabus <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 3: Women's Self-Defense -->
+          <div class="col-lg-6" id="service-defense">
+            <div class="service-deep-card">
+              <div class="service-deep-header">
+                <img src="assets/images/unique/home2-svc-defense.jpg" alt="Women's Self Defense Workshop Service">
+                <span class="service-badge-float">SERVICE #03 &bull; SELF-DEFENSE</span>
+              </div>
+              <div class="service-deep-body">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                  <h4 class="mb-0">Practical Reality-Based Self-Defense</h4>
+                  <span class="badge-combat ice">Women & Young Teens</span>
+                </div>
+                <p class="text-secondary mb-3">
+                  Empowering, practical survival skills engineered specifically for smaller practitioners against larger assailants. Teaches biomechanical joint leverage, instinctive releases, and decisive de-escalation.
+                </p>
+
+                <!-- Detailed Service Metrics -->
+                <div class="row g-2 mb-3 bg-subtle p-3 rounded-3 border border-secondary border-opacity-25">
+                  <div class="col-4">
+                    <small class="text-muted d-block text-uppercase">Frequency</small>
+                    <strong  class="small">2x Weekly (60m)</strong>
+                  </div>
+                  <div class="col-4">
+                    <small class="text-muted d-block text-uppercase">Coach Ratio</small>
+                    <strong  class="small">Max 1:6 Ratio</strong>
+                  </div>
+                  <div class="col-4">
+                    <small class="text-muted d-block text-uppercase">Format</small>
+                    <strong class="text-info small">Scenario Drills</strong>
+                  </div>
+                </div>
+
+                <h6  class="mb-2 fs-6">What's Included in This Service:</h6>
+                <ul class="list-unstyled small text-secondary mb-4">
+                  <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i> Comprehensive wrist, hair, choke, and pinned-ground escape drills</li>
+                  <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i> Situational awareness & boundary-setting psychological training</li>
+                  <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i> Padded full-contact stress simulation against instructor gear</li>
+                  <li><i class="bi bi-check-circle-fill text-danger me-2"></i> Free lifetime refresher privileges for all graduate members</li>
+                </ul>
+
+                <div class="mt-auto pt-3 border-top border-secondary border-opacity-25 d-flex justify-content-between align-items-center">
+                  <span class="text-secondary small">Prerequisite: <strong >None (100% Supportive Space)</strong></span>
+                  <a href="program-details.html?id=self-defense" class="btn-combat btn-combat-sm">View Full Syllabus <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 4: Youth Character Academy -->
+          <div class="col-lg-6" id="service-youth">
+            <div class="service-deep-card">
+              <div class="service-deep-header">
+                <img src="assets/images/unique/home2-svc-kids.jpg" alt="Kids Martial Arts Youth Service">
+                <span class="service-badge-float">SERVICE #04 &bull; YOUTH</span>
+              </div>
+              <div class="service-deep-body">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                  <h4 class="mb-0">Little Tigers Youth Character Academy</h4>
+                  <span class="badge-combat vermilion">Ages 4 to 12</span>
+                </div>
+                <p class="text-secondary mb-3">
+                  An internationally lauded youth curriculum that channels natural energy into disciplined focus, coordination, manners, and anti-bullying resilience. We partner with parents to ensure lessons reflect at home.
+                </p>
+
+                <!-- Detailed Service Metrics -->
+                <div class="row g-2 mb-3 bg-subtle p-3 rounded-3 border border-secondary border-opacity-25">
+                  <div class="col-4">
+                    <small class="text-muted d-block text-uppercase">Frequency</small>
+                    <strong  class="small">2-3x Weekly (45m)</strong>
+                  </div>
+                  <div class="col-4">
+                    <small class="text-muted d-block text-uppercase">Coach Ratio</small>
+                    <strong  class="small">Max 1:6 Ratio</strong>
+                  </div>
+                  <div class="col-4">
+                    <small class="text-muted d-block text-uppercase">Rewards</small>
+                    <strong class="text-danger small">Merit Stripes</strong>
+                  </div>
+                </div>
+
+                <h6  class="mb-2 fs-6">What's Included in This Service:</h6>
+                <ul class="list-unstyled small text-secondary mb-4">
+                  <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i> Structured Character Merit Badge card system for school & home habits</li>
+                  <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i> Anti-bullying posture, verbal boundary command, and safe evasion</li>
+                  <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i> Safe, padded agility games and motor skill refinement</li>
+                  <li><i class="bi bi-check-circle-fill text-danger me-2"></i> Free parent progress reports and quarterly belt evaluations</li>
+                </ul>
+
+                <div class="mt-auto pt-3 border-top border-secondary border-opacity-25 d-flex justify-content-between align-items-center">
+                  <span class="text-secondary small">Prerequisite: <strong >None (Ages 4–12)</strong></span>
+                  <a href="contact.html" class="btn-combat btn-combat-sm">Book Kids Trial <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 5: Budo Conditioning & Tactical Mat Fitness -->
+          <div class="col-lg-6" id="service-fitness">
+            <div class="service-deep-card">
+              <div class="service-deep-header">
+                <img src="assets/images/unique/home2-seminar.jpg" alt="Budo Tactical Conditioning & Seminar">
+                <span class="service-badge-float">SERVICE #05 &bull; CONDITIONING</span>
+              </div>
+              <div class="service-deep-body">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                  <h4 class="mb-0">Budo Conditioning & Tactical Mat Fitness</h4>
+                  <span class="badge-combat gold">Teens & Adults</span>
+                </div>
+                <p class="text-secondary mb-3">
+                  Forge unshakeable stamina and explosive functional power on the tatami. Combines heavy bag strike combinations, rotational core kinetics, partner conditioning, and high-intensity martial intervals.
+                </p>
+
+                <!-- Detailed Service Metrics -->
+                <div class="row g-2 mb-3 bg-subtle p-3 rounded-3 border border-secondary border-opacity-25">
+                  <div class="col-4">
+                    <small class="text-muted d-block text-uppercase">Frequency</small>
+                    <strong  class="small">Daily Slots (50m)</strong>
+                  </div>
+                  <div class="col-4">
+                    <small class="text-muted d-block text-uppercase">Intensity</small>
+                    <strong class="text-warning small">High Burn (HIIT)</strong>
+                  </div>
+                  <div class="col-4">
+                    <small class="text-muted d-block text-uppercase">Sparring</small>
+                    <strong  class="small">Zero (Bags Only)</strong>
+                  </div>
+                </div>
+
+                <h6  class="mb-2 fs-6">What's Included in This Service:</h6>
+                <ul class="list-unstyled small text-secondary mb-4">
+                  <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i> Dedicated heavy bag station and authentic gel boxing hand wraps</li>
+                  <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i> Calisthenic core development and hip rotational torque training</li>
+                  <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i> Zero contact / non-sparring workout safe for all fitness backgrounds</li>
+                  <li><i class="bi bi-check-circle-fill text-danger me-2"></i> Heart-rate target recovery metrics and mobility cool-downs</li>
+                </ul>
+
+                <div class="mt-auto pt-3 border-top border-secondary border-opacity-25 d-flex justify-content-between align-items-center">
+                  <span class="text-secondary small">Prerequisite: <strong >None (Work at your own pace)</strong></span>
+                  <a href="schedule.html" class="btn-combat btn-combat-sm">View Class Times <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 6: Private 1-on-1 Mentorship -->
+          <div class="col-lg-6" id="service-private">
+            <div class="service-deep-card">
+              <div class="service-deep-header">
+                <img src="assets/images/unique/home2-svc-vip.jpg" alt="Private 1-on-1 Grandmaster Mentorship Service">
+                <span class="service-badge-float">SERVICE #06 &bull; VIP MENTORSHIP</span>
+              </div>
+              <div class="service-deep-body">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                  <h4 class="mb-0">Private 1-on-1 Grandmaster Mentorship</h4>
+                  <span class="badge-combat jade">Strictly 1:1 Private</span>
+                </div>
+                <p class="text-secondary mb-3">
+                  The fastest track to mastery. Work directly with 5th Dan Master Arjun Rao or senior black belt faculty in private dojo hours with personalized biomechanics and accelerated belt progress.
+                </p>
+
+                <!-- Detailed Service Metrics -->
+                <div class="row g-2 mb-3 bg-subtle p-3 rounded-3 border border-secondary border-opacity-25">
+                  <div class="col-4">
+                    <small class="text-muted d-block text-uppercase">Duration</small>
+                    <strong  class="small">60m Sessions</strong>
+                  </div>
+                  <div class="col-4">
+                    <small class="text-muted d-block text-uppercase">Schedule</small>
+                    <strong class="text-danger small">100% Flexible</strong>
+                  </div>
+                  <div class="col-4">
+                    <small class="text-muted d-block text-uppercase">Pace</small>
+                    <strong  class="small">Accelerated</strong>
+                  </div>
+                </div>
+
+                <h6  class="mb-2 fs-6">What's Included in This Service:</h6>
+                <ul class="list-unstyled small text-secondary mb-4">
+                  <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i> High-speed video camera analysis with frame-by-frame strike review</li>
+                  <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i> Tailored injury rehabilitation and joint mobility programming</li>
+                  <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i> Priority grading and direct Dan certification pathway</li>
+                  <li><i class="bi bi-check-circle-fill text-danger me-2"></i> Complete privacy on a closed tatami floor during executive hours</li>
+                </ul>
+
+                <div class="mt-auto pt-3 border-top border-secondary border-opacity-25 d-flex justify-content-between align-items-center">
+                  <span class="text-secondary small">Availability: <strong >Limited to 8 Active Mentees</strong></span>
+                  <a href="contact.html" class="btn-combat btn-combat-sm">Request Consultation <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 03: CURRICULUM BLUEPRINT (PROGRESSION TIMELINE) -->
+    <section class="py-combat border-bottom border-dark">
+      <div class="container">
+        <div class="text-center max-w-700 mx-auto mb-5">
+          <div class="section-marker justify-content-center">// CURRICULUM BLUEPRINT</div>
+          <h2 class="section-title">The Student Progression Roadmap</h2>
+          <p class="section-desc mx-auto">
+            Our curriculum removes guesswork. Every stage of your martial arts journey is mapped with clear benchmarks, grading criteria, and measurable physical adaptations.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Stage 1 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="combat-panel h-100">
+              <span class="badge-combat jade mb-3">MONTHS 1 &ndash; 3</span>
+              <h5 class="mb-2">Phase 1: Foundation Kinetics</h5>
+              <p class="text-secondary small mb-3">
+                Mastering foundational stance stability (Zenkutsu-dachi), diaphragmatic breathing, core striking mechanics, and safe break-falls.
+              </p>
+              <ul class="list-unstyled small text-secondary mb-0">
+                <li class="mb-1"><i class="bi bi-check2 text-danger me-1"></i> Basic straight punch (Choku-zuki)</li>
+                <li class="mb-1"><i class="bi bi-check2 text-danger me-1"></i> Front snap kick (Mae-geri)</li>
+                <li><i class="bi bi-check2 text-danger me-1"></i> White to Yellow Belt exam</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Stage 2 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="combat-panel h-100">
+              <span class="badge-combat gold mb-3">MONTHS 4 &ndash; 6</span>
+              <h5 class="mb-2">Phase 2: Combinations & Speed</h5>
+              <p class="text-secondary small mb-3">
+                Transitioning single techniques into fluid combinations. Introduction to formal kata routines, pad work rhythm, and evasion footwork.
+              </p>
+              <ul class="list-unstyled small text-secondary mb-0">
+                <li class="mb-1"><i class="bi bi-check2 text-warning me-1"></i> Kata Heian Shodan mastery</li>
+                <li class="mb-1"><i class="bi bi-check2 text-warning me-1"></i> Side thrust kick (Yoko-geri)</li>
+                <li><i class="bi bi-check2 text-warning me-1"></i> Yellow to Orange Belt exam</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Stage 3 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="combat-panel h-100">
+              <span class="badge-combat ice mb-3">MONTHS 7 &ndash; 12</span>
+              <h5 class="mb-2">Phase 3: Tactical Sparring</h5>
+              <p class="text-secondary small mb-3">
+                Controlled partner sparring (Kumite). Distance management, counter-attacks, defensive angle cutting, and intermediate forms.
+              </p>
+              <ul class="list-unstyled small text-secondary mb-0">
+                <li class="mb-1"><i class="bi bi-check2 text-info me-1"></i> Controlled point sparring</li>
+                <li class="mb-1"><i class="bi bi-check2 text-info me-1"></i> Green & Blue belt testing</li>
+                <li><i class="bi bi-check2 text-info me-1"></i> Joint lock defense basics</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Stage 4 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="combat-panel h-100">
+              <span class="badge-combat vermilion mb-3">MONTHS 12+</span>
+              <h5 class="mb-2">Phase 4: Dan Mastery Track</h5>
+              <p class="text-secondary small mb-3">
+                Pre-Black Belt and Dan candidate preparation. Practical self-defense application (Bunkai), teaching assistantship, and competition.
+              </p>
+              <ul class="list-unstyled small text-secondary mb-0">
+                <li class="mb-1"><i class="bi bi-check2 text-danger me-1"></i> Brown to Black Belt syllabus</li>
+                <li class="mb-1"><i class="bi bi-check2 text-danger me-1"></i> Senior kata interpretation</li>
+                <li><i class="bi bi-check2 text-danger me-1"></i> Junior coaching mentorship</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 04: SERVICE MEMBERSHIP COMPARISON MATRIX -->
+    <section class="py-combat bg-surface border-bottom border-dark" id="serviceComparison">
+      <div class="container">
+        <div class="text-center max-w-700 mx-auto mb-5">
+          <div class="section-marker justify-content-center">// MEMBERSHIP SERVICES</div>
+          <h2 class="section-title">Service Inclusions Comparison</h2>
+          <p class="section-desc mx-auto">
+            Choose the training package that fits your schedule, frequency, and personal aspirations. Every membership includes zero hidden fees.
+          </p>
+        </div>
+
+        <div class="schedule-table-container shadow-sm">
+          <table class="combat-table">
+            <thead>
+              <tr>
+                <th style="width: 32%;">Service Feature</th>
+                <th class="text-center" style="width: 22%;">Foundation Track</th>
+                <th class="text-center" style="width: 23%;">All-Access Unlimited</th>
+                <th class="text-center" style="width: 23%;">VIP Master Mentorship</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Weekly Class Frequency</strong></td>
+                <td class="text-center">2 Classes / Week</td>
+                <td class="text-center"><span class="text-danger fw-bold">Unlimited Classes</span></td>
+                <td class="text-center"><span class="text-warning fw-bold">Unlimited + 2x Private</span></td>
+              </tr>
+              <tr>
+                <td><strong>Disciplines Included</strong></td>
+                <td class="text-center">Single Chosen Discipline</td>
+                <td class="text-center">All Disciplines (Karate, TKD, Defense)</td>
+                <td class="text-center">All Disciplines + 1-on-1</td>
+              </tr>
+              <tr>
+                <td><strong>Free Dogi Uniform & Belt</strong></td>
+                <td class="text-center"><i class="bi bi-check-circle-fill text-danger fs-5"></i></td>
+                <td class="text-center"><i class="bi bi-check-circle-fill text-danger fs-5"></i></td>
+                <td class="text-center"><i class="bi bi-check-circle-fill text-danger fs-5"></i></td>
+              </tr>
+              <tr>
+                <td><strong>Belt Examination Fees</strong></td>
+                <td class="text-center text-secondary">Standard Fee</td>
+                <td class="text-center"><span class="text-danger fw-bold">100% Free Included</span></td>
+                <td class="text-center"><span class="text-warning fw-bold">100% Free Priority</span></td>
+              </tr>
+              <tr>
+                <td><strong>Online Video Technique Portal</strong></td>
+                <td class="text-center text-secondary">Basic Video Access</td>
+                <td class="text-center"><i class="bi bi-check-circle-fill text-danger fs-5"></i> Full Library</td>
+                <td class="text-center"><i class="bi bi-check-circle-fill text-danger fs-5"></i> Full + Video Analysis</td>
+              </tr>
+              <tr>
+                <td><strong>Specialty Master Workshops</strong></td>
+                <td class="text-center text-secondary">20% Discount</td>
+                <td class="text-center"><span class="text-danger fw-bold">Complimentary</span></td>
+                <td class="text-center"><span class="text-warning fw-bold">VIP Reserved Seating</span></td>
+              </tr>
+              <tr>
+                <td><strong>Contract Commitment</strong></td>
+                <td class="text-center">Month-to-Month</td>
+                <td class="text-center">Month-to-Month</td>
+                <td class="text-center">Quarterly Plan</td>
+              </tr>
+              <tr>
+                <td><strong>Tuition Rate</strong></td>
+                <td class="text-center"><strong  class="fs-5">$129</strong> <small class="text-secondary">/mo</small></td>
+                <td class="text-center"><strong class="fs-5 text-danger">$189</strong> <small class="text-secondary">/mo</small></td>
+                <td class="text-center"><strong class="fs-5 text-warning">$349</strong> <small class="text-secondary">/mo</small></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td class="text-center py-3">
+                  <a href="contact.html" class="btn-combat-outline btn-combat-sm w-100">Select Plan</a>
+                </td>
+                <td class="text-center py-3">
+                  <a href="contact.html" class="btn-combat btn-combat-sm w-100">Get All-Access</a>
+                </td>
+                <td class="text-center py-3">
+                  <a href="contact.html" class="btn-combat-outline btn-combat-sm w-100">Apply for VIP</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 05: CORPORATE & INSTITUTIONAL WORKSHOPS -->
+    <section class="py-combat border-bottom border-dark">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <div class="section-marker">// GROUP & CORPORATE SERVICES</div>
+            <h2 class="section-title">Corporate Safety & Team Building Seminars</h2>
+            <p class="section-desc mb-4">
+              Bring KAI's certified black belt faculty directly to your organization or book our private tatami facility. We deliver hands-on, high-impact safety workshops that build team trust, mental resilience, and situational awareness.
+            </p>
+
+            <div class="row g-3 mb-4">
+              <div class="col-sm-6">
+                <div class="combat-panel p-3">
+                  <h6  class="mb-1"><i class="bi bi-building text-danger me-2"></i> Corporate De-escalation</h6>
+                  <p class="text-secondary small mb-0">Practical situational awareness and verbal boundary setting for office employees and executives.</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="combat-panel p-3">
+                  <h6  class="mb-1"><i class="bi bi-mortarboard-fill text-warning me-2"></i> University Workshops</h6>
+                  <p class="text-secondary small mb-0">Campus safety, boundary control, and instinctive escape tactics for college students.</p>
+                </div>
+              </div>
+            </div>
+
+            <a href="contact.html" class="btn-combat">Inquire About Group Rates <i class="bi bi-arrow-right"></i></a>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="combat-panel p-2 shadow-sm">
+              <img src="assets/images/unique/home2-seminar.jpg" alt="Corporate Self-Defense Training Session" class="img-fluid w-100 rounded-3" style="height: 380px; object-fit: cover;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 06: SERVICE CONSULTATION CTA -->
+    <section class="py-combat position-relative overflow-hidden">
+      <div class="container">
+        <div class="combat-panel cta-banner-dark p-4 p-md-5 text-center position-relative overflow-hidden">
+          <div class="max-w-700 mx-auto position-relative z-2">
+            <span class="badge-combat jade mb-3">COMPLIMENTARY ASSESSMENT</span>
+            <h2 class="section-title fs-1 mb-3">Book Your 1-on-1 Skills Placement Evaluation</h2>
+            <p class="section-desc mx-auto mb-4">
+              Not sure which service is right for you or your child? Meet with a senior coach for a 20-minute movement assessment, posture review, and personalized training recommendation.
+            </p>
+            <div class="d-flex flex-wrap justify-content-center gap-3 mb-4">
+              <a href="contact.html" class="btn-combat btn-lg">
+                Schedule Assessment <i class="bi bi-calendar-check-fill ms-1"></i>
+              </a>
+              <a href="pricing.html" class="btn-combat-outline btn-lg">
+                View Tuition Plans
+              </a>
+            </div>
+            <div class="d-flex justify-content-center flex-wrap gap-4 small">
+              <span class="cta-feature-item"><i class="bi bi-check-circle-fill"></i> Free 20-Minute Placement</span>
+              <span class="cta-feature-item"><i class="bi bi-check-circle-fill"></i> Zero Pressure Recommendation</span>
+              <span class="cta-feature-item"><i class="bi bi-check-circle-fill"></i> Family Inquiries Welcome</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== GLOBAL FOOTER ==================== -->
+  <footer class="combat-footer">
+    <div class="container">
+      <div class="row g-5">
+        <!-- Col 1: Brand & Bio -->
+        <div class="col-lg-4">
+          <a class="navbar-brand mb-3 d-inline-flex align-items-center" href="index.html">
+            <img src="assets/images/logo.svg" alt="KAI Martial Arts Logo" width="44" height="44" class="brand-logo-img">
+            <div>
+              <span>KAI</span>
+              <span class="brand-sub">MARTIAL ARTS</span>
+            </div>
+          </a>
+          <p class="text-secondary small mb-4">
+            KAI Martial Arts Academy is an internationally accredited martial arts center dedicated to authentic traditional Karate, Olympic Taekwondo, and practical reality-based self-defense.
+          </p>
+          <div class="d-flex gap-3">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="btn-combat-outline btn-combat-sm px-3" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" class="btn-combat-outline btn-combat-sm px-3" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="btn-combat-outline btn-combat-sm px-3" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Academy Nav -->
+        <div class="col-6 col-lg-2">
+          <h5 class="footer-heading">Academy</h5>
+          <ul class="footer-links">
+            <li><a href="about.html">About KAI</a></li>
+            <li><a href="programs.html">Our Programs</a></li>
+            <li><a href="instructors.html">Grandmasters</a></li>
+            <li><a href="schedule.html">Class Schedule</a></li>
+            <li><a href="pricing.html">Tuition & Pricing</a></li>
+            <li><a href="home-2.html">Home 2 (Services)</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Programs -->
+        <div class="col-6 col-lg-3">
+          <h5 class="footer-heading">Disciplines</h5>
+          <ul class="footer-links">
+            <li><a href="program-details.html">Traditional Karate</a></li>
+            <li><a href="programs.html">Olympic Taekwondo</a></li>
+            <li><a href="programs.html">Women's Self-Defense</a></li>
+            <li><a href="programs.html">Kids Little Tigers (4-12)</a></li>
+            <li><a href="programs.html">Adult Tactical Combat</a></li>
+            <li><a href="gallery.html">Action Gallery</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Academy Info & Newsletter -->
+        <div class="col-lg-3">
+          <h5 class="footer-heading">The Dojo</h5>
+          <p class="small text-secondary mb-2"><i class="bi bi-geo-alt-fill text-danger me-2"></i> 448 Combat Way, Dojo District, Suite 100</p>
+          <p class="small text-secondary mb-2"><i class="bi bi-telephone-fill text-danger me-2"></i> +1 (555) 839-2041</p>
+          <p class="small text-secondary mb-2"><i class="bi bi-envelope-fill text-danger me-2"></i> info@kaimartialarts.com</p>
+          <p class="small text-secondary mb-3"><i class="bi bi-clock-fill text-danger me-2"></i> Mon - Sat: 06:00 AM - 09:30 PM</p>
+          
+          <div class="mt-3">
+            <span class="d-block small text-primary fw-bold mb-2">DOJO NEWSLETTER</span>
+            <div class="input-group">
+              <input type="email" class="form-control form-combat-control py-2" placeholder="Your email..." aria-label="Email address">
+              <button class="btn btn-combat btn-combat-sm" type="button"><i class="bi bi-send-fill"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <p class="mb-2 mb-md-0 text-secondary">&copy; <span class="current-year">2026</span> KAI Martial Arts Academy. All Rights Reserved. Built for ThemeForest & TemplateMonster.</p>
+        <div class="d-flex gap-3 text-secondary">
+          <a href="privacy.html" class="text-secondary small">Privacy Policy</a>
+          <span>&bull;</span>
+          <a href="terms.html" class="text-secondary small">Terms of Training</a>
+          <span>&bull;</span>
+          <a href="contact.html" class="text-secondary small">Support & Mat Rules</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" type="button" aria-label="Back to Top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Bootstrap 5 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Custom Combat JS -->
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/rtl.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

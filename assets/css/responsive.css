@@ -1,0 +1,230 @@
+/* ==========================================================================
+   MARTIAL ARTS ACADEMY — RESPONSIVE STYLESHEET
+   Supports: 320px, 360px, 375px, 390px, 414px, 768px, 820px, 1024px, 1280px, 1440px, 1920px
+   Zero horizontal overflow guarantee
+   ========================================================================== */
+
+/* Universal Overflow Prevention (using clip to preserve position: sticky) */
+html, body {
+  max-width: 100vw;
+  overflow-x: clip;
+}
+
+/* Base Responsive Container Tuning */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+/* Large Screens (1200px+) */
+@media (min-width: 1200px) {
+  .hero-combat-title {
+    font-size: 4.8rem;
+    line-height: 1.02;
+  }
+}
+
+/* Tablet & Smaller Laptops (992px to 1199px) */
+@media (max-width: 1199.98px) {
+  .combat-panel {
+    padding: 1.75rem;
+  }
+
+  .nav-link {
+    padding: 0.5rem 0.55rem !important;
+    font-size: 0.85rem;
+  }
+}
+
+/* Medium Devices (Tablets, 768px to 991.98px) */
+@media (max-width: 991.98px) {
+  /* Mobile Navigation Collapse */
+  .navbar-collapse {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    padding: 1.5rem;
+    margin-top: 1rem;
+    box-shadow: var(--shadow-combat);
+  }
+
+  .nav-link {
+    padding: 0.65rem 0 !important;
+    font-size: 1rem;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .nav-link.active::after {
+    display: none;
+  }
+
+  .nav-link.active {
+    color: var(--accent-vermilion) !important;
+    padding-left: 0.5rem !important;
+  }
+
+  .nav-util-group {
+    margin-top: 1.25rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--border-color);
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  /* Split & Offset Grids on Tablets */
+  .editorial-split {
+    flex-direction: column;
+  }
+
+  .belt-timeline-wrapper {
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  /* Schedule Table Cards on Tablet/Mobile */
+  .combat-table th {
+    padding: 0.85rem 1rem;
+    font-size: 0.8rem;
+  }
+  
+  .combat-table td {
+    padding: 0.85rem 1rem;
+    font-size: 0.88rem;
+  }
+}
+
+/* Small Devices (Landscape Phones & Small Tablets, 576px to 767.98px) */
+@media (max-width: 767.98px) {
+  .py-combat {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .py-combat-sm {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .section-desc {
+    font-size: 1rem;
+  }
+
+  .btn-combat, .btn-combat-outline {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .hero-cta-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+  }
+
+  .stat-box {
+    padding: 1.5rem 1rem;
+    text-align: center;
+  }
+
+  .stat-num {
+    font-size: 2.5rem;
+  }
+
+  /* Schedule Cards conversion for mobile */
+  .schedule-table-container {
+    border: none;
+    background: transparent;
+  }
+
+  .schedule-mobile-card {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+    border-left: 4px solid var(--accent-vermilion);
+  }
+
+  /* Footer on mobile */
+  .footer-heading {
+    margin-top: 1.5rem;
+  }
+
+  .footer-bottom {
+    text-align: center;
+  }
+
+  .footer-bottom .text-md-end {
+    text-align: center !important;
+    margin-top: 0.75rem;
+  }
+}
+
+/* Extra Small Devices (Smartphones, 320px to 575.98px) */
+@media (max-width: 575.98px) {
+  h1, .h1 {
+    font-size: 2rem;
+  }
+
+  h2, .h2 {
+    font-size: 1.65rem;
+  }
+
+  .combat-panel {
+    padding: 1.25rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.15rem;
+  }
+
+  .brand-icon {
+    width: 32px;
+    height: 32px;
+    font-size: 0.95rem;
+  }
+
+  .trial-wizard-card {
+    padding: 1.25rem 1rem;
+  }
+
+  .wizard-step-indicator {
+    font-size: 0.75rem;
+    padding: 0.65rem 0.35rem;
+  }
+
+  .back-to-top {
+    bottom: 1.25rem;
+    right: 1.25rem;
+    width: 38px;
+    height: 38px;
+  }
+}
+
+/* Specific narrow devices (iPhone SE, Galaxy Fold 320px - 375px) */
+@media (max-width: 375px) {
+  .btn-combat, .btn-combat-outline {
+    font-size: 0.85rem;
+    padding: 0.75rem 1.2rem;
+  }
+
+  .pricing-price {
+    font-size: 2.4rem;
+  }
+
+  .badge-combat {
+    font-size: 0.7rem;
+    padding: 0.25rem 0.5rem;
+  }
+}
+
+/* Accessibility: Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

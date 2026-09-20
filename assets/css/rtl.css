@@ -1,0 +1,116 @@
+/* ==========================================================================
+   MARTIAL ARTS ACADEMY — RTL (RIGHT-TO-LEFT) STYLESHEET
+   Applied when html[dir="rtl"] is active
+   ========================================================================== */
+
+[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Typography & Section Markers */
+[dir="rtl"] .section-marker::before {
+  margin-left: 0.5rem;
+  margin-right: 0;
+}
+
+[dir="rtl"] .section-desc {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+/* Navbar */
+[dir="rtl"] .navbar-brand {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .brand-icon {
+  clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+[dir="rtl"] .nav-link.active::before {
+  right: 0.85rem;
+  left: 0.85rem;
+}
+
+[dir="rtl"] .combat-navbar .dropdown-toggle::after {
+  margin-left: 0;
+  margin-right: 0.45rem;
+}
+
+[dir="rtl"] .nav-util-group {
+  flex-direction: row-reverse;
+}
+
+/* Combat Panels & Borders */
+[dir="rtl"] .combat-panel.active-border {
+  border-left: 1px solid var(--border-color);
+  border-right: 4px solid var(--accent-vermilion);
+}
+
+[dir="rtl"] .program-overlay-tag {
+  left: auto;
+  right: 1rem;
+  border-left: none;
+  border-right: 3px solid var(--accent-vermilion);
+}
+
+/* Pricing Tags */
+[dir="rtl"] .pricing-tier-tag {
+  right: auto;
+  left: 2rem;
+}
+
+/* Tables & Schedules */
+[dir="rtl"] .combat-table {
+  text-align: right;
+}
+
+[dir="rtl"] .schedule-mobile-card {
+  border-left: 1px solid var(--border-color);
+  border-right: 4px solid var(--accent-vermilion);
+}
+
+/* Forms & Wizard */
+[dir="rtl"] .form-combat-control {
+  text-align: right;
+}
+
+/* Footer Elements */
+[dir="rtl"] .footer-heading::after {
+  left: auto;
+  right: 0;
+}
+
+[dir="rtl"] .footer-links a:hover {
+  transform: translateX(-3px);
+}
+
+[dir="rtl"] .footer-bottom .text-md-end {
+  text-align: left !important;
+}
+
+/* Floating Controls */
+[dir="rtl"] .back-to-top {
+  right: auto;
+  left: 2rem;
+}
+
+/* Directional Icons (chevrons, arrows) */
+[dir="rtl"] .bi-arrow-right,
+[dir="rtl"] .bi-chevron-right {
+  transform: scaleX(-1);
+}
+
+[dir="rtl"] .bi-arrow-left,
+[dir="rtl"] .bi-chevron-left {
+  transform: scaleX(-1);
+}
+
+/* Mobile Nav Accordion */
+@media (max-width: 991.98px) {
+  [dir="rtl"] .nav-link.active {
+    padding-left: 0 !important;
+    padding-right: 0.5rem !important;
+  }
+}

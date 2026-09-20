@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none">
+  <defs>
+    <linearGradient id="favGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00ff88"/>
+      <stop offset="100%" stop-color="#00e5ff"/>
+    </linearGradient>
+  </defs>
+  <polygon points="18,2 46,2 62,18 62,46 46,62 18,62 2,46 2,18" fill="#0b0f14" stroke="url(#favGrad)" stroke-width="3"/>
+  <circle cx="32" cy="32" r="22" stroke="#00ff88" stroke-opacity="0.3" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <!-- Crossed Katanas -->
+  <path d="M14 12 L 42 40 M 40 42 L 50 52" stroke="#00e5ff" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M50 12 L 22 40 M 24 42 L 14 52" stroke="#00e5ff" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Fighter High Kick -->
+  <circle cx="28" cy="24" r="3" fill="#00ff88"/>
+  <path d="M28 27 L 31 36 L 27 38 L 24 30 Z" fill="#ffffff"/>
+  <path d="M31 35 L 42 27 L 46 25 L 45 28 L 38 34 Z" fill="#00ff88"/>
+  <path d="M27 38 L 29 45 L 24 47 L 23 44 Z" fill="#ffffff"/>
+  <path d="M16 18 Q 32 12 48 20" stroke="#00ff88" stroke-width="2" stroke-linecap="round"/>
+</svg>

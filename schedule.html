@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class Schedule & Training Timetable | KAI Martial Arts Academy</title>
+  <meta name="description" content="View the full weekly martial arts timetable at KAI Martial Arts Academy. Filter classes by day and discipline: Karate, Taekwondo, Self-Defense, Kids, and Adults.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+  <!-- GLOBAL NAVBAR -->
+  <nav class="navbar navbar-expand-lg combat-navbar sticky-top" id="mainNavbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/images/logo.svg" alt="KAI Martial Arts" width="44" height="44" class="brand-logo-img">
+        <div>
+          <span>KAI</span>
+          <span class="brand-sub">MARTIAL ARTS</span>
+        </div>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#combatNavContent" aria-controls="combatNavContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list fs-2"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="combatNavContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <!-- Home Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-house-door-fill me-1"></i> Home
+            </a>
+            <ul class="dropdown-menu combat-dropdown-menu" aria-labelledby="homeDropdown">
+              <li>
+                <a class="dropdown-item" href="index.html">
+                  <div class="fw-bold"><i class="bi bi-heart-fill text-danger me-2"></i>Home 1 &mdash; Academy &amp; Community</div>
+                  <small class="text-secondary d-block ps-4">Welcoming photo-rich flagship</small>
+                </a>
+              </li>
+              <li><hr class="dropdown-divider border-secondary border-opacity-25 my-1"></li>
+              <li>
+                <a class="dropdown-item" href="home-2.html">
+                  <div class="fw-bold"><i class="bi bi-grid-3x3-gap-fill text-warning me-2"></i>Home 2 &mdash; Services &amp; Curriculum</div>
+                  <small class="text-secondary d-block ps-4">Detailed training directory</small>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- About -->
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+
+          <!-- Programs Dropdown (Includes Programs, Schedule, Instructors, Gallery) -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="programsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-shield-shaded me-1"></i> Programs
+            </a>
+            <ul class="dropdown-menu combat-dropdown-menu" aria-labelledby="programsDropdown">
+              <li>
+                <a class="dropdown-item" href="programs.html">
+                  <div class="fw-bold"><i class="bi bi-grid-fill text-danger me-2"></i>All Disciplines &amp; Programs</div>
+                  <small class="text-secondary d-block ps-4">Karate, Taekwondo &amp; Self-Defense</small>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="program-details.html">
+                  <div class="fw-bold"><i class="bi bi-journal-bookmark-fill text-warning me-2"></i>Curriculum &amp; Syllabus</div>
+                  <small class="text-secondary d-block ps-4">Kihon, Kata &amp; Kumite breakdown</small>
+                </a>
+              </li>
+              <li><hr class="dropdown-divider border-secondary border-opacity-25 my-1"></li>
+              <li>
+                <a class="dropdown-item active" href="schedule.html">
+                  <div class="fw-bold"><i class="bi bi-calendar3 text-info me-2"></i>Class Schedule &amp; Timetable</div>
+                  <small class="text-secondary d-block ps-4">Weekly timetable &amp; age brackets</small>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="instructors.html">
+                  <div class="fw-bold"><i class="bi bi-person-badge-fill text-danger me-2"></i>Grandmasters &amp; Faculty</div>
+                  <small class="text-secondary d-block ps-4">Certified 5th Dan instructor bios</small>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="gallery.html">
+                  <div class="fw-bold"><i class="bi bi-images text-warning me-2"></i>Action Gallery</div>
+                  <small class="text-secondary d-block ps-4">Tatami sparring &amp; tournament photos</small>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- Pricing -->
+          <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+
+          <!-- Blog -->
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+
+          <!-- Contact -->
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-util-group">
+          <button class="theme-toggle-btn" type="button">
+            <i class="bi bi-sun-fill text-warning"></i> <span class="d-none d-sm-inline">Light</span>
+          </button>
+          
+          <button class="rtl-toggle-btn" type="button">
+            <span class="fw-bold">LTR | RTL</span>
+          </button>
+
+          <a href="contact.html" class="btn-combat btn-combat-sm ms-lg-2">Book a Trial</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- SECTION 01: SCHEDULE HERO -->
+    <section class="py-combat bg-body border-bottom border-dark position-relative">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-7">
+            <div class="d-flex align-items-center gap-2 mb-3">
+              <span class="badge-combat vermilion">// WEEKLY TIMETABLE</span>
+              <span class="badge-combat gold"><i class="bi bi-broadcast text-danger me-1"></i> MATS OPEN MON-SUN</span>
+            </div>
+            <h1 class="display-3 fw-bold text-uppercase mb-4">
+              TRAINING<br>
+              <span class="text-danger">SCHEDULE.</span>
+            </h1>
+            <p class="lead text-secondary mb-4">
+              Consistent attendance builds technical mastery. We host morning, evening, and weekend classes across our 6,500 sq ft facility with dedicated tatami zones for each discipline.
+            </p>
+          </div>
+          <div class="col-lg-5">
+            <div class="combat-panel p-2">
+              <img src="assets/images/unique/schedule-hero.jpg" alt="Dojo Martial Arts Class in Session" class="img-fluid w-100" style="height: 340px; object-fit: cover;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 02 & 03: INTERACTIVE TIMETABLE MODULE -->
+    <section class="py-combat bg-surface border-bottom border-dark" id="scheduleSection">
+      <div class="container">
+        <div class="row align-items-end mb-4">
+          <div class="col-lg-8">
+            <div class="section-marker">// 02 &bull; TIMETABLE MATRIX</div>
+            <h2 class="section-title">FIND YOUR TRAINING SLOT</h2>
+            <p class="section-desc mb-0">Filter by day of the week or your specific martial discipline below.</p>
+          </div>
+          <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+            <a href="contact.html" class="btn-combat btn-combat-sm">Reserve Class Spot <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Filter 1: Day of Week Buttons -->
+        <div class="combat-panel p-2 mb-3 d-flex flex-wrap gap-2 justify-content-center">
+          <button class="btn-combat btn-combat-sm schedule-day-btn active" data-day-filter="all">ALL DAYS</button>
+          <button class="btn-combat-outline btn-combat-sm schedule-day-btn" data-day-filter="mon">MONDAY</button>
+          <button class="btn-combat-outline btn-combat-sm schedule-day-btn" data-day-filter="tue">TUESDAY</button>
+          <button class="btn-combat-outline btn-combat-sm schedule-day-btn" data-day-filter="wed">WEDNESDAY</button>
+          <button class="btn-combat-outline btn-combat-sm schedule-day-btn" data-day-filter="thu">THURSDAY</button>
+          <button class="btn-combat-outline btn-combat-sm schedule-day-btn" data-day-filter="fri">FRIDAY</button>
+          <button class="btn-combat-outline btn-combat-sm schedule-day-btn" data-day-filter="sat">SATURDAY</button>
+          <button class="btn-combat-outline btn-combat-sm schedule-day-btn" data-day-filter="sun">SUNDAY</button>
+        </div>
+
+        <!-- Filter 2: Category Filters -->
+        <div class="d-flex flex-wrap gap-2 mb-4 justify-content-center">
+          <button class="badge-combat border-0 schedule-cat-btn active badge-combat-active" data-cat-filter="all">ALL DISCIPLINES</button>
+          <button class="badge-combat border-0 schedule-cat-btn" data-cat-filter="karate">KARATE</button>
+          <button class="badge-combat border-0 schedule-cat-btn" data-cat-filter="taekwondo">TAEKWONDO</button>
+          <button class="badge-combat border-0 schedule-cat-btn" data-cat-filter="defense">SELF-DEFENSE</button>
+          <button class="badge-combat border-0 schedule-cat-btn" data-cat-filter="kids">KIDS</button>
+          <button class="badge-combat border-0 schedule-cat-btn" data-cat-filter="adults">ADULT COMBAT</button>
+        </div>
+
+        <!-- SECTION 03: SCHEDULE TABLE (DESKTOP) -->
+        <div class="schedule-table-container d-none d-md-block">
+          <table class="combat-table">
+            <thead>
+              <tr>
+                <th>Day</th>
+                <th>Time</th>
+                <th>Program & Discipline</th>
+                <th>Level</th>
+                <th>Mat Area</th>
+                <th>Instructor</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Row 1 -->
+              <tr class="schedule-item-row" data-day="mon" data-category="karate adults">
+                <td><strong>MONDAY</strong></td>
+                <td><span class="time-badge">06:30 AM - 07:30 AM</span></td>
+                <td><span class="badge-combat vermilion me-2">KARATE</span> Shotokan Morning Kihon</td>
+                <td>Beginner / Intermediate</td>
+                <td>Tatami Alpha (Area 1)</td>
+                <td>Master Arjun Rao</td>
+                <td><span class="badge bg-success-subtle text-success">Open</span></td>
+              </tr>
+              <!-- Row 2 -->
+              <tr class="schedule-item-row" data-day="mon" data-category="kids karate">
+                <td><strong>MONDAY</strong></td>
+                <td><span class="time-badge">04:30 PM - 05:15 PM</span></td>
+                <td><span class="badge-combat me-2">KIDS</span> Little Tigers Karate (Ages 4-8)</td>
+                <td>Beginner White/Yellow</td>
+                <td>Tatami Beta (Area 2)</td>
+                <td>Sensei Kenji Sato</td>
+                <td><span class="badge bg-warning-subtle text-warning">Filling Fast</span></td>
+              </tr>
+              <!-- Row 3 -->
+              <tr class="schedule-item-row" data-day="mon" data-category="taekwondo adults">
+                <td><strong>MONDAY</strong></td>
+                <td><span class="time-badge">06:00 PM - 07:15 PM</span></td>
+                <td><span class="badge-combat gold me-2">TAEKWONDO</span> Olympic Sparring Drills</td>
+                <td>Intermediate / Advanced</td>
+                <td>Tatami Alpha (Area 1)</td>
+                <td>Sensei Elena Cruz</td>
+                <td><span class="badge bg-success-subtle text-success">Open</span></td>
+              </tr>
+              <!-- Row 4 -->
+              <tr class="schedule-item-row" data-day="mon" data-category="adults defense">
+                <td><strong>MONDAY</strong></td>
+                <td><span class="time-badge">07:30 PM - 08:30 PM</span></td>
+                <td><span class="badge-combat vermilion me-2">COMBAT FIT</span> Heavy Bag Conditioning</td>
+                <td>All Adults (18+)</td>
+                <td>Heavy Bag Zone</td>
+                <td>Coach Marcus Vance</td>
+                <td><span class="badge bg-success-subtle text-success">Open</span></td>
+              </tr>
+
+              <!-- Row 5: Tuesday -->
+              <tr class="schedule-item-row" data-day="tue" data-category="defense adults">
+                <td><strong>TUESDAY</strong></td>
+                <td><span class="time-badge">10:00 AM - 11:15 AM</span></td>
+                <td><span class="badge-combat vermilion me-2">SELF-DEFENSE</span> Women's Practical Defense</td>
+                <td>All Levels</td>
+                <td>Tatami Beta (Area 2)</td>
+                <td>Sensei Priya Sharma</td>
+                <td><span class="badge bg-success-subtle text-success">Open</span></td>
+              </tr>
+              <!-- Row 6 -->
+              <tr class="schedule-item-row" data-day="tue" data-category="karate adults">
+                <td><strong>TUESDAY</strong></td>
+                <td><span class="time-badge">07:00 PM - 08:15 PM</span></td>
+                <td><span class="badge-combat vermilion me-2">KARATE</span> Shotokan Kata & Bunkai</td>
+                <td>Intermediate & Advanced</td>
+                <td>Tatami Alpha (Area 1)</td>
+                <td>Master Arjun Rao</td>
+                <td><span class="badge bg-success-subtle text-success">Open</span></td>
+              </tr>
+
+              <!-- Row 7: Wednesday -->
+              <tr class="schedule-item-row" data-day="wed" data-category="kids taekwondo">
+                <td><strong>WEDNESDAY</strong></td>
+                <td><span class="time-badge">05:00 PM - 06:00 PM</span></td>
+                <td><span class="badge-combat gold me-2">TAEKWONDO</span> Junior Cadets (Ages 9-13)</td>
+                <td>All Belts</td>
+                <td>Tatami Alpha (Area 1)</td>
+                <td>Sensei Elena Cruz</td>
+                <td><span class="badge bg-success-subtle text-success">Open</span></td>
+              </tr>
+              <!-- Row 8 -->
+              <tr class="schedule-item-row" data-day="wed" data-category="taekwondo adults">
+                <td><strong>WEDNESDAY</strong></td>
+                <td><span class="time-badge">06:30 PM - 07:45 PM</span></td>
+                <td><span class="badge-combat gold me-2">TAEKWONDO</span> High Kicking & Footwork</td>
+                <td>All Levels</td>
+                <td>Tatami Alpha (Area 1)</td>
+                <td>Grandmaster Jin Woo</td>
+                <td><span class="badge bg-warning-subtle text-warning">Filling Fast</span></td>
+              </tr>
+
+              <!-- Row 9: Thursday -->
+              <tr class="schedule-item-row" data-day="thu" data-category="defense adults">
+                <td><strong>THURSDAY</strong></td>
+                <td><span class="time-badge">06:30 PM - 07:45 PM</span></td>
+                <td><span class="badge-combat vermilion me-2">SELF-DEFENSE</span> Grab Escapes & Ground Defense</td>
+                <td>Women & Teens</td>
+                <td>Tatami Beta (Area 2)</td>
+                <td>Sensei Priya Sharma</td>
+                <td><span class="badge bg-success-subtle text-success">Open</span></td>
+              </tr>
+
+              <!-- Row 10: Friday -->
+              <tr class="schedule-item-row" data-day="fri" data-category="karate adults">
+                <td><strong>FRIDAY</strong></td>
+                <td><span class="time-badge">06:30 PM - 08:00 PM</span></td>
+                <td><span class="badge-combat vermilion me-2">KARATE</span> Continuous Kumite Sparring Night</td>
+                <td>Green Belt & Above</td>
+                <td>Tatami Alpha (Area 1)</td>
+                <td>Master Arjun Rao</td>
+                <td><span class="badge bg-danger-subtle text-danger">Waitlist Only</span></td>
+              </tr>
+
+              <!-- Row 11: Saturday -->
+              <tr class="schedule-item-row" data-day="sat" data-category="kids karate">
+                <td><strong>SATURDAY</strong></td>
+                <td><span class="time-badge">09:00 AM - 10:00 AM</span></td>
+                <td><span class="badge-combat me-2">KIDS</span> Little Tigers Weekend Kata</td>
+                <td>All Junior Belts</td>
+                <td>Tatami Beta (Area 2)</td>
+                <td>Sensei Kenji Sato</td>
+                <td><span class="badge bg-success-subtle text-success">Open</span></td>
+              </tr>
+              <!-- Row 12 -->
+              <tr class="schedule-item-row" data-day="sat" data-category="adults defense">
+                <td><strong>SATURDAY</strong></td>
+                <td><span class="time-badge">10:30 AM - 11:45 AM</span></td>
+                <td><span class="badge-combat vermilion me-2">COMBAT FIT</span> Weekend Boot Camp Sparring</td>
+                <td>All Adults</td>
+                <td>Main Combat Floor</td>
+                <td>Coach Marcus Vance</td>
+                <td><span class="badge bg-success-subtle text-success">Open</span></td>
+              </tr>
+
+              <!-- Row 13: Sunday -->
+              <tr class="schedule-item-row" data-day="sun" data-category="karate adults">
+                <td><strong>SUNDAY</strong></td>
+                <td><span class="time-badge">10:00 AM - 12:00 PM</span></td>
+                <td><span class="badge-combat gold me-2">KARATE</span> Black Belt Dan Masterclass</td>
+                <td>Brown & Black Belts</td>
+                <td>Tatami Alpha (Area 1)</td>
+                <td>Master Arjun Rao</td>
+                <td><span class="badge bg-success-subtle text-success">Open</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- MOBILE SCHEDULE CARDS VIEW -->
+        <div class="d-md-none" id="scheduleMobileView">
+          <div class="schedule-mobile-card" data-day="mon" data-category="karate adults">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <span class="badge-combat vermilion">MONDAY &bull; KARATE</span>
+              <span class="time-badge small">06:30 AM</span>
+            </div>
+            <h5 class="mb-1">Shotokan Morning Kihon</h5>
+            <p class="small text-secondary mb-2">Master Arjun Rao &bull; Tatami Alpha</p>
+            <span class="badge bg-success-subtle text-success small">Open for Trials</span>
+          </div>
+
+          <div class="schedule-mobile-card" data-day="mon" data-category="kids karate">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <span class="badge-combat">MONDAY &bull; KIDS</span>
+              <span class="time-badge small">04:30 PM</span>
+            </div>
+            <h5 class="mb-1">Little Tigers Karate (Ages 4-8)</h5>
+            <p class="small text-secondary mb-2">Sensei Kenji Sato &bull; Tatami Beta</p>
+            <span class="badge bg-warning-subtle text-warning small">Filling Fast</span>
+          </div>
+
+          <div class="schedule-mobile-card" data-day="mon" data-category="taekwondo adults">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <span class="badge-combat gold">MONDAY &bull; TAEKWONDO</span>
+              <span class="time-badge small">06:00 PM</span>
+            </div>
+            <h5 class="mb-1">Olympic Sparring Drills</h5>
+            <p class="small text-secondary mb-2">Sensei Elena Cruz &bull; Tatami Alpha</p>
+            <span class="badge bg-success-subtle text-success small">Open for Trials</span>
+          </div>
+
+          <div class="schedule-mobile-card" data-day="tue" data-category="defense adults">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <span class="badge-combat vermilion">TUESDAY &bull; DEFENSE</span>
+              <span class="time-badge small">10:00 AM</span>
+            </div>
+            <h5 class="mb-1">Women's Practical Defense</h5>
+            <p class="small text-secondary mb-2">Sensei Priya Sharma &bull; Tatami Beta</p>
+            <span class="badge bg-success-subtle text-success small">Open for Trials</span>
+          </div>
+
+          <div class="schedule-mobile-card" data-day="fri" data-category="karate adults">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <span class="badge-combat vermilion">FRIDAY &bull; KARATE</span>
+              <span class="time-badge small">06:30 PM</span>
+            </div>
+            <h5 class="mb-1">Continuous Kumite Sparring Night</h5>
+            <p class="small text-secondary mb-2">Master Arjun Rao &bull; Tatami Alpha</p>
+            <span class="badge bg-danger-subtle text-danger small">Waitlist Only</span>
+          </div>
+        </div>
+
+        <div id="scheduleEmptyState" class="d-none text-center py-5">
+          <i class="bi bi-calendar-x text-danger fs-1 mb-3 d-block"></i>
+          <h4 class="text-uppercase">No Classes Scheduled for This Filter</h4>
+          <p class="text-secondary">Please choose another day or select "All Disciplines" to view available sessions.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 04: CLASS PREPARATION & MAT ETIQUETTE -->
+    <section class="py-combat border-bottom border-dark">
+      <div class="container">
+        <div class="row align-items-end mb-5">
+          <div class="col-lg-8">
+            <div class="section-marker">// 04 &bull; CLASS PROTOCOL</div>
+            <h2 class="section-title">PREPARING FOR YOUR CLASS</h2>
+            <p class="section-desc mb-0">Follow these standard dojo guidelines to maximize your safety and preserve tatami cleanliness.</p>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="combat-panel p-4 h-100">
+              <i class="bi bi-clock-history text-danger fs-2 mb-2 d-block"></i>
+              <h5 class="text-uppercase mb-2">Arrive 15 Minutes Early</h5>
+              <p class="text-secondary small mb-0">Change into your gi, warm up cold joints on the side mat, and complete your attendance check-in before the bell.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="combat-panel p-4 h-100">
+              <i class="bi bi-droplet-half text-danger fs-2 mb-2 d-block"></i>
+              <h5 class="text-uppercase mb-2">Hydration & Nutrition</h5>
+              <p class="text-secondary small mb-0">Bring a sealed water bottle. Avoid heavy meals within 90 minutes of class to prevent cramping during high-intensity kumite.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="combat-panel p-4 h-100">
+              <i class="bi bi-shield-x text-danger fs-2 mb-2 d-block"></i>
+              <h5 class="text-uppercase mb-2">Jewelry & Nails Protocol</h5>
+              <p class="text-secondary small mb-0">All rings, necklaces, and watches must be removed. Finger and toenails must be trimmed short to protect partners.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 05: DOWNLOADABLE TIMETABLE & CALENDAR SYNC -->
+    <section class="py-combat bg-surface border-bottom border-dark">
+      <div class="container">
+        <div class="combat-panel p-4 p-md-5 border-danger">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-8">
+              <span class="badge-combat vermilion mb-2">// DIGITAL TIMETABLE ACCESS</span>
+              <h3 class="display-6 fw-bold text-uppercase mb-2">SYNC OUR CALENDAR TO YOUR DEVICE</h3>
+              <p class="text-secondary mb-0">
+                Never miss a belt testing date or seminar. Subscribe to our live iCal / Google Calendar feed or download the official printable PDF schedule.
+              </p>
+            </div>
+            <div class="col-lg-4 text-lg-end d-flex flex-wrap gap-2 justify-content-lg-end">
+              <a href="#" class="btn-combat btn-combat-sm"><i class="bi bi-file-earmark-pdf-fill me-1"></i> Download PDF</a>
+              <a href="#" class="btn-combat-outline btn-combat-sm"><i class="bi bi-calendar-plus me-1"></i> Sync iCal Feed</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 06: DROP-IN & TRIAL CTA -->
+    <section class="py-combat bg-body text-center">
+      <div class="container">
+        <div class="section-marker justify-content-center">// 06 &bull; ATTEND A CLASS</div>
+        <h2 class="display-4 fw-bold text-uppercase mb-3">STEP ONTO THE MAT THIS WEEK.</h2>
+        <p class="lead text-secondary mx-auto mb-4" style="max-width: 600px;">
+          First-time students receive a free trial class in any open beginner session. Pick a time slot from the schedule and book online in 60 seconds.
+        </p>
+        <div class="d-flex justify-content-center flex-wrap gap-3">
+          <a href="contact.html" class="btn-combat btn-lg px-5">Book Your Trial Slot</a>
+          <a href="pricing.html" class="btn-combat-outline btn-lg px-4">Review Tuition Packages</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- GLOBAL FOOTER -->
+  <footer class="combat-footer">
+    <div class="container">
+      <div class="row g-5">
+        <!-- Col 1: Brand & Bio -->
+        <div class="col-lg-4">
+          <a class="navbar-brand mb-3 d-inline-flex align-items-center" href="index.html">
+            <img src="assets/images/logo.svg" alt="KAI Martial Arts Logo" width="44" height="44" class="brand-logo-img">
+            <div>
+              <span>KAI</span>
+              <span class="brand-sub">MARTIAL ARTS</span>
+            </div>
+          </a>
+          <p class="text-secondary small mb-4">
+            KAI Martial Arts Academy is an internationally accredited martial arts center dedicated to authentic traditional Karate, Olympic Taekwondo, and practical reality-based self-defense.
+          </p>
+          <div class="d-flex gap-3">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="btn-combat-outline btn-combat-sm px-3" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" class="btn-combat-outline btn-combat-sm px-3" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="btn-combat-outline btn-combat-sm px-3" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5 class="footer-heading">Academy</h5>
+          <ul class="footer-links">
+            <li><a href="about.html">About KAI</a></li>
+            <li><a href="programs.html">Our Programs</a></li>
+            <li><a href="instructors.html">Grandmasters</a></li>
+            <li><a href="schedule.html">Class Schedule</a></li>
+            <li><a href="pricing.html">Tuition & Pricing</a></li>
+            <li><a href="home-2.html">Home 2 (Fight Poster)</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <h5 class="footer-heading">Disciplines</h5>
+          <ul class="footer-links">
+            <li><a href="program-details.html">Traditional Karate</a></li>
+            <li><a href="programs.html">Olympic Taekwondo</a></li>
+            <li><a href="programs.html">Women's Self-Defense</a></li>
+            <li><a href="programs.html">Kids Little Tigers (4-12)</a></li>
+            <li><a href="programs.html">Adult Tactical Combat</a></li>
+            <li><a href="gallery.html">Action Gallery</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3">
+          <h5 class="footer-heading">The Dojo</h5>
+          <p class="small text-secondary mb-2"><i class="bi bi-geo-alt-fill text-danger me-2"></i> 448 Combat Way, Dojo District, Suite 100</p>
+          <p class="small text-secondary mb-2"><i class="bi bi-telephone-fill text-danger me-2"></i> +1 (555) 839-2041</p>
+          <p class="small text-secondary mb-2"><i class="bi bi-envelope-fill text-danger me-2"></i> info@kaimartialarts.com</p>
+          <p class="small text-secondary mb-3"><i class="bi bi-clock-fill text-danger me-2"></i> Mon - Sat: 06:00 AM - 09:30 PM</p>
+          
+          <div class="mt-3">
+            <span class="d-block small text-primary fw-bold mb-2">DOJO NEWSLETTER</span>
+            <div class="input-group">
+              <input type="email" class="form-control form-combat-control py-2" placeholder="Your email..." aria-label="Email address">
+              <button class="btn btn-combat btn-combat-sm" type="button"><i class="bi bi-send-fill"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <p class="mb-2 mb-md-0 text-secondary">&copy; <span class="current-year">2026</span> KAI Martial Arts Academy. All Rights Reserved. Built for ThemeForest & TemplateMonster.</p>
+        <div class="d-flex gap-3 text-secondary">
+          <a href="privacy.html" class="text-secondary small">Privacy Policy</a>
+          <span>&bull;</span>
+          <a href="terms.html" class="text-secondary small">Terms of Training</a>
+          <span>&bull;</span>
+          <a href="contact.html" class="text-secondary small">Support & Mat Rules</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" type="button" aria-label="Back to Top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/rtl.js"></script>
+  <script src="assets/js/schedule.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

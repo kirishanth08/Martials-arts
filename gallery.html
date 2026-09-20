@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Action Gallery & Tournaments | KAI Martial Arts Academy</title>
+  <meta name="description" content="View high-impact action photography from KAI Martial Arts Academy. Kata demonstrations, Olympic sparring, women's self-defense workshops, and tournament podiums.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+  <!-- GLOBAL NAVBAR -->
+  <nav class="navbar navbar-expand-lg combat-navbar sticky-top" id="mainNavbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/images/logo.svg" alt="KAI Martial Arts" width="44" height="44" class="brand-logo-img">
+        <div>
+          <span>KAI</span>
+          <span class="brand-sub">MARTIAL ARTS</span>
+        </div>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#combatNavContent" aria-controls="combatNavContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list fs-2"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="combatNavContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <!-- Home Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-house-door-fill me-1"></i> Home
+            </a>
+            <ul class="dropdown-menu combat-dropdown-menu" aria-labelledby="homeDropdown">
+              <li>
+                <a class="dropdown-item" href="index.html">
+                  <div class="fw-bold"><i class="bi bi-heart-fill text-danger me-2"></i>Home 1 &mdash; Academy &amp; Community</div>
+                  <small class="text-secondary d-block ps-4">Welcoming photo-rich flagship</small>
+                </a>
+              </li>
+              <li><hr class="dropdown-divider border-secondary border-opacity-25 my-1"></li>
+              <li>
+                <a class="dropdown-item" href="home-2.html">
+                  <div class="fw-bold"><i class="bi bi-grid-3x3-gap-fill text-warning me-2"></i>Home 2 &mdash; Services &amp; Curriculum</div>
+                  <small class="text-secondary d-block ps-4">Detailed training directory</small>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- About -->
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+
+          <!-- Programs Dropdown (Includes Programs, Schedule, Instructors, Gallery) -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="programsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-shield-shaded me-1"></i> Programs
+            </a>
+            <ul class="dropdown-menu combat-dropdown-menu" aria-labelledby="programsDropdown">
+              <li>
+                <a class="dropdown-item" href="programs.html">
+                  <div class="fw-bold"><i class="bi bi-grid-fill text-danger me-2"></i>All Disciplines &amp; Programs</div>
+                  <small class="text-secondary d-block ps-4">Karate, Taekwondo &amp; Self-Defense</small>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="program-details.html">
+                  <div class="fw-bold"><i class="bi bi-journal-bookmark-fill text-warning me-2"></i>Curriculum &amp; Syllabus</div>
+                  <small class="text-secondary d-block ps-4">Kihon, Kata &amp; Kumite breakdown</small>
+                </a>
+              </li>
+              <li><hr class="dropdown-divider border-secondary border-opacity-25 my-1"></li>
+              <li>
+                <a class="dropdown-item" href="schedule.html">
+                  <div class="fw-bold"><i class="bi bi-calendar3 text-info me-2"></i>Class Schedule &amp; Timetable</div>
+                  <small class="text-secondary d-block ps-4">Weekly timetable &amp; age brackets</small>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="instructors.html">
+                  <div class="fw-bold"><i class="bi bi-person-badge-fill text-danger me-2"></i>Grandmasters &amp; Faculty</div>
+                  <small class="text-secondary d-block ps-4">Certified 5th Dan instructor bios</small>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item active" href="gallery.html">
+                  <div class="fw-bold"><i class="bi bi-images text-warning me-2"></i>Action Gallery</div>
+                  <small class="text-secondary d-block ps-4">Tatami sparring &amp; tournament photos</small>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- Pricing -->
+          <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+
+          <!-- Blog -->
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+
+          <!-- Contact -->
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-util-group">
+          <button class="theme-toggle-btn" type="button">
+            <i class="bi bi-sun-fill text-warning"></i> <span class="d-none d-sm-inline">Light</span>
+          </button>
+          
+          <button class="rtl-toggle-btn" type="button">
+            <span class="fw-bold">LTR | RTL</span>
+          </button>
+
+          <a href="contact.html" class="btn-combat btn-combat-sm ms-lg-2">Book a Trial</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- SECTION 01: GALLERY HERO -->
+    <section class="py-combat bg-body border-bottom border-dark position-relative">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-7">
+            <div class="section-marker">// 01 &bull; ACTION IN PICTURES</div>
+            <h1 class="display-3 fw-bold text-uppercase mb-4">
+              THE MAT<br>
+              IN <span class="text-danger">MOTION.</span>
+            </h1>
+            <p class="lead text-secondary mb-4">
+              Real sweat, authentic kata precision, and high-impact sparring captures. Browse through our visual catalog of daily dojo life, black belt gradings, and championship competitions.
+            </p>
+          </div>
+          <div class="col-lg-5">
+            <div class="combat-panel p-2">
+              <img src="assets/images/gallery/gallery-hero.jpg" alt="Dynamic Olympic Taekwondo Point Sparring in Action" class="img-fluid w-100" style="height: 340px; object-fit: cover;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 02: PHOTOGRAPHY PHILOSOPHY & SPEED -->
+    <section class="py-combat-sm bg-surface border-bottom border-dark">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-md-4">
+            <div class="combat-panel p-3 text-center h-100">
+              <i class="bi bi-speedometer2 text-danger fs-2 mb-2 d-block"></i>
+              <h5 class="text-uppercase mb-1">1/8000s High Shutter Capture</h5>
+              <p class="small text-secondary mb-0">Freezing 70mph side kicks and impact shockwaves with studio strobe synchronization.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="combat-panel p-3 text-center h-100">
+              <i class="bi bi-shield-check text-danger fs-2 mb-2 d-block"></i>
+              <h5 class="text-uppercase mb-1">Zero Staged Stock Photos</h5>
+              <p class="small text-secondary mb-0">Every frame was captured during live belt gradings, open mats, and sanctioned tournaments.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="combat-panel p-3 text-center h-100">
+              <i class="bi bi-award text-danger fs-2 mb-2 d-block"></i>
+              <h5 class="text-uppercase mb-1">Authentic Traditional Lineage</h5>
+              <p class="small text-secondary mb-0">Shotokan Karate, Olympic WT Taekwondo, and certified reality self-defense.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 03: FILTERABLE PHOTO GALLERY GRID -->
+    <section class="py-combat bg-body border-bottom border-dark" id="galleryGridSection">
+      <div class="container">
+        <div class="text-center mb-4">
+          <div class="section-marker justify-content-center">// 03 &bull; THE ARCHIVE</div>
+          <h2 class="section-title">FILTER BY DISCIPLINE</h2>
+        </div>
+
+        <!-- Filter Bar -->
+        <div class="combat-panel p-2 mb-5 d-flex flex-wrap gap-2 justify-content-center">
+          <button class="btn-combat btn-combat-sm gallery-filter-btn active" data-filter="all">ALL PHOTOS</button>
+          <button class="btn-combat-outline btn-combat-sm gallery-filter-btn" data-filter="karate">KARATE</button>
+          <button class="btn-combat-outline btn-combat-sm gallery-filter-btn" data-filter="taekwondo">TAEKWONDO</button>
+          <button class="btn-combat-outline btn-combat-sm gallery-filter-btn" data-filter="defense">SELF-DEFENSE</button>
+          <button class="btn-combat-outline btn-combat-sm gallery-filter-btn" data-filter="tournaments">TOURNAMENTS</button>
+          <button class="btn-combat-outline btn-combat-sm gallery-filter-btn" data-filter="training">CONDITIONING</button>
+        </div>
+
+        <!-- Dynamic Grid Items -->
+        <div class="row g-4">
+          <!-- Item 1 -->
+          <div class="col-lg-4 col-md-6 gallery-item-wrap" data-category="karate" data-title="Shotokan Master Kata Execution & Kihon Focus">
+            <div class="gallery-grid-item">
+              <img src="assets/images/gallery/gallery-item-1.jpg" alt="Shotokan Kata Mastery & Execution">
+              <div class="gallery-overlay">
+                <span class="badge-combat vermilion mb-1">KARATE</span>
+                <h5 class="text-white mb-0 fs-6">Shotokan Kata Mastery</h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="col-lg-4 col-md-6 gallery-item-wrap" data-category="taekwondo" data-title="Olympic High Velocity Spinning Hook Kick">
+            <div class="gallery-grid-item">
+              <img src="assets/images/gallery/gallery-item-2.jpg" alt="Taekwondo High Spin Kick">
+              <div class="gallery-overlay">
+                <span class="badge-combat gold mb-1">TAEKWONDO</span>
+                <h5 class="text-white mb-0 fs-6">High Velocity Spin Kick</h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="col-lg-4 col-md-6 gallery-item-wrap" data-category="tournaments" data-title="International Karate Kumite Championship Bout">
+            <div class="gallery-grid-item">
+              <img src="assets/images/gallery/gallery-item-3.jpg" alt="Championship Kumite Sparring">
+              <div class="gallery-overlay">
+                <span class="badge-combat vermilion mb-1">TOURNAMENTS</span>
+                <h5 class="text-white mb-0 fs-6">Championship Kumite Sparring</h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="col-lg-4 col-md-6 gallery-item-wrap" data-category="defense" data-title="Women's Defensive Framing & Tactical Escape">
+            <div class="gallery-grid-item">
+              <img src="assets/images/gallery/gallery-item-4.jpg" alt="Self-Defense Technique and Framing">
+              <div class="gallery-overlay">
+                <span class="badge-combat vermilion mb-1">SELF-DEFENSE</span>
+                <h5 class="text-white mb-0 fs-6">Tactical Escape & Framing</h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="col-lg-4 col-md-6 gallery-item-wrap" data-category="karate" data-title="Sensei Guiding Students in Dojo Protocol & Respect">
+            <div class="gallery-grid-item">
+              <img src="assets/images/gallery/gallery-item-5.jpg" alt="Dojo Respect & Mentorship on Tatami">
+              <div class="gallery-overlay">
+                <span class="badge-combat gold mb-1">KARATE</span>
+                <h5 class="text-white mb-0 fs-6">Dojo Protocol & Mentorship</h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 6 -->
+          <div class="col-lg-4 col-md-6 gallery-item-wrap" data-category="tournaments" data-title="Full Contact Championship Kumite Point Round">
+            <div class="gallery-grid-item">
+              <img src="assets/images/gallery/gallery-item-6.jpg" alt="Competitive Tournament Match on Tatami">
+              <div class="gallery-overlay">
+                <span class="badge-combat vermilion mb-1">TOURNAMENTS</span>
+                <h5 class="text-white mb-0 fs-6">Championship Match Bout</h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 7 -->
+          <div class="col-lg-4 col-md-6 gallery-item-wrap" data-category="training" data-title="Functional Budo Agility & Pad Conditioning Drills">
+            <div class="gallery-grid-item">
+              <img src="assets/images/gallery/gallery-item-7.jpg" alt="Budo Tactical Conditioning & Seminar Drills">
+              <div class="gallery-overlay">
+                <span class="badge-combat gold mb-1">CONDITIONING</span>
+                <h5 class="text-white mb-0 fs-6">Mat Conditioning & Agility</h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 8 -->
+          <div class="col-lg-4 col-md-6 gallery-item-wrap" data-category="taekwondo" data-title="Olympic Speed Paddle Combinations & Reaction Sparring">
+            <div class="gallery-grid-item">
+              <img src="assets/images/gallery/gallery-item-8.jpg" alt="Junior Taekwondo Speed Paddle Drills">
+              <div class="gallery-overlay">
+                <span class="badge-combat gold mb-1">TAEKWONDO</span>
+                <h5 class="text-white mb-0 fs-6">Speed Paddle Agility Drills</h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 9 -->
+          <div class="col-lg-4 col-md-6 gallery-item-wrap" data-category="karate" data-title="Little Tigers Youth Karate Discipline & Focus">
+            <div class="gallery-grid-item">
+              <img src="assets/images/gallery/gallery-item-9.jpg" alt="Little Tigers Children Martial Arts Class">
+              <div class="gallery-overlay">
+                <span class="badge-combat vermilion mb-1">KARATE</span>
+                <h5 class="text-white mb-0 fs-6">Youth Discipline & Focus</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 04: TOURNAMENT DIARY & PODIUM PERSPECTIVE -->
+    <section class="py-combat bg-surface border-bottom border-dark">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <div class="section-marker">// 04 &bull; TOURNAMENT DIARY</div>
+            <h2 class="section-title mb-4">THE ENERGY BEHIND THE PODIUM</h2>
+            <p class="text-secondary mb-3">
+              Competitive success is never an accident. For every medal hanging in our trophy display, there are hundreds of early morning sprints, tens of thousands of repeated kata turns, and bruised shins conditioned on the tatami.
+            </p>
+            <p class="text-secondary mb-4">
+              Our travel competition team represents the academy across state, national, and international stages. Students as young as eight compete alongside adult master practitioners, bound by mutual support.
+            </p>
+            <div class="p-3 bg-body border border-secondary border-opacity-25 d-flex gap-3 align-items-center">
+              <i class="bi bi-camera-fill text-danger fs-2"></i>
+              <div>
+                <strong  class="d-block">Professional Photography Policy</strong>
+                <small class="text-secondary">High-resolution tournament gallery downloads are provided free to all enrolled student families.</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="combat-panel p-3">
+              <img src="assets/images/gallery/gallery-tournament-diary.jpg" alt="Adult Traditional Karate Kumite Competition Sparring" class="img-fluid w-100" style="height: 420px; object-fit: cover;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 05: COMMUNITY MAT RECOGNITION -->
+    <section class="py-combat border-bottom border-dark">
+      <div class="container text-center">
+        <div class="section-marker justify-content-center">// 05 &bull; SOCIAL SHOWCASE</div>
+        <h2 class="section-title">FEATURED STUDENT MEMORIES</h2>
+        <p class="section-desc mx-auto mb-4">
+          Every belt promotion, medal presentation, and milestone is commemorated in our annual dojo archive.
+        </p>
+        <div class="row g-3 justify-content-center">
+          <div class="col-6 col-md-3">
+            <div class="p-3 bg-surface border border-secondary border-opacity-25">
+              <div class="display-6 fw-bold text-danger font-display">1,400+</div>
+              <small class="text-muted text-uppercase">Archived Action Shots</small>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="p-3 bg-surface border border-secondary border-opacity-25">
+              <div class="display-6 fw-bold text-warning font-display">12</div>
+              <small class="text-muted text-uppercase">Championship Albums</small>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="p-3 bg-surface border border-secondary border-opacity-25">
+              <div class="display-6 fw-bold font-display">100%</div>
+              <small class="text-muted text-uppercase">Student Owned Rights</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 06: INSTAGRAM & JOIN THE MAT CTA -->
+    <section class="py-combat bg-surface text-center">
+      <div class="container">
+        <div class="section-marker justify-content-center">// 06 &bull; CONNECT WITH US</div>
+        <h2 class="display-4 fw-bold text-uppercase mb-3">TAG US ON THE MAT: @KAICOMBAT</h2>
+        <p class="lead text-secondary mx-auto mb-4" style="max-width: 620px;">
+          Follow our daily training reels, technique breakdown videos, and student belt promotions on Instagram and YouTube.
+        </p>
+        <div class="d-flex justify-content-center flex-wrap gap-3">
+          <a href="contact.html" class="btn-combat btn-lg px-5">Book Free Trial Class</a>
+          <a href="about.html" class="btn-combat-outline btn-lg px-4">Learn Our Story</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- LIGHTBOX MODAL VIEWER (Bootstrap 5 Modal API) -->
+  <div class="modal fade" id="galleryLightboxModal" tabindex="-1" aria-labelledby="lightboxModalCaption" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-dark border border-danger">
+        <div class="modal-header border-bottom border-secondary border-opacity-25 p-3">
+          <div>
+            <span id="lightboxModalCategory" class="badge-combat vermilion mb-1">CATEGORY</span>
+            <h5  class="modal-title fs-6" id="lightboxModalCaption">Martial Arts Action</h5>
+          </div>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-0 text-center bg-black">
+          <img id="lightboxModalImage" src="" alt="Enlarged Action View" class="img-fluid w-100" style="max-height: 75vh; object-fit: contain;">
+        </div>
+        <div class="modal-footer border-top border-secondary border-opacity-25 p-2 justify-content-between">
+          <span class="small text-muted">&copy; KAI Martial Arts Academy Archives</span>
+          <button type="button" class="btn-combat btn-combat-sm" data-bs-dismiss="modal">Close Viewer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GLOBAL FOOTER -->
+  <footer class="combat-footer">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4">
+          <a class="navbar-brand mb-3 d-inline-flex align-items-center" href="index.html">
+            <img src="assets/images/logo.svg" alt="KAI Martial Arts Logo" width="44" height="44" class="brand-logo-img">
+            <div>
+              <span>KAI</span>
+              <span class="brand-sub">MARTIAL ARTS</span>
+            </div>
+          </a>
+          <p class="text-secondary small mb-4">
+            KAI Martial Arts Academy is an internationally accredited martial arts center dedicated to authentic traditional Karate, Olympic Taekwondo, and practical reality-based self-defense.
+          </p>
+          <div class="d-flex gap-3">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="btn-combat-outline btn-combat-sm px-3" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" class="btn-combat-outline btn-combat-sm px-3" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="btn-combat-outline btn-combat-sm px-3" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5 class="footer-heading">Academy</h5>
+          <ul class="footer-links">
+            <li><a href="about.html">About KAI</a></li>
+            <li><a href="programs.html">Our Programs</a></li>
+            <li><a href="instructors.html">Grandmasters</a></li>
+            <li><a href="schedule.html">Class Schedule</a></li>
+            <li><a href="pricing.html">Tuition & Pricing</a></li>
+            <li><a href="home-2.html">Home 2 (Fight Poster)</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <h5 class="footer-heading">Disciplines</h5>
+          <ul class="footer-links">
+            <li><a href="program-details.html">Traditional Karate</a></li>
+            <li><a href="programs.html">Olympic Taekwondo</a></li>
+            <li><a href="programs.html">Women's Self-Defense</a></li>
+            <li><a href="programs.html">Kids Little Tigers (4-12)</a></li>
+            <li><a href="programs.html">Adult Tactical Combat</a></li>
+            <li><a href="gallery.html">Action Gallery</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3">
+          <h5 class="footer-heading">The Dojo</h5>
+          <p class="small text-secondary mb-2"><i class="bi bi-geo-alt-fill text-danger me-2"></i> 448 Combat Way, Dojo District, Suite 100</p>
+          <p class="small text-secondary mb-2"><i class="bi bi-telephone-fill text-danger me-2"></i> +1 (555) 839-2041</p>
+          <p class="small text-secondary mb-2"><i class="bi bi-envelope-fill text-danger me-2"></i> info@kaimartialarts.com</p>
+          <p class="small text-secondary mb-3"><i class="bi bi-clock-fill text-danger me-2"></i> Mon - Sat: 06:00 AM - 09:30 PM</p>
+          
+          <div class="mt-3">
+            <span class="d-block small text-primary fw-bold mb-2">DOJO NEWSLETTER</span>
+            <div class="input-group">
+              <input type="email" class="form-control form-combat-control py-2" placeholder="Your email..." aria-label="Email address">
+              <button class="btn btn-combat btn-combat-sm" type="button"><i class="bi bi-send-fill"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <p class="mb-2 mb-md-0 text-secondary">&copy; <span class="current-year">2026</span> KAI Martial Arts Academy. All Rights Reserved. Built for ThemeForest & TemplateMonster.</p>
+        <div class="d-flex gap-3 text-secondary">
+          <a href="privacy.html" class="text-secondary small">Privacy Policy</a>
+          <span>&bull;</span>
+          <a href="terms.html" class="text-secondary small">Terms of Training</a>
+          <span>&bull;</span>
+          <a href="contact.html" class="text-secondary small">Support & Mat Rules</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" type="button" aria-label="Back to Top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/rtl.js"></script>
+  <script src="assets/js/gallery.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

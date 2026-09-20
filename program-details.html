@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shotokan Karate-Do Program Details | KAI Martial Arts Academy</title>
+  <meta name="description" content="In-depth curriculum for Shotokan Karate-Do at KAI. Learn traditional Kihon, the 26 formal katas, point Kumite sparring, and black belt examination standards.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+  <!-- GLOBAL NAVBAR -->
+  <nav class="navbar navbar-expand-lg combat-navbar sticky-top" id="mainNavbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/images/logo.svg" alt="KAI Martial Arts" width="44" height="44" class="brand-logo-img">
+        <div>
+          <span>KAI</span>
+          <span class="brand-sub">MARTIAL ARTS</span>
+        </div>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#combatNavContent" aria-controls="combatNavContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list fs-2"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="combatNavContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <!-- Home Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-house-door-fill me-1"></i> Home
+            </a>
+            <ul class="dropdown-menu combat-dropdown-menu" aria-labelledby="homeDropdown">
+              <li>
+                <a class="dropdown-item" href="index.html">
+                  <div class="fw-bold"><i class="bi bi-heart-fill text-danger me-2"></i>Home 1 &mdash; Academy &amp; Community</div>
+                  <small class="text-secondary d-block ps-4">Welcoming photo-rich flagship</small>
+                </a>
+              </li>
+              <li><hr class="dropdown-divider border-secondary border-opacity-25 my-1"></li>
+              <li>
+                <a class="dropdown-item" href="home-2.html">
+                  <div class="fw-bold"><i class="bi bi-grid-3x3-gap-fill text-warning me-2"></i>Home 2 &mdash; Services &amp; Curriculum</div>
+                  <small class="text-secondary d-block ps-4">Detailed training directory</small>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- About -->
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+
+          <!-- Programs Dropdown (Includes Programs, Schedule, Instructors, Gallery) -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="programsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-shield-shaded me-1"></i> Programs
+            </a>
+            <ul class="dropdown-menu combat-dropdown-menu" aria-labelledby="programsDropdown">
+              <li>
+                <a class="dropdown-item" href="programs.html">
+                  <div class="fw-bold"><i class="bi bi-grid-fill text-danger me-2"></i>All Disciplines &amp; Programs</div>
+                  <small class="text-secondary d-block ps-4">Karate, Taekwondo &amp; Self-Defense</small>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item active" href="program-details.html">
+                  <div class="fw-bold"><i class="bi bi-journal-bookmark-fill text-warning me-2"></i>Curriculum &amp; Syllabus</div>
+                  <small class="text-secondary d-block ps-4">Kihon, Kata &amp; Kumite breakdown</small>
+                </a>
+              </li>
+              <li><hr class="dropdown-divider border-secondary border-opacity-25 my-1"></li>
+              <li>
+                <a class="dropdown-item" href="schedule.html">
+                  <div class="fw-bold"><i class="bi bi-calendar3 text-info me-2"></i>Class Schedule &amp; Timetable</div>
+                  <small class="text-secondary d-block ps-4">Weekly timetable &amp; age brackets</small>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="instructors.html">
+                  <div class="fw-bold"><i class="bi bi-person-badge-fill text-danger me-2"></i>Grandmasters &amp; Faculty</div>
+                  <small class="text-secondary d-block ps-4">Certified 5th Dan instructor bios</small>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="gallery.html">
+                  <div class="fw-bold"><i class="bi bi-images text-warning me-2"></i>Action Gallery</div>
+                  <small class="text-secondary d-block ps-4">Tatami sparring &amp; tournament photos</small>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- Pricing -->
+          <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+
+          <!-- Blog -->
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+
+          <!-- Contact -->
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-util-group">
+          <button class="theme-toggle-btn" type="button">
+            <i class="bi bi-sun-fill text-warning"></i> <span class="d-none d-sm-inline">Light</span>
+          </button>
+          
+          <button class="rtl-toggle-btn" type="button">
+            <span class="fw-bold">LTR | RTL</span>
+          </button>
+
+          <a href="contact.html" class="btn-combat btn-combat-sm ms-lg-2">Book a Trial</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- SECTION 01: PROGRAM HERO -->
+    <section class="py-combat bg-body border-bottom border-dark position-relative">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-7">
+            <div class="d-flex align-items-center gap-2 mb-3">
+              <span class="badge-combat vermilion" id="progCategoryBadge">// TRADITIONAL PROGRAM</span>
+              <span class="badge-combat gold" id="progAccreditationBadge">JKA & WKF RECOGNIZED</span>
+            </div>
+            <h1 class="display-3 fw-bold text-uppercase mb-4" id="progTitle">
+              SHOTOKAN<br>
+              <span class="text-danger">KARATE-DO.</span>
+            </h1>
+            <p class="lead text-secondary mb-4" id="progLeadDesc">
+              The supreme art of the empty hand. Shotokan develops devastating linear strike power, iron stance stability, and the mental composure to end conflict decisively in a single technique.
+            </p>
+            <div class="d-flex flex-wrap gap-3 mb-4">
+              <a href="contact.html?program=shotokan" class="btn-combat" id="progBookTrialBtn">Book Introductory Class <i class="bi bi-arrow-right"></i></a>
+              <a href="schedule.html" class="btn-combat-outline">View Class Schedule</a>
+            </div>
+            <div class="row g-3 pt-3 border-top border-secondary border-opacity-25">
+              <div class="col-4">
+                <span class="d-block text-danger fw-bold font-display fs-6">LEAD MASTER</span>
+                <small class="text-secondary" id="progLeadMaster">Arjun Rao (5th Dan)</small>
+              </div>
+              <div class="col-4">
+                <span class="d-block text-warning fw-bold font-display fs-6">DIFFICULTY</span>
+                <small class="text-secondary" id="progDifficulty">All Levels (White-Black)</small>
+              </div>
+              <div class="col-4">
+                <span class="d-block text-primary fw-bold font-display fs-6">FREQUENCY</span>
+                <small class="text-secondary" id="progFrequency">5 Days / Week Available</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="combat-panel p-2">
+              <img src="assets/images/programs/program-shotokan.jpg" alt="Shotokan Traditional Karate Reverse Punch" class="img-fluid w-100" style="height: 480px; object-fit: cover;" id="progHeroImg">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 02: CURRICULUM SYLLABUS & OVERVIEW -->
+    <section class="py-combat bg-surface border-bottom border-dark">
+      <div class="container">
+        <div class="text-center max-w-800 mx-auto mb-5">
+          <div class="section-marker justify-content-center">// 02 &bull; DISCIPLINE CURRICULUM</div>
+          <h2 class="section-title" id="progOverviewTitle">ABOUT THE SHOTOKAN CURRICULUM</h2>
+          <p class="lead text-secondary mb-3" id="progOverviewP1">
+            Shotokan Karate is characterized by its deep, grounded stances and powerful direct hip transitions. Under JKA-certified instructors, students progress systematically through core technical sequences.
+          </p>
+          <p class="text-secondary mb-0" id="progOverviewP2">
+            Founded on the principle of "Ikken Hissatsu" (to defeat with one blow), our curriculum emphasizes uncompromising technical precision before explosive acceleration.
+          </p>
+        </div>
+
+        <div class="row g-4" id="progSyllabusContainer">
+          <div class="col-md-6">
+            <div class="combat-panel p-4 h-100 border-start border-danger border-3">
+              <span class="badge-combat vermilion mb-2">PHASE 01</span>
+              <h4 class="text-uppercase mb-2 fs-5">Kihon & Stance Biomechanics</h4>
+              <p class="text-secondary small mb-0">Mastery of forward stance (Zenkutsu-dachi), horse-riding stance (Kiba-dachi), reverse punches (Gyaku-zuki), and three-point blocking mechanics.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="combat-panel p-4 h-100 border-start border-danger border-3">
+              <span class="badge-combat gold mb-2">PHASE 02</span>
+              <h4 class="text-uppercase mb-2 fs-5">Kata Architecture & Bunkai</h4>
+              <p class="text-secondary small mb-0">In-depth study of standard Heian katas (Shodan through Godan), Tekki Shodan, and Bassai Dai, including practical applications against realistic grabs.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="combat-panel p-4 h-100 border-start border-danger border-3">
+              <span class="badge-combat vermilion mb-2">PHASE 03</span>
+              <h4 class="text-uppercase mb-2 fs-5">Yakusoku & Jiyu Kumite</h4>
+              <p class="text-secondary small mb-0">Progression from pre-arranged five-step sparring (Gohon Kumite) into dynamic freestyle continuous sparring with protective gear and timing drills.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="combat-panel p-4 h-100 border-start border-danger border-3">
+              <span class="badge-combat gold mb-2">PHASE 04</span>
+              <h4 class="text-uppercase mb-2 fs-5">Mokuso & Dojo Kun Philosophy</h4>
+              <p class="text-secondary small mb-0">Integration of breath regulation, mental fortitude, humility, and the 5 precepts of Gichin Funakoshi into everyday moral character.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 03: SKILLS YOU WILL DEVELOP -->
+    <section class="py-combat border-bottom border-dark">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <div class="section-marker">// 03 &bull; ATHLETIC ADAPTATIONS</div>
+            <h2 class="section-title mb-4">WHAT YOU DEVELOP ON THE MAT</h2>
+            <p class="text-secondary mb-4">
+              Full-body physical and mental architecture. Over 6 to 12 months of consistent training, our students develop measurable improvements in neurological reflex speed, core rotational power, and mental composure.
+            </p>
+            <ul class="list-unstyled" id="progOutcomesList">
+              <li class="d-flex align-items-start gap-2 mb-3">
+                <i class="bi bi-check-circle-fill text-danger fs-5 mt-n1"></i>
+                <span>Devastating kinetic strike generation through rotational hip torquing</span>
+              </li>
+              <li class="d-flex align-items-start gap-2 mb-3">
+                <i class="bi bi-check-circle-fill text-danger fs-5 mt-n1"></i>
+                <span>Rock-solid physical stability, spatial awareness, and posture alignment</span>
+              </li>
+              <li class="d-flex align-items-start gap-2 mb-3">
+                <i class="bi bi-check-circle-fill text-danger fs-5 mt-n1"></i>
+                <span>Reflexive blocking instincts against sudden linear and hook attacks</span>
+              </li>
+              <li class="d-flex align-items-start gap-2 mb-3">
+                <i class="bi bi-check-circle-fill text-danger fs-5 mt-n1"></i>
+                <span>Mental discipline, reduced stress reactivity, and razor-sharp focus</span>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <div class="combat-panel p-4">
+              <h4 class="text-uppercase mb-3 text-warning">REQUIRED GEAR & EQUIPMENT</h4>
+              <p class="text-secondary small mb-4">All required training equipment can be acquired through the KAI Pro Shop or is provided during trial periods:</p>
+              <ul class="list-unstyled" id="progGearList">
+                <li class="d-flex align-items-start gap-2 mb-3">
+                  <i class="bi bi-shield-fill-check text-warning fs-5 mt-n1"></i>
+                  <span>14oz Heavyweight Canvas Traditional Gi (White)</span>
+                </li>
+                <li class="d-flex align-items-start gap-2 mb-3">
+                  <i class="bi bi-shield-fill-check text-warning fs-5 mt-n1"></i>
+                  <span>WKF-Approved Red & Blue Fist Mitts</span>
+                </li>
+                <li class="d-flex align-items-start gap-2 mb-3">
+                  <i class="bi bi-shield-fill-check text-warning fs-5 mt-n1"></i>
+                  <span>Standard High-Density Shin & Instep Guards</span>
+                </li>
+                <li class="d-flex align-items-start gap-2 mb-3">
+                  <i class="bi bi-shield-fill-check text-warning fs-5 mt-n1"></i>
+                  <span>Custom Fitted Mouthguard & Groin Protector</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 04: TRAINING STRUCTURE BY SKILL LEVEL -->
+    <section class="py-combat bg-surface border-bottom border-dark">
+      <div class="container">
+        <div class="row align-items-end mb-5">
+          <div class="col-lg-8">
+            <div class="section-marker">// 04 &bull; CLASS TIERS</div>
+            <h2 class="section-title">KARATE CLASS STRUCTURE & DIVISIONS</h2>
+            <p class="section-desc mb-0">
+              Classes are separated by rank and experience level to ensure personalized instruction, safety, and steady progression.
+            </p>
+          </div>
+          <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+            <a href="instructors.html" class="btn-combat-outline btn-combat-sm">Meet Karate Instructors <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="combat-panel h-100">
+              <span class="badge-combat mb-2">BEGINNER (WHITE TO ORANGE)</span>
+              <h4 class="text-uppercase mb-3">FOUNDATION KYU</h4>
+              <p class="text-secondary small mb-3">Tuesdays & Thursdays: 06:30 PM &bull; Saturdays: 09:00 AM</p>
+              <ul class="list-unstyled small text-secondary">
+                <li class="mb-2"><i class="bi bi-check text-danger me-1"></i> Front stance (Zenkutsu-dachi) & horse stance (Kiba-dachi)</li>
+                <li class="mb-2"><i class="bi bi-check text-danger me-1"></i> Upper block (Age-uke) & downward block (Gedan-barai)</li>
+                <li class="mb-2"><i class="bi bi-check text-danger me-1"></i> Kata Taikyoku Shodan & Heian Shodan</li>
+                <li><i class="bi bi-check text-danger me-1"></i> Controlled Gohon kumite drills</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="combat-panel h-100">
+              <span class="badge-combat vermilion mb-2">INTERMEDIATE (GREEN TO BLUE)</span>
+              <h4 class="text-uppercase mb-3">ADVANCEMENT KYU</h4>
+              <p class="text-secondary small mb-3">Mondays & Wednesdays: 07:00 PM &bull; Saturdays: 10:30 AM</p>
+              <ul class="list-unstyled small text-secondary">
+                <li class="mb-2"><i class="bi bi-check text-danger me-1"></i> Back stance (Kokutsu-dachi) & cat stance (Nekoashi-dachi)</li>
+                <li class="mb-2"><i class="bi bi-check text-danger me-1"></i> Side snap (Yoko-geri keage) & thrust kicks (kekomi)</li>
+                <li class="mb-2"><i class="bi bi-check text-danger me-1"></i> Kata Heian Nidan through Heian Godan</li>
+                <li><i class="bi bi-check text-danger me-1"></i> Semi-free Jiu-ippon kumite with light contact</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="combat-panel h-100">
+              <span class="badge-combat gold mb-2">ADVANCED (BROWN TO BLACK DAN)</span>
+              <h4 class="text-uppercase mb-3">YUDANSHA DIVISION</h4>
+              <p class="text-secondary small mb-3">Mondays & Fridays: 08:00 PM &bull; Sundays: 10:00 AM</p>
+              <ul class="list-unstyled small text-secondary">
+                <li class="mb-2"><i class="bi bi-check text-danger me-1"></i> Advanced katas: Tekki, Bassai, Kanku, Jion, Empi</li>
+                <li class="mb-2"><i class="bi bi-check text-danger me-1"></i> Full bunkai application against armed defenses</li>
+                <li class="mb-2"><i class="bi bi-check text-danger me-1"></i> Free sparring (Jiyu kumite) for tournament athletes</li>
+                <li><i class="bi bi-check text-danger me-1"></i> Teaching assistantship & mentorship coaching</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 05: BELT PROGRESSION FOR KARATE -->
+    <section class="py-combat border-bottom border-dark">
+      <div class="container">
+        <div class="row align-items-end mb-5">
+          <div class="col-lg-8">
+            <div class="section-marker">// 05 &bull; RANK SYLLABUS</div>
+            <h2 class="section-title">EXAMINATION REQUIREMENTS</h2>
+            <p class="section-desc mb-0">
+              Examinations take place every three months. Advancement requires verified training hours, sensei recommendation, and demonstration of required katas and kumite proficiency.
+            </p>
+          </div>
+          <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+            <a href="about.html" class="btn-combat-outline btn-combat-sm">Review Dojo Kun <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="schedule-table-container">
+          <table class="combat-table">
+            <thead>
+              <tr>
+                <th>Belt Rank</th>
+                <th>Minimum Mat Hours</th>
+                <th>Required Kata</th>
+                <th>Kumite Requirement</th>
+                <th>Theoretical Knowledge</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="badge-combat">WHITE TO YELLOW</span></td>
+                <td>30 Hours (3 Months)</td>
+                <td>Taikyoku Shodan, Heian Shodan</td>
+                <td>5-Step Gohon Kumite</td>
+                <td>Dojo Etiquette, Stance Names</td>
+              </tr>
+              <tr>
+                <td><span class="badge-combat vermilion">YELLOW TO GREEN</span></td>
+                <td>60 Hours (6 Months)</td>
+                <td>Heian Nidan, Heian Sandan</td>
+                <td>3-Step Sanbon Kumite</td>
+                <td>Breathing Control & Kihon Principles</td>
+              </tr>
+              <tr>
+                <td><span class="badge-combat gold">GREEN TO BLUE</span></td>
+                <td>90 Hours (9 Months)</td>
+                <td>Heian Yondan, Heian Godan</td>
+                <td>1-Step Ippon Kumite</td>
+                <td>Striking Anatomy & Distance Concepts</td>
+              </tr>
+              <tr>
+                <td><span class="badge-combat">BLUE TO BROWN</span></td>
+                <td>140 Hours (12 Months)</td>
+                <td>Tekki Shodan, Bassai Dai</td>
+                <td>Semi-Free Jiu-Ippon Kumite</td>
+                <td>Bunkai Self-Defense Applications</td>
+              </tr>
+              <tr>
+                <td><span class="badge-combat vermilion">BROWN TO 1ST DAN BLACK</span></td>
+                <td>350+ Hours (3-4 Years)</td>
+                <td>Bassai Dai, Kanku Dai + Choice</td>
+                <td>Continuous Free Kumite (10 Rounds)</td>
+                <td>Written Thesis on Martial Philosophy</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 04: SCHEDULE & CLASS TIMES -->
+    <section class="py-combat bg-surface border-bottom border-dark">
+      <div class="container">
+        <div class="row align-items-end mb-5">
+          <div class="col-lg-8">
+            <div class="section-marker">// 04 &bull; CLASS TIMETABLE</div>
+            <h2 class="section-title">WEEKLY TRAINING SCHEDULE</h2>
+            <p class="section-desc mb-0">
+              Attend designated training hours on our specialized tatami mats.
+            </p>
+          </div>
+          <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+            <a href="schedule.html" class="btn-combat-outline btn-combat-sm">Full Timetable <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="schedule-table-container">
+          <table class="combat-table">
+            <thead>
+              <tr>
+                <th>Training Days</th>
+                <th>Time Slot</th>
+                <th>Focus & Experience</th>
+                <th>Mat Location</th>
+              </tr>
+            </thead>
+            <tbody id="progScheduleBody">
+              <tr>
+                <td class="fw-bold">Monday & Wednesday</td>
+                <td><span class="badge bg-danger-subtle text-danger px-2 py-1">06:30 AM – 07:30 AM</span></td>
+                <td class="text-secondary">All Belts (Morning Kihon)</td>
+                <td class="text-warning">Tatami Alpha</td>
+              </tr>
+              <tr>
+                <td class="fw-bold">Tuesday & Thursday</td>
+                <td><span class="badge bg-danger-subtle text-danger px-2 py-1">07:00 PM – 08:15 PM</span></td>
+                <td class="text-secondary">Intermediate / Advanced</td>
+                <td class="text-warning">Tatami Alpha</td>
+              </tr>
+              <tr>
+                <td class="fw-bold">Friday</td>
+                <td><span class="badge bg-danger-subtle text-danger px-2 py-1">06:30 PM – 08:00 PM</span></td>
+                <td class="text-secondary">Continuous Kumite Sparring</td>
+                <td class="text-warning">Tatami Alpha</td>
+              </tr>
+              <tr>
+                <td class="fw-bold">Saturday</td>
+                <td><span class="badge bg-danger-subtle text-danger px-2 py-1">09:00 AM – 10:30 AM</span></td>
+                <td class="text-secondary">Black Belt Dan Prep & Bunkai</td>
+                <td class="text-warning">Tatami Alpha</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 06: TRIAL CLASS CTA -->
+    <section class="py-combat bg-body text-center">
+      <div class="container">
+        <div class="section-marker justify-content-center" id="progBottomMarker">// 06 &bull; YOUR FIRST KATA</div>
+        <h2 class="display-4 fw-bold text-uppercase mb-3" id="progBottomTitle">STEP ONTO THE MAT IN SHOTOKAN.</h2>
+        <p class="lead text-secondary mx-auto mb-4" style="max-width: 640px;" id="progBottomDesc">
+          Join a beginner session this week. Loaner gear provided free of charge for your trial class.
+        </p>
+        <div class="d-flex justify-content-center flex-wrap gap-3">
+          <a href="contact.html" class="btn-combat btn-lg px-5" id="progBottomTrialBtn">Book Free Trial Class</a>
+          <a href="schedule.html" class="btn-combat-outline btn-lg px-4">View Class Schedule</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- GLOBAL FOOTER -->
+  <footer class="combat-footer">
+    <div class="container">
+      <div class="row g-5">
+        <!-- Col 1: Brand & Bio -->
+        <div class="col-lg-4">
+          <a class="navbar-brand mb-3 d-inline-flex align-items-center" href="index.html">
+            <img src="assets/images/logo.svg" alt="KAI Martial Arts Logo" width="44" height="44" class="brand-logo-img">
+            <div>
+              <span>KAI</span>
+              <span class="brand-sub">MARTIAL ARTS</span>
+            </div>
+          </a>
+          <p class="text-secondary small mb-4">
+            KAI Martial Arts Academy is an internationally accredited martial arts center dedicated to authentic traditional Karate, Olympic Taekwondo, and practical reality-based self-defense.
+          </p>
+          <div class="d-flex gap-3">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="btn-combat-outline btn-combat-sm px-3" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" class="btn-combat-outline btn-combat-sm px-3" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="btn-combat-outline btn-combat-sm px-3" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5 class="footer-heading">Academy</h5>
+          <ul class="footer-links">
+            <li><a href="about.html">About KAI</a></li>
+            <li><a href="programs.html">Our Programs</a></li>
+            <li><a href="instructors.html">Grandmasters</a></li>
+            <li><a href="schedule.html">Class Schedule</a></li>
+            <li><a href="pricing.html">Tuition & Pricing</a></li>
+            <li><a href="home-2.html">Home 2 (Fight Poster)</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <h5 class="footer-heading">Disciplines</h5>
+          <ul class="footer-links">
+            <li><a href="program-details.html">Traditional Karate</a></li>
+            <li><a href="programs.html">Olympic Taekwondo</a></li>
+            <li><a href="programs.html">Women's Self-Defense</a></li>
+            <li><a href="programs.html">Kids Little Tigers (4-12)</a></li>
+            <li><a href="programs.html">Adult Tactical Combat</a></li>
+            <li><a href="gallery.html">Action Gallery</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3">
+          <h5 class="footer-heading">The Dojo</h5>
+          <p class="small text-secondary mb-2"><i class="bi bi-geo-alt-fill text-danger me-2"></i> 448 Combat Way, Dojo District, Suite 100</p>
+          <p class="small text-secondary mb-2"><i class="bi bi-telephone-fill text-danger me-2"></i> +1 (555) 839-2041</p>
+          <p class="small text-secondary mb-2"><i class="bi bi-envelope-fill text-danger me-2"></i> info@kaimartialarts.com</p>
+          <p class="small text-secondary mb-3"><i class="bi bi-clock-fill text-danger me-2"></i> Mon - Sat: 06:00 AM - 09:30 PM</p>
+          
+          <div class="mt-3">
+            <span class="d-block small text-primary fw-bold mb-2">DOJO NEWSLETTER</span>
+            <div class="input-group">
+              <input type="email" class="form-control form-combat-control py-2" placeholder="Your email..." aria-label="Email address">
+              <button class="btn btn-combat btn-combat-sm" type="button"><i class="bi bi-send-fill"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <p class="mb-2 mb-md-0 text-secondary">&copy; <span class="current-year">2026</span> KAI Martial Arts Academy. All Rights Reserved. Built for ThemeForest & TemplateMonster.</p>
+        <div class="d-flex gap-3 text-secondary">
+          <a href="privacy.html" class="text-secondary small">Privacy Policy</a>
+          <span>&bull;</span>
+          <a href="terms.html" class="text-secondary small">Terms of Training</a>
+          <span>&bull;</span>
+          <a href="contact.html" class="text-secondary small">Support & Mat Rules</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" type="button" aria-label="Back to Top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/rtl.js"></script>
+  <script src="assets/js/programs-data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

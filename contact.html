@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Book a Trial Class | KAI Martial Arts Academy</title>
+  <meta name="description" content="Step into the dojo. Book your complimentary trial class at KAI Martial Arts Academy through our 4-step wizard. Facility hours, directions, and contact information.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+  <!-- GLOBAL NAVBAR -->
+  <nav class="navbar navbar-expand-lg combat-navbar sticky-top" id="mainNavbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/images/logo.svg" alt="KAI Martial Arts" width="44" height="44" class="brand-logo-img">
+        <div>
+          <span>KAI</span>
+          <span class="brand-sub">MARTIAL ARTS</span>
+        </div>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#combatNavContent" aria-controls="combatNavContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list fs-2"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="combatNavContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <!-- Home Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-house-door-fill me-1"></i> Home
+            </a>
+            <ul class="dropdown-menu combat-dropdown-menu" aria-labelledby="homeDropdown">
+              <li>
+                <a class="dropdown-item" href="index.html">
+                  <div class="fw-bold"><i class="bi bi-heart-fill text-danger me-2"></i>Home 1 &mdash; Academy &amp; Community</div>
+                  <small class="text-secondary d-block ps-4">Welcoming photo-rich flagship</small>
+                </a>
+              </li>
+              <li><hr class="dropdown-divider border-secondary border-opacity-25 my-1"></li>
+              <li>
+                <a class="dropdown-item" href="home-2.html">
+                  <div class="fw-bold"><i class="bi bi-grid-3x3-gap-fill text-warning me-2"></i>Home 2 &mdash; Services &amp; Curriculum</div>
+                  <small class="text-secondary d-block ps-4">Detailed training directory</small>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- About -->
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+
+          <!-- Programs Dropdown (Includes Programs, Schedule, Instructors, Gallery) -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="programsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-shield-shaded me-1"></i> Programs
+            </a>
+            <ul class="dropdown-menu combat-dropdown-menu" aria-labelledby="programsDropdown">
+              <li>
+                <a class="dropdown-item" href="programs.html">
+                  <div class="fw-bold"><i class="bi bi-grid-fill text-danger me-2"></i>All Disciplines &amp; Programs</div>
+                  <small class="text-secondary d-block ps-4">Karate, Taekwondo &amp; Self-Defense</small>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="program-details.html">
+                  <div class="fw-bold"><i class="bi bi-journal-bookmark-fill text-warning me-2"></i>Curriculum &amp; Syllabus</div>
+                  <small class="text-secondary d-block ps-4">Kihon, Kata &amp; Kumite breakdown</small>
+                </a>
+              </li>
+              <li><hr class="dropdown-divider border-secondary border-opacity-25 my-1"></li>
+              <li>
+                <a class="dropdown-item" href="schedule.html">
+                  <div class="fw-bold"><i class="bi bi-calendar3 text-info me-2"></i>Class Schedule &amp; Timetable</div>
+                  <small class="text-secondary d-block ps-4">Weekly timetable &amp; age brackets</small>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="instructors.html">
+                  <div class="fw-bold"><i class="bi bi-person-badge-fill text-danger me-2"></i>Grandmasters &amp; Faculty</div>
+                  <small class="text-secondary d-block ps-4">Certified 5th Dan instructor bios</small>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="gallery.html">
+                  <div class="fw-bold"><i class="bi bi-images text-warning me-2"></i>Action Gallery</div>
+                  <small class="text-secondary d-block ps-4">Tatami sparring &amp; tournament photos</small>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- Pricing -->
+          <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+
+          <!-- Blog -->
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+
+          <!-- Contact -->
+          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-util-group">
+          <button class="theme-toggle-btn" type="button">
+            <i class="bi bi-sun-fill text-warning"></i> <span class="d-none d-sm-inline">Light</span>
+          </button>
+          
+          <button class="rtl-toggle-btn" type="button">
+            <span class="fw-bold">LTR | RTL</span>
+          </button>
+
+          <a href="contact.html" class="btn-combat btn-combat-sm ms-lg-2">Book a Trial</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- SECTION 01: CONTACT HERO -->
+    <section class="py-combat bg-body border-bottom border-dark position-relative">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-7">
+            <div class="section-marker">// 01 &bull; ENTER THE DOJO</div>
+            <h1 class="display-3 fw-bold text-uppercase mb-4">
+              STEP INTO<br>
+              THE <span class="text-danger">DOJO.</span>
+            </h1>
+            <p class="lead text-secondary mb-4">
+              Your first class is the hardest step. Taking it is the most important one. Book your trial class using our interactive booking pass wizard below or visit our facility during open mat hours.
+            </p>
+            <div class="p-3 bg-surface border border-danger border-opacity-50 max-w-500">
+              <span class="badge-combat vermilion mb-1">FREE TRIAL GUARANTEE</span>
+              <p class="small text-secondary mb-0">Includes free loaner uniform, orientation with a black belt sensei, and zero obligation.</p>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="combat-panel p-2">
+              <img src="assets/images/unique/contact-hero.jpg" alt="KAI Dojo Entrance & Mats" class="img-fluid w-100" style="height: 360px; object-fit: cover;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 02: 4-STEP INTERACTIVE TRIAL BOOKING WIZARD -->
+    <section class="py-combat bg-surface border-bottom border-dark" id="trialWizardSection">
+      <div class="container">
+        <div class="max-w-900 mx-auto">
+          <div class="text-center mb-4">
+            <div class="section-marker justify-content-center">// 02 &bull; INTERACTIVE RESERVATION</div>
+            <h2 class="section-title">BOOK YOUR TRIAL MAT PASS</h2>
+          </div>
+
+          <!-- Wizard Container -->
+          <div class="trial-wizard-card">
+            <!-- Step Indicators Header -->
+            <div class="wizard-steps-header">
+              <div class="wizard-step-indicator active" data-step-target="1">
+                01 / YOUR DETAILS
+              </div>
+              <div class="wizard-step-indicator" data-step-target="2">
+                02 / CHOOSE PROGRAM
+              </div>
+              <div class="wizard-step-indicator" data-step-target="3">
+                03 / SELECT DATE & TIME
+              </div>
+              <div class="wizard-step-indicator" data-step-target="4">
+                04 / CONFIRM TRIAL PASS
+              </div>
+            </div>
+
+            <!-- Wizard Form -->
+            <form id="trialBookingForm" novalidate>
+              <div id="wizardFormBody">
+                
+                <!-- STEP 1: YOUR DETAILS -->
+                <div class="wizard-step-pane active" data-step="1">
+                  <h4 class="text-uppercase mb-3 fs-5">Step 1: Student Information</h4>
+                  <div class="row g-3">
+                    <div class="col-md-6 form-combat-group">
+                      <label for="trialFullName" class="form-combat-label">Full Name *</label>
+                      <input type="text" class="form-combat-control" id="trialFullName" placeholder="e.g. Marcus Aurelius" required>
+                      <div class="invalid-feedback small text-danger mt-1"></div>
+                    </div>
+                    <div class="col-md-6 form-combat-group">
+                      <label for="trialEmail" class="form-combat-label">Email Address *</label>
+                      <input type="email" class="form-combat-control" id="trialEmail" placeholder="e.g. warrior@discipline.com" required>
+                      <div class="invalid-feedback small text-danger mt-1"></div>
+                    </div>
+                    <div class="col-md-6 form-combat-group">
+                      <label for="trialPhone" class="form-combat-label">Phone Number *</label>
+                      <input type="tel" class="form-combat-control" id="trialPhone" placeholder="e.g. +1 (555) 019-2834" required>
+                      <div class="invalid-feedback small text-danger mt-1"></div>
+                    </div>
+                    <div class="col-md-6 form-combat-group">
+                      <label for="trialAge" class="form-combat-label">Age Category</label>
+                      <select class="form-combat-control" id="trialAge">
+                        <option value="adult">Adult (Ages 18+)</option>
+                        <option value="teen">Teens (Ages 13-17)</option>
+                        <option value="junior">Junior Cadets (Ages 9-12)</option>
+                        <option value="little-tiger">Little Tigers (Ages 4-8)</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-end mt-4">
+                    <button type="button" class="btn-combat btn-wizard-next">
+                      Proceed to Choose Program <i class="bi bi-arrow-right"></i>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- STEP 2: CHOOSE PROGRAM -->
+                <div class="wizard-step-pane d-none" data-step="2">
+                  <h4 class="text-uppercase mb-3 fs-5">Step 2: Choose Your Discipline</h4>
+                  <div class="row g-3 mb-4">
+                    <div class="col-md-6">
+                      <label class="combat-panel p-3 d-flex gap-3 align-items-center cursor-pointer w-100 h-100">
+                        <input type="radio" name="programChoice" value="Shotokan Karate" checked class="form-check-input mt-0 text-danger">
+                        <div>
+                          <strong  class="d-block">Shotokan Traditional Karate</strong>
+                          <small class="text-secondary">Kihon, kata forms, linear strike fundamentals.</small>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="col-md-6">
+                      <label class="combat-panel p-3 d-flex gap-3 align-items-center cursor-pointer w-100 h-100">
+                        <input type="radio" name="programChoice" value="Olympic Taekwondo" class="form-check-input mt-0 text-danger">
+                        <div>
+                          <strong  class="d-block">Olympic Taekwondo</strong>
+                          <small class="text-secondary">High kicking, spinning techniques, competition sparring.</small>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="col-md-6">
+                      <label class="combat-panel p-3 d-flex gap-3 align-items-center cursor-pointer w-100 h-100">
+                        <input type="radio" name="programChoice" value="Women's Self-Defense" class="form-check-input mt-0 text-danger">
+                        <div>
+                          <strong  class="d-block">Women's Practical Self-Defense</strong>
+                          <small class="text-secondary">Escape tactics, boundary setting, street reality drills.</small>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="col-md-6">
+                      <label class="combat-panel p-3 d-flex gap-3 align-items-center cursor-pointer w-100 h-100">
+                        <input type="radio" name="programChoice" value="Combat Conditioning" class="form-check-input mt-0 text-danger">
+                        <div>
+                          <strong  class="d-block">Adult Combat Conditioning</strong>
+                          <small class="text-secondary">Heavy bag rounds, calisthenics, core rotational power.</small>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+
+                  <h5 class="text-uppercase fs-6 mb-2">Previous Martial Arts Experience?</h5>
+                  <div class="d-flex flex-wrap gap-3 mb-4">
+                    <label class="form-check d-flex align-items-center gap-2">
+                      <input type="radio" name="experienceLevel" value="Complete Beginner" checked class="form-check-input mt-0">
+                      <span class="text-secondary small">Total Beginner (Zero Experience)</span>
+                    </label>
+                    <label class="form-check d-flex align-items-center gap-2">
+                      <input type="radio" name="experienceLevel" value="Some Experience (1-2 Years)" class="form-check-input mt-0">
+                      <span class="text-secondary small">1-2 Years (Other Martial Art)</span>
+                    </label>
+                    <label class="form-check d-flex align-items-center gap-2">
+                      <input type="radio" name="experienceLevel" value="Experienced (Belt Holder)" class="form-check-input mt-0">
+                      <span class="text-secondary small">Experienced Belt Holder</span>
+                    </label>
+                  </div>
+
+                  <div class="d-flex justify-content-between mt-4">
+                    <button type="button" class="btn-combat-outline btn-wizard-prev"><i class="bi bi-arrow-left"></i> Back</button>
+                    <button type="button" class="btn-combat btn-wizard-next">Proceed to Date <i class="bi bi-arrow-right"></i></button>
+                  </div>
+                </div>
+
+                <!-- STEP 3: SELECT DATE & TIME -->
+                <div class="wizard-step-pane d-none" data-step="3">
+                  <h4 class="text-uppercase mb-3 fs-5">Step 3: Preferred Class Session</h4>
+                  <div class="row g-3 mb-4">
+                    <div class="col-md-6 form-combat-group">
+                      <label for="trialDate" class="form-combat-label">Preferred Date *</label>
+                      <input type="date" class="form-combat-control" id="trialDate" required>
+                      <div class="invalid-feedback small text-danger mt-1"></div>
+                    </div>
+                    <div class="col-md-6 form-combat-group">
+                      <label class="form-combat-label">Preferred Time Slot *</label>
+                      <div class="d-flex flex-column gap-2">
+                        <label class="form-check d-flex align-items-center gap-2">
+                          <input type="radio" name="trialSlot" value="06:30 AM (Morning)" class="form-check-input mt-0">
+                          <span class="text-secondary small">06:30 AM - Morning Dawn Session</span>
+                        </label>
+                        <label class="form-check d-flex align-items-center gap-2">
+                          <input type="radio" name="trialSlot" value="10:00 AM (Mid-Morning)" class="form-check-input mt-0">
+                          <span class="text-secondary small">10:00 AM - Mid-Morning Defense Drill</span>
+                        </label>
+                        <label class="form-check d-flex align-items-center gap-2">
+                          <input type="radio" name="trialSlot" value="06:30 PM (Evening)" checked class="form-check-input mt-0">
+                          <span class="text-secondary small">06:30 PM - Prime Evening Masterclass</span>
+                        </label>
+                        <label class="form-check d-flex align-items-center gap-2">
+                          <input type="radio" name="trialSlot" value="07:30 PM (Late Night)" class="form-check-input mt-0">
+                          <span class="text-secondary small">07:30 PM - Combat Conditioning / Bag Work</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-combat-group">
+                    <label for="trialNotes" class="form-combat-label">Injuries or Special Goals (Optional)</label>
+                    <textarea class="form-combat-control" id="trialNotes" rows="2" placeholder="Let our senseis know about any joint history, fitness goals, or questions..."></textarea>
+                  </div>
+
+                  <div class="d-flex justify-content-between mt-4">
+                    <button type="button" class="btn-combat-outline btn-wizard-prev"><i class="bi bi-arrow-left"></i> Back</button>
+                    <button type="button" class="btn-combat btn-wizard-next">Review Mat Pass <i class="bi bi-arrow-right"></i></button>
+                  </div>
+                </div>
+
+                <!-- STEP 4: CONFIRMATION SUMMARY -->
+                <div class="wizard-step-pane d-none" data-step="4">
+                  <h4 class="text-uppercase mb-3 fs-5">Step 4: Your Digital Mat Pass Summary</h4>
+                  <div class="p-4 bg-body border border-danger mb-4">
+                    <div class="d-flex justify-content-between align-items-center mb-3 pb-2 border-bottom border-secondary border-opacity-25">
+                      <span class="badge-combat vermilion">OFFICIAL TRIAL PASS</span>
+                      <span id="summaryPassCode" class="fw-bold font-display text-warning fs-5">DOJO-829104</span>
+                    </div>
+                    <div class="row g-3">
+                      <div class="col-sm-6">
+                        <small class="text-muted d-block">PRACTITIONER NAME</small>
+                        <strong id="summaryName"  class="fs-5">Marcus Aurelius</strong>
+                      </div>
+                      <div class="col-sm-6">
+                        <small class="text-muted d-block">DISCIPLINE</small>
+                        <strong id="summaryProgram" class="text-danger fs-5">Shotokan Karate</strong>
+                      </div>
+                      <div class="col-sm-6">
+                        <small class="text-muted d-block">RESERVED DATE</small>
+                        <strong id="summaryDate" >2026-09-16</strong>
+                      </div>
+                      <div class="col-sm-6">
+                        <small class="text-muted d-block">SESSION TIME</small>
+                        <strong id="summaryTime" >06:30 PM</strong>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="d-flex justify-content-between align-items-center">
+                    <button type="button" class="btn-combat-outline btn-wizard-prev"><i class="bi bi-arrow-left"></i> Modify Details</button>
+                    <button type="submit" class="btn-combat btn-lg px-4">Confirm & Lock Mat Pass <i class="bi bi-check-circle-fill ms-1"></i></button>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- SUCCESS NOTICE (Revealed on submit) -->
+              <div id="wizardSuccessNotice" class="d-none text-center py-5">
+                <i class="bi bi-check-circle-fill text-danger display-3 mb-3 d-block"></i>
+                <h3 class="text-uppercase mb-2">TRIAL CLASS CONFIRMED</h3>
+                <p class="text-secondary max-w-500 mx-auto mb-4">
+                  Your reservation is locked in our dojo roster. We have sent a confirmation email with your digital pass and arrival directions. We look forward to welcoming you onto the mat.
+                </p>
+                <div class="d-flex justify-content-center gap-3">
+                  <button type="button" class="btn-combat" onclick="window.print();"><i class="bi bi-printer-fill me-1"></i> Print Mat Pass</button>
+                  <a href="index.html" class="btn-combat-outline">Return to Home</a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 03: DOJO LOCATION, COORDINATES & OPERATING HOURS -->
+    <section class="py-combat border-bottom border-dark">
+      <div class="container">
+        <div class="row align-items-end mb-5">
+          <div class="col-lg-8">
+            <div class="section-marker">// 03 &bull; THE PHYSICAL LOCATION</div>
+            <h2 class="section-title">HEADQUARTERS & MAT HOURS</h2>
+            <p class="section-desc mb-0">Our 6,500 sq ft facility is centrally located in the Dojo Arts District with dedicated student parking and transit access.</p>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="combat-panel p-4 h-100">
+              <i class="bi bi-geo-alt-fill text-danger fs-2 mb-2 d-block"></i>
+              <h5 class="text-uppercase mb-2">Address Coordinates</h5>
+              <p class="text-secondary small mb-3">448 Combat Way, Dojo District, Suite 100<br>Metropolis, NY 10012</p>
+              <span class="small text-muted d-block">Cross Streets: Tatami Blvd & Iron Gate Ave</span>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="combat-panel p-4 h-100">
+              <i class="bi bi-telephone-inbound-fill text-danger fs-2 mb-2 d-block"></i>
+              <h5 class="text-uppercase mb-2">Direct Communications</h5>
+              <p class="text-secondary small mb-1"><strong>Front Desk:</strong> +1 (555) 839-2041</p>
+              <p class="text-secondary small mb-1"><strong>Master Arjun Direct:</strong> +1 (555) 839-2042</p>
+              <p class="text-secondary small mb-0"><strong>Inquiries:</strong> info@kaimartialarts.com</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="combat-panel p-4 h-100">
+              <i class="bi bi-clock-fill text-danger fs-2 mb-2 d-block"></i>
+              <h5 class="text-uppercase mb-2">Operating Hours</h5>
+              <p class="text-secondary small mb-1"><strong>Monday - Friday:</strong> 06:00 AM - 09:30 PM</p>
+              <p class="text-secondary small mb-1"><strong>Saturday:</strong> 08:00 AM - 04:00 PM</p>
+              <p class="text-secondary small mb-0"><strong>Sunday:</strong> 09:30 AM - 01:30 PM (Yudansha)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 04: MAP VISUAL & TRANSIT DIRECTIONS -->
+    <section class="py-combat bg-surface border-bottom border-dark">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <div class="section-marker">// 04 &bull; TRANSIT & PARKING</div>
+            <h2 class="section-title mb-4">HOW TO REACH THE DOJO</h2>
+            <p class="text-secondary mb-4">
+              Conveniently situated with dedicated on-site parking for up to 45 vehicles and rapid subway connections within a three-minute walking perimeter.
+            </p>
+            <div class="d-flex flex-column gap-3">
+              <div class="p-3 bg-body border border-secondary border-opacity-25 d-flex gap-3 align-items-center">
+                <i class="bi bi-train-front-fill text-danger fs-3"></i>
+                <div>
+                  <h6 class="mb-0 text-uppercase">Subway Transit</h6>
+                  <span class="small text-muted">Lines 4, 5, 6 to Dojo District Station (Exit B, walk 200m North).</span>
+                </div>
+              </div>
+              <div class="p-3 bg-body border border-secondary border-opacity-25 d-flex gap-3 align-items-center">
+                <i class="bi bi-p-square-fill text-danger fs-3"></i>
+                <div>
+                  <h6 class="mb-0 text-uppercase">Complimentary Parking</h6>
+                  <span class="small text-muted">Free 2-hour student parking in the rear lot off Iron Gate Avenue.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <!-- Stylized Combat Map Embed Placeholder -->
+            <div class="combat-panel p-4 text-center border-danger" style="min-height: 380px; background: linear-gradient(135deg, #15171b 0%, #0c0d0f 100%); display: flex; flex-direction: column; justify-content: center; align-items: center;">
+              <i class="bi bi-map-fill text-danger display-4 mb-3"></i>
+              <h5  class="text-uppercase mb-1">INTERACTIVE DOJO MAP</h5>
+              <p class="text-secondary small mb-3">448 Combat Way, Metropolis NY 10012</p>
+              <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="btn-combat btn-combat-sm">
+                Open in Google Maps <i class="bi bi-box-arrow-up-right ms-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 05: WHAT TO EXPECT ON YOUR FIRST DAY -->
+    <section class="py-combat border-bottom border-dark">
+      <div class="container">
+        <div class="text-center max-w-700 mx-auto mb-5">
+          <div class="section-marker justify-content-center">// 05 &bull; FIRST DAY WALKTHROUGH</div>
+          <h2 class="section-title">WHAT HAPPENS WHEN YOU ARRIVE</h2>
+          <p class="section-desc mx-auto">We know walking into a martial arts dojo for the first time can feel intimidating. Here is exactly what your orientation looks like.</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-3 col-sm-6">
+            <div class="combat-panel p-4 h-100">
+              <span class="text-danger font-display fw-bold fs-3 d-block mb-1">01</span>
+              <h6 class="text-uppercase mb-2">Check In at Reception</h6>
+              <p class="text-secondary small mb-0">Show your digital pass code. You will be greeted by an assistant sensei who gives you a quick tour of locker facilities.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="combat-panel p-4 h-100">
+              <span class="text-danger font-display fw-bold fs-3 d-block mb-1">02</span>
+              <h6 class="text-uppercase mb-2">Receive Loaner Uniform</h6>
+              <p class="text-secondary small mb-0">We provide a freshly laundered white uniform and belt. If you prefer athletic sweatpants and a t-shirt, that is completely fine too.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="combat-panel p-4 h-100">
+              <span class="text-danger font-display fw-bold fs-3 d-block mb-1">03</span>
+              <h6 class="text-uppercase mb-2">10-Minute Stance Briefing</h6>
+              <p class="text-secondary small mb-0">Before group class begins, an instructor walks you through the bow, the basic guard, and the first forward stance on the side mat.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="combat-panel p-4 h-100">
+              <span class="text-danger font-display fw-bold fs-3 d-block mb-1">04</span>
+              <h6 class="text-uppercase mb-2">Join the Class</h6>
+              <p class="text-secondary small mb-0">You participate at your own physical pace. Zero sparring or dangerous contact during trial visits—guaranteed.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 06: IMMEDIATE INQUIRIES & HOTLINE -->
+    <section class="py-combat bg-surface text-center">
+      <div class="container">
+        <div class="section-marker justify-content-center">// 06 &bull; DIRECT LINE</div>
+        <h2 class="display-4 fw-bold text-uppercase mb-3">HAVE IMMEDIATE QUESTIONS?</h2>
+        <p class="lead text-secondary mx-auto mb-4" style="max-width: 600px;">
+          Call our front desk coordinator directly at <strong>+1 (555) 839-2041</strong> or speak with Head Master Arjun Rao during open hours.
+        </p>
+        <div class="d-flex justify-content-center flex-wrap gap-3">
+          <a href="tel:+15558392041" class="btn-combat btn-lg px-5"><i class="bi bi-telephone-fill me-2"></i> Call the Dojo</a>
+          <a href="schedule.html" class="btn-combat-outline btn-lg px-4">View Class Schedule</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- GLOBAL FOOTER -->
+  <footer class="combat-footer">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4">
+          <a class="navbar-brand mb-3 d-inline-flex align-items-center" href="index.html">
+            <img src="assets/images/logo.svg" alt="KAI Martial Arts Logo" width="44" height="44" class="brand-logo-img">
+            <div>
+              <span>KAI</span>
+              <span class="brand-sub">MARTIAL ARTS</span>
+            </div>
+          </a>
+          <p class="text-secondary small mb-4">
+            KAI Martial Arts Academy is an internationally accredited martial arts center dedicated to authentic traditional Karate, Olympic Taekwondo, and practical reality-based self-defense.
+          </p>
+          <div class="d-flex gap-3">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="btn-combat-outline btn-combat-sm px-3" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" class="btn-combat-outline btn-combat-sm px-3" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="btn-combat-outline btn-combat-sm px-3" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5 class="footer-heading">Academy</h5>
+          <ul class="footer-links">
+            <li><a href="about.html">About KAI</a></li>
+            <li><a href="programs.html">Our Programs</a></li>
+            <li><a href="instructors.html">Grandmasters</a></li>
+            <li><a href="schedule.html">Class Schedule</a></li>
+            <li><a href="pricing.html">Tuition & Pricing</a></li>
+            <li><a href="home-2.html">Home 2 (Fight Poster)</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <h5 class="footer-heading">Disciplines</h5>
+          <ul class="footer-links">
+            <li><a href="program-details.html">Traditional Karate</a></li>
+            <li><a href="programs.html">Olympic Taekwondo</a></li>
+            <li><a href="programs.html">Women's Self-Defense</a></li>
+            <li><a href="programs.html">Kids Little Tigers (4-12)</a></li>
+            <li><a href="programs.html">Adult Tactical Combat</a></li>
+            <li><a href="gallery.html">Action Gallery</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3">
+          <h5 class="footer-heading">The Dojo</h5>
+          <p class="small text-secondary mb-2"><i class="bi bi-geo-alt-fill text-danger me-2"></i> 448 Combat Way, Dojo District, Suite 100</p>
+          <p class="small text-secondary mb-2"><i class="bi bi-telephone-fill text-danger me-2"></i> +1 (555) 839-2041</p>
+          <p class="small text-secondary mb-2"><i class="bi bi-envelope-fill text-danger me-2"></i> info@kaimartialarts.com</p>
+          <p class="small text-secondary mb-3"><i class="bi bi-clock-fill text-danger me-2"></i> Mon - Sat: 06:00 AM - 09:30 PM</p>
+          
+          <div class="mt-3">
+            <span class="d-block small text-primary fw-bold mb-2">DOJO NEWSLETTER</span>
+            <div class="input-group">
+              <input type="email" class="form-control form-combat-control py-2" placeholder="Your email..." aria-label="Email address">
+              <button class="btn btn-combat btn-combat-sm" type="button"><i class="bi bi-send-fill"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <p class="mb-2 mb-md-0 text-secondary">&copy; <span class="current-year">2026</span> KAI Martial Arts Academy. All Rights Reserved. Built for ThemeForest & TemplateMonster.</p>
+        <div class="d-flex gap-3 text-secondary">
+          <a href="privacy.html" class="text-secondary small">Privacy Policy</a>
+          <span>&bull;</span>
+          <a href="terms.html" class="text-secondary small">Terms of Training</a>
+          <span>&bull;</span>
+          <a href="contact.html" class="text-secondary small">Support & Mat Rules</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" type="button" aria-label="Back to Top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/rtl.js"></script>
+  <script src="assets/js/forms.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
