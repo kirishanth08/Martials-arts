@@ -1,4 +1,4 @@
-/**
+﻿/**
  * THEME CONTROLLER (Vanilla JS)
  * Manages Light / Dark mode toggling with localStorage persistence.
  * Carbon + Bone + Vermilion palette.
@@ -33,9 +33,10 @@
     buttons.forEach((btn) => {
       const isDark = theme === 'dark';
       btn.setAttribute('aria-label', isDark ? 'Switch to Light Mode' : 'Switch to Dark Mode');
+      btn.setAttribute('title', isDark ? 'Switch to Light Mode' : 'Switch to Dark Mode');
       btn.innerHTML = isDark 
-        ? '<i class="bi bi-sun-fill text-warning"></i> <span class="d-none d-sm-inline">Light</span>' 
-        : '<i class="bi bi-moon-stars-fill text-danger"></i> <span class="d-none d-sm-inline">Dark</span>';
+        ? '<i class="bi bi-sun-fill text-warning"></i>' 
+        : '<i class="bi bi-moon-stars-fill text-danger"></i>';
     });
   }
 

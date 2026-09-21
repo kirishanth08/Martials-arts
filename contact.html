@@ -27,12 +27,25 @@
         </div>
       </a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#combatNavContent" aria-controls="combatNavContent" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="bi bi-list fs-2"></i>
-      </button>
+            <!-- Controls outside hamburger (Theme, RTL, CTA, and Toggler) -->
+      <div class="d-flex align-items-center gap-2 order-lg-last nav-actions-wrap">
+        <button class="theme-toggle-btn" type="button" aria-label="Toggle Light/Dark Theme" title="Toggle Light/Dark Theme">
+          <i class="bi bi-sun-fill text-warning"></i>
+        </button>
+        
+        <button class="rtl-toggle-btn" type="button" aria-label="Toggle Text Direction" title="Toggle Text Direction">
+          <span class="fw-bold">RTL</span>
+        </button>
+
+        <a href="contact.html" class="btn-combat btn-combat-sm nav-cta-btn">Trial</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#combatNavContent" aria-controls="combatNavContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list fs-2"></i>
+        </button>
+      </div>
 
       <div class="collapse navbar-collapse" id="combatNavContent">
-        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav mx-auto mb-2 mb-xl-0">
           <!-- Home Dropdown -->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -107,18 +120,6 @@
           <!-- Contact -->
           <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
         </ul>
-
-        <div class="nav-util-group">
-          <button class="theme-toggle-btn" type="button">
-            <i class="bi bi-sun-fill text-warning"></i> <span class="d-none d-sm-inline">Light</span>
-          </button>
-          
-          <button class="rtl-toggle-btn" type="button">
-            <span class="fw-bold">LTR | RTL</span>
-          </button>
-
-          <a href="contact.html" class="btn-combat btn-combat-sm ms-lg-2">Book a Trial</a>
-        </div>
       </div>
     </div>
   </nav>
@@ -198,7 +199,7 @@
                     </div>
                     <div class="col-md-6 form-combat-group">
                       <label for="trialPhone" class="form-combat-label">Phone Number *</label>
-                      <input type="tel" class="form-combat-control" id="trialPhone" placeholder="e.g. +1 (555) 019-2834" required>
+                      <input type="tel" class="form-combat-control" id="trialPhone" placeholder="e.g. +1 (555) 019-2834" pattern="[\+]?[0-9\s\-\(\)\.]+" inputmode="tel" required>
                       <div class="invalid-feedback small text-danger mt-1"></div>
                     </div>
                     <div class="col-md-6 form-combat-group">
@@ -476,30 +477,30 @@
 
         <div class="row g-4">
           <div class="col-md-3 col-sm-6">
-            <div class="combat-panel p-4 h-100">
-              <span class="text-danger font-display fw-bold fs-3 d-block mb-1">01</span>
-              <h6 class="text-uppercase mb-2">Check In at Reception</h6>
+            <div class="combat-panel p-4 h-100 d-flex flex-column align-items-start">
+              <span class="text-danger font-display fw-bold fs-3 d-block mb-1"><bdi>01</bdi></span>
+              <h6 class="text-uppercase mb-2 step-card-title">Check In at Reception</h6>
               <p class="text-secondary small mb-0">Show your digital pass code. You will be greeted by an assistant sensei who gives you a quick tour of locker facilities.</p>
             </div>
           </div>
           <div class="col-md-3 col-sm-6">
-            <div class="combat-panel p-4 h-100">
-              <span class="text-danger font-display fw-bold fs-3 d-block mb-1">02</span>
-              <h6 class="text-uppercase mb-2">Receive Loaner Uniform</h6>
+            <div class="combat-panel p-4 h-100 d-flex flex-column align-items-start">
+              <span class="text-danger font-display fw-bold fs-3 d-block mb-1"><bdi>02</bdi></span>
+              <h6 class="text-uppercase mb-2 step-card-title">Receive Loaner Uniform</h6>
               <p class="text-secondary small mb-0">We provide a freshly laundered white uniform and belt. If you prefer athletic sweatpants and a t-shirt, that is completely fine too.</p>
             </div>
           </div>
           <div class="col-md-3 col-sm-6">
-            <div class="combat-panel p-4 h-100">
-              <span class="text-danger font-display fw-bold fs-3 d-block mb-1">03</span>
-              <h6 class="text-uppercase mb-2">10-Minute Stance Briefing</h6>
+            <div class="combat-panel p-4 h-100 d-flex flex-column align-items-start">
+              <span class="text-danger font-display fw-bold fs-3 d-block mb-1"><bdi>03</bdi></span>
+              <h6 class="text-uppercase mb-2 step-card-title"><bdi>10-Minute Stance Briefing</bdi></h6>
               <p class="text-secondary small mb-0">Before group class begins, an instructor walks you through the bow, the basic guard, and the first forward stance on the side mat.</p>
             </div>
           </div>
           <div class="col-md-3 col-sm-6">
-            <div class="combat-panel p-4 h-100">
-              <span class="text-danger font-display fw-bold fs-3 d-block mb-1">04</span>
-              <h6 class="text-uppercase mb-2">Join the Class</h6>
+            <div class="combat-panel p-4 h-100 d-flex flex-column align-items-start">
+              <span class="text-danger font-display fw-bold fs-3 d-block mb-1"><bdi>04</bdi></span>
+              <h6 class="text-uppercase mb-2 step-card-title">Join the Class</h6>
               <p class="text-secondary small mb-0">You participate at your own physical pace. Zero sparring or dangerous contact during trial visits—guaranteed.</p>
             </div>
           </div>
@@ -539,9 +540,9 @@
             KAI Martial Arts Academy is an internationally accredited martial arts center dedicated to authentic traditional Karate, Olympic Taekwondo, and practical reality-based self-defense.
           </p>
           <div class="d-flex gap-3">
-            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="btn-combat-outline btn-combat-sm px-3" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" class="btn-combat-outline btn-combat-sm px-3" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
-            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="btn-combat-outline btn-combat-sm px-3" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="btn-combat-outline footer-social-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" class="btn-combat-outline footer-social-btn" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="btn-combat-outline footer-social-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
           </div>
         </div>
 
@@ -570,18 +571,33 @@
         </div>
 
         <div class="col-lg-3">
-          <h5 class="footer-heading">The Dojo</h5>
-          <p class="small text-secondary mb-2"><i class="bi bi-geo-alt-fill text-danger me-2"></i> 448 Combat Way, Dojo District, Suite 100</p>
-          <p class="small text-secondary mb-2"><i class="bi bi-telephone-fill text-danger me-2"></i> +1 (555) 839-2041</p>
-          <p class="small text-secondary mb-2"><i class="bi bi-envelope-fill text-danger me-2"></i> info@kaimartialarts.com</p>
-          <p class="small text-secondary mb-3"><i class="bi bi-clock-fill text-danger me-2"></i> Mon - Sat: 06:00 AM - 09:30 PM</p>
-          
+                    <h5 class="footer-heading">The Dojo</h5>
+          <div class="combat-footer-contact">
+            <div class="combat-footer-contact-item">
+              <i class="bi bi-geo-alt-fill"></i>
+              <span>448 Combat Way, Dojo District, Suite 100</span>
+            </div>
+            <div class="combat-footer-contact-item">
+              <i class="bi bi-telephone-fill"></i>
+              <a href="tel:+15558392041" class="text-secondary text-decoration-none">+1 (555) 839-2041</a>
+            </div>
+            <div class="combat-footer-contact-item">
+              <i class="bi bi-envelope-fill"></i>
+              <a href="mailto:info@kaimartialarts.com" class="text-secondary text-decoration-none">info@kaimartialarts.com</a>
+            </div>
+            <div class="combat-footer-contact-item">
+              <i class="bi bi-clock-fill"></i>
+              <span>Mon - Sat: 06:00 AM - 09:30 PM</span>
+            </div>
+          </div> 
+
           <div class="mt-3">
             <span class="d-block small text-primary fw-bold mb-2">DOJO NEWSLETTER</span>
-            <div class="input-group">
-              <input type="email" class="form-control form-combat-control py-2" placeholder="Your email..." aria-label="Email address">
-              <button class="btn btn-combat btn-combat-sm" type="button"><i class="bi bi-send-fill"></i></button>
-            </div>
+            <form class="footer-newsletter-form input-group" novalidate>
+              <input type="email" class="form-control form-combat-control py-2 footer-newsletter-input" placeholder="Enter your email" aria-label="Email address" required>
+              <button class="btn btn-combat btn-combat-sm" type="submit" aria-label="Subscribe to Dojo Newsletter"><i class="bi bi-send-fill"></i></button>
+            </form>
+            <div class="footer-newsletter-feedback small mt-2" style="display: none;"></div>
           </div>
         </div>
       </div>

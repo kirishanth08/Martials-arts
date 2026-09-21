@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en" data-theme="dark" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Martial Arts Journal & Training Insights | KAI</title>
+  <title>Martial Arts Journal &amp; Training Insights | KAI</title>
   <meta name="description" content="Technical breakdowns, self-defense principles, karate philosophy, and athletic conditioning articles written by KAI Martial Arts Academy grandmasters.">
   <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
   
@@ -27,12 +27,25 @@
         </div>
       </a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#combatNavContent" aria-controls="combatNavContent" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="bi bi-list fs-2"></i>
-      </button>
+            <!-- Controls outside hamburger (Theme, RTL, CTA, and Toggler) -->
+      <div class="d-flex align-items-center gap-2 order-lg-last nav-actions-wrap">
+        <button class="theme-toggle-btn" type="button" aria-label="Toggle Light/Dark Theme" title="Toggle Light/Dark Theme">
+          <i class="bi bi-sun-fill text-warning"></i>
+        </button>
+        
+        <button class="rtl-toggle-btn" type="button" aria-label="Toggle Text Direction" title="Toggle Text Direction">
+          <span class="fw-bold">RTL</span>
+        </button>
+
+        <a href="contact.html" class="btn-combat btn-combat-sm nav-cta-btn">Trial</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#combatNavContent" aria-controls="combatNavContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list fs-2"></i>
+        </button>
+      </div>
 
       <div class="collapse navbar-collapse" id="combatNavContent">
-        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav mx-auto mb-2 mb-xl-0">
           <!-- Home Dropdown -->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -58,7 +71,7 @@
           <!-- About -->
           <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
 
-          <!-- Programs Dropdown (Includes Programs, Schedule, Instructors, Gallery) -->
+          <!-- Programs Dropdown -->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="programsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               <i class="bi bi-shield-shaded me-1"></i> Programs
@@ -107,52 +120,44 @@
           <!-- Contact -->
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
-
-        <div class="nav-util-group">
-          <button class="theme-toggle-btn" type="button">
-            <i class="bi bi-sun-fill text-warning"></i> <span class="d-none d-sm-inline">Light</span>
-          </button>
-          
-          <button class="rtl-toggle-btn" type="button">
-            <span class="fw-bold">LTR | RTL</span>
-          </button>
-
-          <a href="contact.html" class="btn-combat btn-combat-sm ms-lg-2">Book a Trial</a>
-        </div>
       </div>
     </div>
   </nav>
 
   <main>
-    <!-- SECTION 01: BLOG HERO & SEARCH -->
+    <!-- SECTION 01: BLOG HERO -->
     <section class="py-combat bg-body border-bottom border-dark position-relative">
       <div class="container">
-        <div class="row align-items-center g-5 mb-5">
+        <!-- Breadcrumbs -->
+        <nav aria-label="breadcrumb" class="mb-4">
+          <ol class="breadcrumb combat-breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Journal</li>
+          </ol>
+        </nav>
+
+        <div class="row align-items-center g-5">
           <div class="col-lg-7">
             <div class="section-marker">// 01 &bull; THE DOJO JOURNAL</div>
-            <h1 class="display-3 fw-bold text-uppercase mb-4">
+            <h1 class="display-3 fw-bold text-uppercase mb-3">
               MARTIAL ARTS<br>
               <span class="text-danger">DISPATCHES.</span>
             </h1>
             <p class="lead text-secondary mb-4">
-              Deep-dive essays on combative biomechanics, situational self-defense, psychological resilience under pressure, and the historical lineage of traditional karate.
+              Deep-dive essays on combative biomechanics, situational self-defense, psychological resilience under pressure, and the historical lineage of classical martial arts.
             </p>
+            <div class="d-flex flex-wrap gap-3 align-items-center text-secondary small">
+              <span class="d-flex align-items-center gap-1"><i class="bi bi-journal-text text-danger"></i> 6 Technical Essays</span>
+              <span>&bull;</span>
+              <span class="d-flex align-items-center gap-1"><i class="bi bi-person-check text-warning"></i> 4 Black Belt Faculty Authors</span>
+              <span>&bull;</span>
+              <span class="d-flex align-items-center gap-1"><i class="bi bi-unlock-fill text-success"></i> 100% Open Knowledge</span>
+            </div>
           </div>
           <div class="col-lg-5">
             <div class="combat-panel p-2">
               <img src="assets/images/blog/blog-hero.jpg" alt="Martial Arts Dojo Floor and Heavy Bags" class="img-fluid w-100" style="height: 320px; object-fit: cover;">
             </div>
-          </div>
-        </div>
-
-        
-          <div class="d-flex flex-wrap gap-2 justify-content-center align-items-center">
-            <button class="btn-combat btn-combat-sm blog-cat-btn active" data-cat-filter="all">ALL TOPICS</button>
-            <button class="btn-combat-outline btn-combat-sm blog-cat-btn" data-cat-filter="discipline">DISCIPLINE</button>
-            <button class="btn-combat-outline btn-combat-sm blog-cat-btn" data-cat-filter="defense">SELF-DEFENSE</button>
-            <button class="btn-combat-outline btn-combat-sm blog-cat-btn" data-cat-filter="technique">TECHNIQUE</button>
-            <button class="btn-combat-outline btn-combat-sm blog-cat-btn" data-cat-filter="youth">YOUTH FOCUS</button>
-            <span id="blogVisibleCount" class="badge-combat gold ms-lg-2">Showing 6 of 6 Dispatches</span>
           </div>
         </div>
       </div>
@@ -161,6 +166,7 @@
     <!-- SECTION 02: FEATURED ARTICLE HERO -->
     <section class="py-combat bg-surface border-bottom border-dark">
       <div class="container">
+        <div class="section-marker mb-3">// 02 &bull; PREMIER FEATURED ESSAY</div>
         <div class="blog-featured-card">
           <div class="row g-0 align-items-stretch">
             <div class="col-lg-6 p-4 p-md-5 d-flex flex-column justify-content-center">
@@ -196,40 +202,56 @@
     <!-- SECTION 03: FILTERABLE BLOG POST GRID -->
     <section class="py-combat border-bottom border-dark" id="blogDirectorySection">
       <div class="container">
-        <div class="row align-items-end mb-5">
+        <div class="row align-items-end mb-4">
           <div class="col-lg-8">
             <div class="section-marker">// 03 &bull; THE ESSAYS</div>
             <h2 class="section-title">ALL PUBLISHED ARTICLES</h2>
-            <p class="section-desc mb-0">Browse recent publications on technique mechanics, self-defense strategy, and youth mindset.</p>
+            <p class="section-desc mb-0">Search and filter technical analyses, conditioning protocols, and dojo philosophy.</p>
           </div>
         </div>
 
-        <!-- Search Bar & Category Controls -->
-        <div class="combat-panel p-3 p-md-4 d-flex flex-column flex-lg-row gap-3 justify-content-between align-items-center">
-          <div class="w-100" style="max-width: 480px;">
-            <div class="input-group">
-              <span class="input-group-text bg-surface border-secondary border-opacity-25 text-danger"><i class="bi bi-search"></i></span>
-              <input type="text" class="form-control form-combat-control" id="blogSearchInput" placeholder="Search technical articles, kata, sparring...">
+        <!-- Search Bar & Category Controls Toolbar -->
+        <div class="combat-panel p-3 p-md-4 mb-4">
+          <div class="row g-3 align-items-center">
+            <!-- Search Field -->
+            <div class="col-lg-5">
+              <div class="input-group">
+                <span class="input-group-text bg-surface border-secondary border-opacity-25 text-danger"><i class="bi bi-search"></i></span>
+                <input type="text" class="form-control form-combat-control" id="blogSearchInput" placeholder="Search essays, kata, sparring...">
+              </div>
+            </div>
+
+            <!-- Category Filter Pills -->
+            <div class="col-lg-7">
+              <div class="d-flex flex-wrap gap-2 justify-content-lg-end align-items-center">
+                <button class="btn-combat btn-combat-sm blog-cat-btn active" data-cat-filter="all">ALL TOPICS</button>
+                <button class="btn-combat-outline btn-combat-sm blog-cat-btn" data-cat-filter="discipline">DISCIPLINE</button>
+                <button class="btn-combat-outline btn-combat-sm blog-cat-btn" data-cat-filter="defense">SELF-DEFENSE</button>
+                <button class="btn-combat-outline btn-combat-sm blog-cat-btn" data-cat-filter="technique">TECHNIQUE</button>
+                <button class="btn-combat-outline btn-combat-sm blog-cat-btn" data-cat-filter="youth">YOUTH FOCUS</button>
+              </div>
             </div>
           </div>
+        </div>
 
+        <!-- Blog Cards Grid -->
         <div class="row g-4" id="blogPostsGrid">
           <!-- Post 1 -->
           <div class="col-lg-4 col-md-6 blog-card-item" data-category="defense">
-            <article class="blog-card">
+            <article class="blog-card h-100">
               <div class="blog-card-media">
                 <img src="assets/images/blog/blog-self-defense.jpg" alt="Self-Defense Awareness" loading="lazy">
                 <span class="blog-card-badge badge-combat vermilion">SELF-DEFENSE</span>
                 <span class="blog-card-readtime"><i class="bi bi-clock me-1"></i>5 min</span>
               </div>
-              <div class="blog-card-body">
-                <h4 class="blog-card-title">
-                  <a href="blog-details.html?id=defense-principles">5 Practical Defense Principles Every Commuter Should Know</a>
+              <div class="blog-card-body d-flex flex-column">
+                <h4 class="blog-card-title mb-2">
+                  <a href="blog-details.html?id=defense-principles" class="text-reset text-decoration-none">5 Practical Defense Principles Every Commuter Should Know</a>
                 </h4>
-                <p class="blog-card-excerpt">
+                <p class="blog-card-excerpt text-secondary mb-3">
                   Situational boundary control, recognizing pre-assault indicators, and the physical biomechanics of releasing wrist and collar grabs instantly.
                 </p>
-                <div class="blog-card-footer">
+                <div class="blog-card-footer mt-auto pt-3 border-top border-secondary border-opacity-25 d-flex justify-content-between align-items-center">
                   <div class="d-flex align-items-center gap-2">
                     <img src="assets/images/instructors/priya-sharma.jpg" alt="Sensei Priya Sharma" class="blog-author-avatar">
                     <small class="text-secondary">Sensei Priya Sharma</small>
@@ -242,23 +264,23 @@
 
           <!-- Post 2 -->
           <div class="col-lg-4 col-md-6 blog-card-item" data-category="discipline">
-            <article class="blog-card">
+            <article class="blog-card h-100">
               <div class="blog-card-media">
                 <img src="assets/images/blog/blog-belt-journey.jpg" alt="White to Black Belt Journey" loading="lazy">
                 <span class="blog-card-badge badge-combat gold">DISCIPLINE</span>
                 <span class="blog-card-readtime"><i class="bi bi-clock me-1"></i>8 min</span>
               </div>
-              <div class="blog-card-body">
-                <h4 class="blog-card-title">
-                  <a href="blog-details.html?id=belt-journey">The Journey from White to Black Belt: The Psychological Stages</a>
+              <div class="blog-card-body d-flex flex-column">
+                <h4 class="blog-card-title mb-2">
+                  <a href="blog-details.html?id=belt-journey" class="text-reset text-decoration-none">The Journey from White to Black Belt: The Psychological Stages</a>
                 </h4>
-                <p class="blog-card-excerpt">
-                  The plateau at green belt, the humbleness of brown belt, and why black belt is simply a permit to begin serious study.
+                <p class="blog-card-excerpt text-secondary mb-3">
+                  The psychological plateaus, the plateau of the blue belt, and how to transcend frustration when technical progress feels imperceptible.
                 </p>
-                <div class="blog-card-footer">
+                <div class="blog-card-footer mt-auto pt-3 border-top border-secondary border-opacity-25 d-flex justify-content-between align-items-center">
                   <div class="d-flex align-items-center gap-2">
-                    <img src="assets/images/instructors/arjun-rao.jpg" alt="Master Arjun Rao" class="blog-author-avatar">
-                    <small class="text-secondary">Master Arjun Rao</small>
+                    <img src="assets/images/unique/instructors-jinwoo.jpg" alt="Master Jin Woo" class="blog-author-avatar">
+                    <small class="text-secondary">Master Jin Woo</small>
                   </div>
                   <a href="blog-details.html?id=belt-journey" class="text-danger fw-bold small text-uppercase text-decoration-none">Read <i class="bi bi-arrow-right"></i></a>
                 </div>
@@ -268,20 +290,20 @@
 
           <!-- Post 3 -->
           <div class="col-lg-4 col-md-6 blog-card-item" data-category="technique">
-            <article class="blog-card">
+            <article class="blog-card h-100">
               <div class="blog-card-media">
-                <img src="assets/images/blog/blog-tkd-kick.jpg" alt="Taekwondo Kicking Mechanics" loading="lazy">
-                <span class="blog-card-badge badge-combat vermilion">TECHNIQUE</span>
+                <img src="assets/images/blog/blog-tkd-kick.jpg" alt="Taekwondo Kicking Kinetics" loading="lazy">
+                <span class="blog-card-badge badge-combat jade">TECHNIQUE</span>
                 <span class="blog-card-readtime"><i class="bi bi-clock me-1"></i>6 min</span>
               </div>
-              <div class="blog-card-body">
-                <h4 class="blog-card-title">
-                  <a href="blog-details.html?id=taekwondo-kinetics">Taekwondo Kicking Kinetics: Speed, Snap & Hip Rotation</a>
+              <div class="blog-card-body d-flex flex-column">
+                <h4 class="blog-card-title mb-2">
+                  <a href="blog-details.html?id=taekwondo-kinetics" class="text-reset text-decoration-none">Taekwondo Kicking Kinetics: Speed, Snap &amp; Hip Rotation</a>
                 </h4>
-                <p class="blog-card-excerpt">
-                  How elite Olympic practitioners leverage ground reaction force and pelvic tilt to generate kicks that clock in under 0.25 seconds.
+                <p class="blog-card-excerpt text-secondary mb-3">
+                  Kinematic chain analysis of the turning kick and 540 spinning hook kick. Maximize foot velocity through hip-first torque transfer.
                 </p>
-                <div class="blog-card-footer">
+                <div class="blog-card-footer mt-auto pt-3 border-top border-secondary border-opacity-25 d-flex justify-content-between align-items-center">
                   <div class="d-flex align-items-center gap-2">
                     <img src="assets/images/instructors/elena-cruz.jpg" alt="Sensei Elena Cruz" class="blog-author-avatar">
                     <small class="text-secondary">Sensei Elena Cruz</small>
@@ -294,23 +316,23 @@
 
           <!-- Post 4 -->
           <div class="col-lg-4 col-md-6 blog-card-item" data-category="youth">
-            <article class="blog-card">
+            <article class="blog-card h-100">
               <div class="blog-card-media">
-                <img src="assets/images/blog/blog-kids-karate.jpg" alt="Children Focus and Karate" loading="lazy">
-                <span class="blog-card-badge badge-combat">YOUTH FOCUS</span>
+                <img src="assets/images/blog/blog-kids-karate.jpg" alt="Building Focus in Children" loading="lazy">
+                <span class="blog-card-badge badge-combat cobalt">YOUTH FOCUS</span>
                 <span class="blog-card-readtime"><i class="bi bi-clock me-1"></i>5 min</span>
               </div>
-              <div class="blog-card-body">
-                <h4 class="blog-card-title">
-                  <a href="blog-details.html?id=focus-children">Building Unshakable Focus in Children Through Karate</a>
+              <div class="blog-card-body d-flex flex-column">
+                <h4 class="blog-card-title mb-2">
+                  <a href="blog-details.html?id=focus-children" class="text-reset text-decoration-none">Building Unshakable Focus in Children Through Karate</a>
                 </h4>
-                <p class="blog-card-excerpt">
-                  Why physical ritual, eye contact requirements, and stance immobility dramatically improve attention spans in young students.
+                <p class="blog-card-excerpt text-secondary mb-3">
+                  How traditional dojo etiquette and structured kata drills reprogram short attention spans into calm, prolonged academic focus.
                 </p>
-                <div class="blog-card-footer">
+                <div class="blog-card-footer mt-auto pt-3 border-top border-secondary border-opacity-25 d-flex justify-content-between align-items-center">
                   <div class="d-flex align-items-center gap-2">
-                    <img src="assets/images/instructors/kenji-sato.jpg" alt="Sensei Kenji Sato" class="blog-author-avatar">
-                    <small class="text-secondary">Sensei Kenji Sato</small>
+                    <img src="assets/images/instructors/marcus-vance.jpg" alt="Coach Marcus Vance" class="blog-author-avatar">
+                    <small class="text-secondary">Coach Marcus Vance</small>
                   </div>
                   <a href="blog-details.html?id=focus-children" class="text-danger fw-bold small text-uppercase text-decoration-none">Read <i class="bi bi-arrow-right"></i></a>
                 </div>
@@ -320,23 +342,23 @@
 
           <!-- Post 5 -->
           <div class="col-lg-4 col-md-6 blog-card-item" data-category="technique">
-            <article class="blog-card">
+            <article class="blog-card h-100">
               <div class="blog-card-media">
-                <img src="assets/images/blog/blog-recovery-mobility.jpg" alt="Combat Athlete Mobility and Joint Conditioning" loading="lazy">
-                <span class="blog-card-badge badge-combat gold">LONGEVITY</span>
+                <img src="assets/images/blog/blog-recovery-mobility.jpg" alt="Recovery &amp; Mobility" loading="lazy">
+                <span class="blog-card-badge badge-combat jade">TECHNIQUE</span>
                 <span class="blog-card-readtime"><i class="bi bi-clock me-1"></i>7 min</span>
               </div>
-              <div class="blog-card-body">
-                <h4 class="blog-card-title">
-                  <a href="blog-details.html?id=recovery-nutrition">Recovery & Nutrition for Combat Athletes: Protecting Joints & Tendons</a>
+              <div class="blog-card-body d-flex flex-column">
+                <h4 class="blog-card-title mb-2">
+                  <a href="blog-details.html?id=recovery-nutrition" class="text-reset text-decoration-none">Recovery &amp; Nutrition for Combat Athletes: Protecting Joints &amp; Tendons</a>
                 </h4>
-                <p class="blog-card-excerpt">
-                  Active mobility routines, hydration science, and tendon preservation protocols for maintaining speed and explosive power through decades of martial arts.
+                <p class="blog-card-excerpt text-secondary mb-3">
+                  Nutritional protocols, soft-tissue regeneration, and eccentric loading routines designed to shield martial artists against chronic injury.
                 </p>
-                <div class="blog-card-footer">
+                <div class="blog-card-footer mt-auto pt-3 border-top border-secondary border-opacity-25 d-flex justify-content-between align-items-center">
                   <div class="d-flex align-items-center gap-2">
-                    <img src="assets/images/instructors/marcus-vance.jpg" alt="Coach Marcus Vance" class="blog-author-avatar">
-                    <small class="text-secondary">Coach Marcus Vance</small>
+                    <img src="assets/images/instructors/arjun-rao.jpg" alt="Master Arjun Rao" class="blog-author-avatar">
+                    <small class="text-secondary">Master Arjun Rao</small>
                   </div>
                   <a href="blog-details.html?id=recovery-nutrition" class="text-danger fw-bold small text-uppercase text-decoration-none">Read <i class="bi bi-arrow-right"></i></a>
                 </div>
@@ -346,23 +368,23 @@
 
           <!-- Post 6 -->
           <div class="col-lg-4 col-md-6 blog-card-item" data-category="discipline">
-            <article class="blog-card">
+            <article class="blog-card h-100">
               <div class="blog-card-media">
-                <img src="assets/images/blog/blog-kata-bassai.jpg" alt="Kata Philosophy and Architecture" loading="lazy">
-                <span class="blog-card-badge badge-combat vermilion">DISCIPLINE</span>
-                <span class="blog-card-readtime"><i class="bi bi-clock me-1"></i>6 min</span>
+                <img src="assets/images/blog/blog-kata-bassai.jpg" alt="Bassai Dai Secret Architecture" loading="lazy">
+                <span class="blog-card-badge badge-combat gold">DISCIPLINE</span>
+                <span class="blog-card-readtime"><i class="bi bi-clock me-1"></i>9 min</span>
               </div>
-              <div class="blog-card-body">
-                <h4 class="blog-card-title">
-                  <a href="blog-details.html?id=bassai-dai">The Secret Architecture of Bassai Dai: Storming the Fortress</a>
+              <div class="blog-card-body d-flex flex-column">
+                <h4 class="blog-card-title mb-2">
+                  <a href="blog-details.html?id=bassai-dai" class="text-reset text-decoration-none">The Secret Architecture of Bassai Dai: Storming the Fortress</a>
                 </h4>
-                <p class="blog-card-excerpt">
-                  An analytical breakdown of Shotokan's primary black belt kata and its tactical relevance to modern close-quarters combat.
+                <p class="blog-card-excerpt text-secondary mb-3">
+                  Historical deep-dive into the bunkai of Bassai Dai. How its directional shifts teach the martial artist to breach enemy strongholds under pressure.
                 </p>
-                <div class="blog-card-footer">
+                <div class="blog-card-footer mt-auto pt-3 border-top border-secondary border-opacity-25 d-flex justify-content-between align-items-center">
                   <div class="d-flex align-items-center gap-2">
-                    <img src="assets/images/instructors/arjun-rao.jpg" alt="Master Arjun Rao" class="blog-author-avatar">
-                    <small class="text-secondary">Master Arjun Rao</small>
+                    <img src="assets/images/instructors/kenji-sato.jpg" alt="Shihan Kenji Sato" class="blog-author-avatar">
+                    <small class="text-secondary">Shihan Kenji Sato</small>
                   </div>
                   <a href="blog-details.html?id=bassai-dai" class="text-danger fw-bold small text-uppercase text-decoration-none">Read <i class="bi bi-arrow-right"></i></a>
                 </div>
@@ -371,43 +393,24 @@
           </div>
         </div>
 
+        <!-- Empty Filter State -->
         <div id="blogEmptyState" class="d-none text-center py-5">
           <i class="bi bi-search text-danger fs-1 mb-3 d-block"></i>
-          <h4 class="text-uppercase">No Matching Articles Found</h4>
-          <p class="text-secondary">Try searching for different keywords or select "ALL TOPICS" above.</p>
+          <h4 class="text-uppercase">No Matching Dispatches Found</h4>
+          <p class="text-secondary mb-3">Try adjusting your search terms or selecting a different category.</p>
+          <button class="btn-combat btn-combat-sm" onclick="document.getElementById('blogSearchInput').value=''; document.querySelector('.blog-cat-btn[data-cat-filter=\'all\']').click();">Reset Filters</button>
         </div>
       </div>
     </section>
 
-    <!-- SECTION 04: NEWSLETTER SUBSCRIPTION BOX -->
-    <section class="py-combat bg-surface border-bottom border-dark">
-      <div class="container">
-        <div class="combat-panel p-5 border-danger text-center max-w-800 mx-auto">
-          <div class="section-marker justify-content-center">// 04 &bull; DOJO DISPATCHES</div>
-          <h3 class="display-6 fw-bold text-uppercase mb-3">RECEIVE OUR BI-WEEKLY TECHNIQUE ESSAYS</h3>
-          <p class="text-secondary mb-4">
-            Join 3,200+ martial artists who read our private commentary on kata interpretations, tournament rules, and athletic longevity. No spam, ever.
-          </p>
-          <form class="row g-2 justify-content-center" onsubmit="event.preventDefault(); alert('Thank you for subscribing to KAI Dispatches!');">
-            <div class="col-sm-8">
-              <input type="email" class="form-control form-combat-control py-3" placeholder="Enter your email address..." required>
-            </div>
-            <div class="col-sm-4">
-              <button type="submit" class="btn-combat w-100 py-3">Subscribe Free</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 05: RECOMMENDED DOJO BOOKLIST -->
+    <!-- SECTION 04: RECOMMENDED DOJO BOOKLIST -->
     <section class="py-combat border-bottom border-dark">
       <div class="container">
         <div class="row align-items-end mb-5">
           <div class="col-lg-8">
-            <div class="section-marker">// 05 &bull; MARTIAL SCHOLARSHIP</div>
+            <div class="section-marker">// 04 &bull; MARTIAL SCHOLARSHIP</div>
             <h2 class="section-title">ESSENTIAL MARTIAL ARTS LITERATURE</h2>
-            <p class="section-desc mb-0">Recommended foundational texts kept in the KAI library for serious practitioners.</p>
+            <p class="section-desc mb-0">Foundational texts and strategic treatises kept in the KAI study hall for dedicated students.</p>
           </div>
         </div>
 
@@ -417,7 +420,7 @@
               <span class="badge-combat vermilion mb-2">CLASSIC TEXT</span>
               <h5 class="text-uppercase mb-1">Karate-Do: My Way of Life</h5>
               <span class="d-block small text-muted mb-2">By Gichin Funakoshi</span>
-              <p class="text-secondary small mb-0">The essential autobiography of the founder of Shotokan, detailing his training in Okinawa and the moral code of the empty hand.</p>
+              <p class="text-secondary small mb-0">The essential autobiography of the father of modern Shotokan, detailing his training in Okinawa and the moral compass of the empty hand.</p>
             </div>
           </div>
           <div class="col-md-4">
@@ -425,28 +428,28 @@
               <span class="badge-combat gold mb-2">STRATEGY</span>
               <h5 class="text-uppercase mb-1">The Book of Five Rings (Go Rin No Sho)</h5>
               <span class="d-block small text-muted mb-2">By Miyamoto Musashi</span>
-              <p class="text-secondary small mb-0">The seminal 17th-century treatise on sword strategy, timing, psychological warfare, and seizing instantaneous advantage.</p>
+              <p class="text-secondary small mb-0">The seminal 17th-century treatise on duel strategy, spatial timing, psychological pressure, and seizing instantaneous initiative.</p>
             </div>
           </div>
           <div class="col-md-4">
             <div class="combat-panel p-4 h-100">
-              <span class="badge-combat mb-2">TACTICS</span>
+              <span class="badge-combat jade mb-2">TACTICS</span>
               <h5 class="text-uppercase mb-1">Meditations on Violence</h5>
               <span class="d-block small text-muted mb-2">By Rory Miller</span>
-              <p class="text-secondary small mb-0">A critical, unromantic examination of how real-world interpersonal violence operates compared to stylized dojo drills.</p>
+              <p class="text-secondary small mb-0">A critical, unsentimental examination of real-world interpersonal conflict dynamics versus ritualized dojo sparring patterns.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- SECTION 06: TRIAL CLASS CTA -->
+    <!-- SECTION 05: TRIAL CLASS CTA -->
     <section class="py-combat bg-surface text-center">
       <div class="container">
-        <div class="section-marker justify-content-center">// 06 &bull; PUT WORDS INTO ACTION</div>
+        <div class="section-marker justify-content-center">// 05 &bull; PUT WORDS INTO ACTION</div>
         <h2 class="display-4 fw-bold text-uppercase mb-3">READING IS THEORY. THE MAT IS REALITY.</h2>
         <p class="lead text-secondary mx-auto mb-4" style="max-width: 620px;">
-          Intellectualizing martial arts will only take you so far. Put on the white uniform and test yourself under master supervision.
+          Intellectualizing martial arts will only take you so far. Step onto the tatami and test yourself under master supervision.
         </p>
         <div class="d-flex justify-content-center flex-wrap gap-3">
           <a href="contact.html" class="btn-combat btn-lg px-5">Book Free Trial Class</a>
@@ -459,26 +462,27 @@
   <!-- GLOBAL FOOTER -->
   <footer class="combat-footer">
     <div class="container">
-      <div class="row g-5">
+      <div class="row g-4 g-lg-5 mb-5">
         <!-- Col 1: Brand & Bio -->
         <div class="col-lg-4">
-          <a class="navbar-brand mb-3 d-inline-flex align-items-center" href="index.html">
-            <img src="assets/images/logo.svg" alt="KAI Martial Arts Logo" width="44" height="44" class="brand-logo-img">
+          <a class="navbar-brand mb-3 d-inline-flex" href="index.html">
+            <img src="assets/images/logo.svg" alt="KAI Martial Arts" width="40" height="40" class="brand-logo-img">
             <div>
               <span>KAI</span>
               <span class="brand-sub">MARTIAL ARTS</span>
             </div>
           </a>
           <p class="text-secondary small mb-4">
-            KAI Martial Arts Academy is an internationally accredited martial arts center dedicated to authentic traditional Karate, Olympic Taekwondo, and practical reality-based self-defense.
+            A traditional &amp; modern combat institute committed to developing physical mastery, emotional calm under pressure, and ethical leadership in adults and children.
           </p>
-          <div class="d-flex gap-3">
-            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="btn-combat-outline btn-combat-sm px-3" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" class="btn-combat-outline btn-combat-sm px-3" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
-            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="btn-combat-outline btn-combat-sm px-3" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <div class="d-flex gap-2">
+            <a href="#" class="social-icon" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="#" class="social-icon" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-icon" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
           </div>
         </div>
 
+        <!-- Col 2: Quick Links -->
         <div class="col-6 col-lg-2">
           <h5 class="footer-heading">Academy</h5>
           <ul class="footer-links">
@@ -486,11 +490,12 @@
             <li><a href="programs.html">Our Programs</a></li>
             <li><a href="instructors.html">Grandmasters</a></li>
             <li><a href="schedule.html">Class Schedule</a></li>
-            <li><a href="pricing.html">Tuition & Pricing</a></li>
-            <li><a href="home-2.html">Home 2 (Fight Poster)</a></li>
+            <li><a href="pricing.html">Tuition &amp; Pricing</a></li>
+            <li><a href="home-2.html">Home 2 (Services)</a></li>
           </ul>
         </div>
 
+        <!-- Col 3: Programs -->
         <div class="col-6 col-lg-3">
           <h5 class="footer-heading">Disciplines</h5>
           <ul class="footer-links">
@@ -503,40 +508,59 @@
           </ul>
         </div>
 
+        <!-- Col 4: Academy Info -->
         <div class="col-lg-3">
-          <h5 class="footer-heading">The Dojo</h5>
-          <p class="small text-secondary mb-2"><i class="bi bi-geo-alt-fill text-danger me-2"></i> 448 Combat Way, Dojo District, Suite 100</p>
-          <p class="small text-secondary mb-2"><i class="bi bi-telephone-fill text-danger me-2"></i> +1 (555) 839-2041</p>
-          <p class="small text-secondary mb-2"><i class="bi bi-envelope-fill text-danger me-2"></i> info@kaimartialarts.com</p>
-          <p class="small text-secondary mb-3"><i class="bi bi-clock-fill text-danger me-2"></i> Mon - Sat: 06:00 AM - 09:30 PM</p>
-          
+                    <h5 class="footer-heading">The Dojo</h5>
+          <div class="combat-footer-contact">
+            <div class="combat-footer-contact-item">
+              <i class="bi bi-geo-alt-fill"></i>
+              <span>448 Combat Way, Dojo District, Suite 100</span>
+            </div>
+            <div class="combat-footer-contact-item">
+              <i class="bi bi-telephone-fill"></i>
+              <a href="tel:+15558392041" class="text-secondary text-decoration-none">+1 (555) 839-2041</a>
+            </div>
+            <div class="combat-footer-contact-item">
+              <i class="bi bi-envelope-fill"></i>
+              <a href="mailto:info@kaimartialarts.com" class="text-secondary text-decoration-none">info@kaimartialarts.com</a>
+            </div>
+            <div class="combat-footer-contact-item">
+              <i class="bi bi-clock-fill"></i>
+              <span>Mon - Sat: 06:00 AM - 09:30 PM</span>
+            </div>
+          </div> 
+
           <div class="mt-3">
             <span class="d-block small text-primary fw-bold mb-2">DOJO NEWSLETTER</span>
-            <div class="input-group">
-              <input type="email" class="form-control form-combat-control py-2" placeholder="Your email..." aria-label="Email address">
-              <button class="btn btn-combat btn-combat-sm" type="button"><i class="bi bi-send-fill"></i></button>
-            </div>
+            <form class="footer-newsletter-form input-group" novalidate>
+              <input type="email" class="form-control form-combat-control py-2 footer-newsletter-input" placeholder="Enter your email" aria-label="Email address" required>
+              <button class="btn btn-combat btn-combat-sm" type="submit" aria-label="Subscribe to Dojo Newsletter"><i class="bi bi-send-fill"></i></button>
+            </form>
+            <div class="footer-newsletter-feedback small mt-2" style="display: none;"></div>
           </div>
         </div>
       </div>
 
+      <!-- Bottom Bar -->
       <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center">
-        <p class="mb-2 mb-md-0 text-secondary">&copy; <span class="current-year">2026</span> KAI Martial Arts Academy. All Rights Reserved. Built for ThemeForest & TemplateMonster.</p>
+        <p class="mb-2 mb-md-0 text-secondary">&copy; <span class="current-year">2026</span> KAI Martial Arts Academy. All Rights Reserved.</p>
         <div class="d-flex gap-3 text-secondary">
           <a href="privacy.html" class="text-secondary small">Privacy Policy</a>
           <span>&bull;</span>
           <a href="terms.html" class="text-secondary small">Terms of Training</a>
           <span>&bull;</span>
-          <a href="contact.html" class="text-secondary small">Support & Mat Rules</a>
+          <a href="contact.html" class="text-secondary small">Support &amp; Mat Rules</a>
         </div>
       </div>
     </div>
   </footer>
 
+  <!-- Back to Top Button -->
   <button class="back-to-top" type="button" aria-label="Back to Top">
     <i class="bi bi-arrow-up"></i>
   </button>
 
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/theme.js"></script>
   <script src="assets/js/rtl.js"></script>

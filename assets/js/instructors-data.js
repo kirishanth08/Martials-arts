@@ -92,7 +92,7 @@ const KAI_INSTRUCTORS_DATA = {
     roleBadge: 'GRANDMASTER',
     certBadge: '6TH DAN KUKKIWON HONBU',
     portrait: 'assets/images/unique/instructors-jinwoo.jpg',
-    actionPhoto: 'assets/images/unique/home2-hero.jpg',
+    actionPhoto: 'assets/images/unique/instructors-jinwoo-action.jpg',
     leadBio: 'A venerable figure in classical Korean martial arts with 42 years of teaching distinction, Grandmaster Jin oversees Dan-rank standardization, Yudansha philosophy, and senior instructor certifications.',
     stat1Number: '42 YEARS',
     stat1Label: 'Dojo Leadership',

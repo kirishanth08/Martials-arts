@@ -102,4 +102,48 @@ document.addEventListener('DOMContentLoaded', () => {
   yearEls.forEach(el => {
     el.textContent = thisYear;
   });
+
+  // 7. Footer DOJO Newsletter Submission Handler
+  const newsletterForms = document.querySelectorAll('.footer-newsletter-form');
+  newsletterForms.forEach(form => {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const input = form.querySelector('.footer-newsletter-input');
+      const feedback = form.parentElement.querySelector('.footer-newsletter-feedback');
+      if (!input) return;
+
+      const emailVal = input.value.trim();
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+      if (!emailVal || !emailRegex.test(emailVal)) {
+        input.classList.add('is-invalid');
+        input.classList.remove('is-valid');
+        if (feedback) {
+          feedback.textContent = 'Please enter a valid email address.';
+          feedback.className = 'footer-newsletter-feedback small mt-2 error';
+          feedback.style.display = 'block';
+        }
+      } else {
+        input.classList.remove('is-invalid');
+        input.classList.add('is-valid');
+        if (feedback) {
+          feedback.textContent = '✓ Thank you for subscribing to DOJO Newsletter!';
+          feedback.className = 'footer-newsletter-feedback small mt-2 success';
+          feedback.style.display = 'block';
+        }
+        try {
+          const subs = JSON.parse(localStorage.getItem('dojo_subscribers') || '[]');
+          if (!subs.includes(emailVal)) subs.push(emailVal);
+          localStorage.setItem('dojo_subscribers', JSON.stringify(subs));
+        } catch (err) {
+          // ignore
+        }
+        input.value = '';
+        setTimeout(() => {
+          input.classList.remove('is-valid');
+        }, 3000);
+      }
+    });
+  });
 });
+

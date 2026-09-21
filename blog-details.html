@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en" data-theme="dark" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Why Discipline Surpasses Motivation on the Mat | KAI Journal</title>
-  <meta name="description" content="Read Master Arjun Rao's essay on why motivation is a fleeting emotion, and how the ancient ritual of martial arts builds lifelong behavioral discipline.">
+  <title>Martial Arts Journal Dispatch | KAI Academy</title>
+  <meta name="description" content="Technical breakdowns, martial arts philosophy, and tactical combat conditioning written by KAI Martial Arts Academy grandmasters.">
   <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
   
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -27,12 +27,25 @@
         </div>
       </a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#combatNavContent" aria-controls="combatNavContent" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="bi bi-list fs-2"></i>
-      </button>
+            <!-- Controls outside hamburger (Theme, RTL, CTA, and Toggler) -->
+      <div class="d-flex align-items-center gap-2 order-lg-last nav-actions-wrap">
+        <button class="theme-toggle-btn" type="button" aria-label="Toggle Light/Dark Theme" title="Toggle Light/Dark Theme">
+          <i class="bi bi-sun-fill text-warning"></i>
+        </button>
+        
+        <button class="rtl-toggle-btn" type="button" aria-label="Toggle Text Direction" title="Toggle Text Direction">
+          <span class="fw-bold">RTL</span>
+        </button>
+
+        <a href="contact.html" class="btn-combat btn-combat-sm nav-cta-btn">Trial</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#combatNavContent" aria-controls="combatNavContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list fs-2"></i>
+        </button>
+      </div>
 
       <div class="collapse navbar-collapse" id="combatNavContent">
-        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav mx-auto mb-2 mb-xl-0">
           <!-- Home Dropdown -->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -58,7 +71,7 @@
           <!-- About -->
           <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
 
-          <!-- Programs Dropdown (Includes Programs, Schedule, Instructors, Gallery) -->
+          <!-- Programs Dropdown -->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="programsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               <i class="bi bi-shield-shaded me-1"></i> Programs
@@ -107,18 +120,6 @@
           <!-- Contact -->
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
-
-        <div class="nav-util-group">
-          <button class="theme-toggle-btn" type="button">
-            <i class="bi bi-sun-fill text-warning"></i> <span class="d-none d-sm-inline">Light</span>
-          </button>
-          
-          <button class="rtl-toggle-btn" type="button">
-            <span class="fw-bold">LTR | RTL</span>
-          </button>
-
-          <a href="contact.html" class="btn-combat btn-combat-sm ms-lg-2">Book a Trial</a>
-        </div>
       </div>
     </div>
   </nav>
@@ -127,117 +128,191 @@
     <!-- SECTION 01: ARTICLE HERO HEADER -->
     <section class="py-combat-sm bg-body border-bottom border-dark position-relative">
       <div class="container">
-        <div class="max-w-800 mx-auto">
-          <a href="blog.html" class="text-danger small fw-bold text-uppercase d-inline-flex align-items-center gap-1 mb-3">
-            <i class="bi bi-arrow-left"></i> Back to All Dispatches
-          </a>
+        <div class="max-w-900 mx-auto">
+          <!-- Navigation Breadcrumb -->
+          <nav aria-label="breadcrumb" class="mb-3">
+            <ol class="breadcrumb combat-breadcrumb mb-0">
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item"><a href="blog.html">Journal</a></li>
+              <li class="breadcrumb-item active" aria-current="page" id="blogArticleCategory">MARTIAL DISCIPLINE</li>
+            </ol>
+          </nav>
+
+          <!-- Meta & Title -->
           <div class="d-flex align-items-center gap-2 mb-3">
-            <span class="badge-combat vermilion" id="blogArticleCategory">MARTIAL DISCIPLINE</span>
+            <span class="badge-combat vermilion">TECHNICAL DISPATCH</span>
             <span class="text-secondary small" id="blogArticleMeta">&bull; 7 Min Read &bull; Published Sept 12, 2026</span>
           </div>
           <h1 class="display-4 fw-bold text-uppercase mb-4" id="blogArticleTitle">
             WHY DISCIPLINE SURPASSES MOTIVATION ON THE MAT
           </h1>
-          <div class="d-flex align-items-center gap-3 pt-3 border-top border-secondary border-opacity-25">
+
+          <!-- Author Byline Bar -->
+          <div class="d-flex flex-wrap align-items-center gap-3 pt-3 border-top border-secondary border-opacity-25">
             <img src="assets/images/instructors/arjun-rao.jpg" alt="Master Arjun Rao" class="rounded-circle border border-danger" style="width: 50px; height: 50px; object-fit: cover;" id="blogArticleAuthorAvatar">
             <div>
-              <strong class="d-block" id="blogArticleAuthorName">Master Arjun Rao</strong>
+              <strong class="d-block text-white" id="blogArticleAuthorName">Master Arjun Rao</strong>
               <small class="text-secondary" id="blogArticleAuthorRole">5th Dan Head Instructor &bull; KAI Founder</small>
             </div>
             <div class="ms-auto d-flex gap-2">
-              <button class="btn-combat-outline btn-combat-sm" onclick="navigator.clipboard ? navigator.clipboard.writeText(window.location.href).then(() => alert('Link copied to clipboard!')) : alert('Link copied!');" aria-label="Share Link"><i class="bi bi-share-fill"></i></button>
-              <button class="btn-combat-outline btn-combat-sm" onclick="window.print();" aria-label="Print Article"><i class="bi bi-printer-fill"></i></button>
+              <button class="btn-combat-outline footer-social-btn" onclick="navigator.clipboard ? navigator.clipboard.writeText(window.location.href).then(() => alert('Link copied to clipboard!')) : alert('Link copied!');" aria-label="Share Link" title="Share Dispatch"><i class="bi bi-share-fill me-1"></i> <span class="d-none d-sm-inline">Share</span></button>
+              <button class="btn-combat-outline btn-combat-sm" onclick="window.print();" aria-label="Print Article" title="Print Dispatch"><i class="bi bi-printer-fill me-1"></i> <span class="d-none d-sm-inline">Print</span></button>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- SECTION 02: FEATURED IMAGE -->
-    <section class="py-combat-sm bg-surface border-bottom border-dark">
+    <!-- SECTION 02: RESTRUCTURED EDITORIAL CONTENT + SIDEBAR -->
+    <section class="py-combat bg-body border-bottom border-dark">
       <div class="container">
-        <div class="max-w-900 mx-auto">
-          <div class="combat-panel p-2">
-            <img src="assets/images/blog/blog-discipline-featured.jpg" alt="Martial Arts Class in Mokuso Bowing" class="img-fluid w-100" style="max-height: 480px; object-fit: cover;" id="blogArticleFeaturedImg">
+        <div class="row g-5">
+          <!-- MAIN CONTENT COLUMN (LEFT) -->
+          <div class="col-lg-8">
+            <article class="blog-main-article">
+              <!-- Featured Image Banner -->
+              <div class="combat-panel p-2 mb-5">
+                <img src="assets/images/blog/blog-discipline-featured.jpg" alt="Martial Arts Class in Mokuso Bowing" class="img-fluid w-100 rounded" style="max-height: 480px; object-fit: cover;" id="blogArticleFeaturedImg">
+              </div>
+
+              <!-- Article Body Paragraphs -->
+              <div class="blog-body-text mb-5" id="blogArticleBody" style="font-size: 1.15rem; line-height: 1.9;">
+                <p class="lead text-secondary mb-4">
+                  Every September, dojos across the world experience an influx of eager beginners. They purchase pristine heavyweight dogis, download training apps, and announce their ambitions of achieving a black belt within three years. By mid-November, more than sixty percent of those white belts have vacated the tatami.
+                </p>
+                <p class="lead text-secondary mb-4">
+                  The reason is not a deficit of athletic potential, nor is it the physical difficulty of reverse punches or stance transitions. It is a fundamental misunderstanding of the engine that drives mastery: the fatal reliance on motivation rather than discipline.
+                </p>
+                <p class="lead text-secondary mb-4">
+                  Motivation is a biological sprint. It is fueled by dopamine, excitement, and the alluring mental projection of who you might become. But neurochemically, dopamine is fleeting. It cannot sustain you through the tenth round of sparring on a freezing Tuesday evening.
+                </p>
+              </div>
+
+              <!-- Mat Drill Key Takeaways Callout Box -->
+              <div class="combat-panel p-4 p-md-5 mb-5 border-danger">
+                <span class="badge-combat vermilion mb-2">// MAT DRILL SUMMARY</span>
+                <h4 class="text-uppercase mb-3">KEY TAKEAWAYS FOR YOUR TRAINING</h4>
+                <ul class="list-unstyled mb-0" id="blogArticleTakeaways">
+                  <li class="d-flex align-items-start gap-2 mb-2">
+                    <i class="bi bi-check-circle-fill text-danger mt-1"></i>
+                    <span>Motivation is an unreliable neurochemical high; discipline is a trained autonomic system habit.</span>
+                  </li>
+                  <li class="d-flex align-items-start gap-2 mb-2">
+                    <i class="bi bi-check-circle-fill text-danger mt-1"></i>
+                    <span>Showing up on days when enthusiasm is zero creates 80% of actual technical and character progression.</span>
+                  </li>
+                  <li class="d-flex align-items-start gap-2 mb-2">
+                    <i class="bi bi-check-circle-fill text-danger mt-1"></i>
+                    <span>Ritualized physical actions signal the brain to enter hyper-focused states.</span>
+                  </li>
+                </ul>
+              </div>
+
+
+
+              <!-- Article Navigation Footer -->
+              <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 pt-4 border-top border-secondary border-opacity-25">
+                <a href="blog.html" class="btn-combat-outline btn-combat-sm"><i class="bi bi-arrow-left me-1"></i> Back to All Dispatches</a>
+                <div class="d-flex gap-2">
+                  <button class="btn-combat-outline footer-social-btn" onclick="navigator.clipboard ? navigator.clipboard.writeText(window.location.href).then(() => alert('Link copied to clipboard!')) : alert('Link copied!');" title="Copy Link"><i class="bi bi-link-45deg me-1"></i> Copy Link</button>
+                  <a href="#blogDirectorySection" class="btn-combat-outline btn-combat-sm" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;"><i class="bi bi-arrow-up"></i> Top</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- SIDEBAR COLUMN (RIGHT) -->
+          <div class="col-lg-4">
+            <aside class="blog-sidebar" style="position: sticky; top: 90px;">
+              <!-- Widget 1: Free Trial Class CTA -->
+              <div class="combat-panel p-4 mb-4 border-danger">
+                <span class="badge-combat vermilion mb-2">COMPLIMENTARY PASS</span>
+                <h4 class="text-uppercase mb-2 text-white">STEP ONTO THE MAT</h4>
+                <p class="text-secondary small mb-4">
+                  Reading theory is the first step. True mastery is forged under master supervision on our tatami mats.
+                </p>
+                <a href="contact.html" class="btn-combat btn-combat-sm w-100 mb-2 text-center">Claim Free Trial Pass <i class="bi bi-arrow-right ms-1"></i></a>
+                <span class="text-secondary small d-block text-center"><i class="bi bi-shield-check text-success me-1"></i> No pressure &bull; Uniform provided</span>
+              </div>
+
+              <!-- Widget 2: Academy Disciplines -->
+              <div class="combat-panel p-4 mb-4">
+                <h5 class="text-uppercase mb-3 text-white border-bottom border-secondary border-opacity-25 pb-2">ACADEMY DISCIPLINES</h5>
+                <ul class="list-unstyled mb-0 d-flex flex-column gap-2">
+                  <li>
+                    <a href="program-details.html" class="text-secondary text-decoration-none d-flex justify-content-between align-items-center py-1">
+                      <span><i class="bi bi-shield-fill text-danger me-2"></i>Traditional Karate</span>
+                      <span class="badge-combat small">Shotokan</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="programs.html" class="text-secondary text-decoration-none d-flex justify-content-between align-items-center py-1">
+                      <span><i class="bi bi-lightning-charge-fill text-warning me-2"></i>Olympic Taekwondo</span>
+                      <span class="badge-combat small">Kukkiwon</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="programs.html" class="text-secondary text-decoration-none d-flex justify-content-between align-items-center py-1">
+                      <span><i class="bi bi-hand-thumbs-up-fill text-info me-2"></i>Women's Self-Defense</span>
+                      <span class="badge-combat small">Tactical</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="programs.html" class="text-secondary text-decoration-none d-flex justify-content-between align-items-center py-1">
+                      <span><i class="bi bi-star-fill text-success me-2"></i>Little Tigers (4-12)</span>
+                      <span class="badge-combat small">Youth</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Widget 3: Quick Filter Topics -->
+              <div class="combat-panel p-4 mb-4">
+                <h5 class="text-uppercase mb-3 text-white border-bottom border-secondary border-opacity-25 pb-2">JOURNAL TOPICS</h5>
+                <div class="d-flex flex-wrap gap-2">
+                  <a href="blog.html" class="badge-combat text-decoration-none">ALL TOPICS</a>
+                  <a href="blog.html" class="badge-combat text-decoration-none">DISCIPLINE</a>
+                  <a href="blog.html" class="badge-combat text-decoration-none">SELF-DEFENSE</a>
+                  <a href="blog.html" class="badge-combat text-decoration-none">TECHNIQUE</a>
+                  <a href="blog.html" class="badge-combat text-decoration-none">YOUTH FOCUS</a>
+                </div>
+              </div>
+
+              <!-- Widget 4: Dojo Schedule Card -->
+              <div class="combat-panel p-4">
+                <h5 class="text-uppercase mb-2 text-white">DOJO TIMETABLE</h5>
+                <p class="text-secondary small mb-3">Morning &amp; evening classes run 6 days a week from 06:00 AM to 09:30 PM.</p>
+                <a href="schedule.html" class="btn-combat-outline btn-combat-sm w-100 text-center">View Full Schedule <i class="bi bi-calendar3 ms-1"></i></a>
+              </div>
+            </aside>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- SECTION 03: ARTICLE CONTENT -->
-    <section class="py-combat bg-body border-bottom border-dark">
-      <div class="container">
-        <article class="max-w-800 mx-auto" id="blogArticleBody" style="font-size: 1.15rem; line-height: 1.8;">
-          <p class="lead text-secondary mb-4">
-            Every September, dojos across the world experience an influx of eager beginners. They purchase pristine heavyweight dogis, download training apps, and announce their ambitions of achieving a black belt within three years. By mid-November, more than sixty percent of those white belts have vacated the tatami.
-          </p>
-          <p class="lead text-secondary mb-4">
-            The reason is not a deficit of athletic potential, nor is it the physical difficulty of reverse punches or stance transitions. It is a fundamental misunderstanding of the engine that drives mastery: the fatal reliance on motivation rather than discipline.
-          </p>
-          <p class="lead text-secondary mb-4">
-            Motivation is a biological sprint. It is fueled by dopamine, excitement, and the alluring mental projection of who you might become. But neurochemically, dopamine is fleeting. It cannot sustain you through the tenth round of sparring on a freezing Tuesday evening.
-          </p>
-        </article>
-      </div>
-    </section>
-
-    <!-- SECTION 04: KEY TAKEAWAYS CALLOUT BOX -->
-    <section class="py-combat-sm bg-surface border-bottom border-dark">
-      <div class="container">
-        <div class="max-w-800 mx-auto combat-panel p-4 border-danger">
-          <span class="badge-combat vermilion mb-2">// MAT DRILL SUMMARY</span>
-          <h4 class="text-uppercase mb-3">KEY TAKEAWAYS FOR YOUR TRAINING</h4>
-          <ul class="list-unstyled mb-0" id="blogArticleTakeaways">
-            <li class="d-flex align-items-start gap-2 mb-2">
-              <i class="bi bi-check-circle-fill text-danger mt-1"></i>
-              <span>Motivation is an unreliable neurochemical high; discipline is a trained autonomic system habit.</span>
-            </li>
-            <li class="d-flex align-items-start gap-2 mb-2">
-              <i class="bi bi-check-circle-fill text-danger mt-1"></i>
-              <span>Showing up on days when enthusiasm is zero creates 80% of actual technical and character progression.</span>
-            </li>
-            <li class="d-flex align-items-start gap-2 mb-2">
-              <i class="bi bi-check-circle-fill text-danger mt-1"></i>
-              <span>Ritualized physical actions signal the brain to enter hyper-focused states.</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 05: RELATED ARTICLES -->
+    <!-- SECTION 03: RELATED ARTICLES -->
     <section class="py-combat border-bottom border-dark">
       <div class="container">
         <div class="row align-items-end mb-4">
           <div class="col-lg-8">
-            <div class="section-marker">// 05 &bull; RELATED DISPATCHES</div>
+            <div class="section-marker">// 03 &bull; RELATED DISPATCHES</div>
             <h2 class="section-title">CONTINUE YOUR STUDY</h2>
           </div>
           <div class="col-lg-4 text-lg-end">
-            <a href="blog.html" class="btn-combat-outline btn-combat-sm">All Articles <i class="bi bi-arrow-right"></i></a>
+            <a href="blog.html" class="btn-combat-outline btn-combat-sm">All Articles <i class="bi bi-arrow-right ms-1"></i></a>
           </div>
         </div>
 
         <div class="row g-4" id="blogRelatedArticles">
-          <div class="col-md-4">
-            <div class="combat-panel p-3 h-100 d-flex flex-column">
-              <img src="assets/images/blog/blog-self-defense.jpg" alt="Self-Defense" class="img-fluid mb-3 w-100" style="height: 180px; object-fit: cover;">
-              <span class="badge-combat vermilion small mb-2">SELF-DEFENSE</span>
-              <h5 class="fs-6 mb-2"><a href="blog-details.html?id=defense-principles" class="text-reset">5 Practical Defense Principles Every Commuter Should Know</a></h5>
-              <div class="pt-2 border-top border-secondary border-opacity-25 mt-auto d-flex justify-content-between align-items-center">
-                <small class="text-muted">Sensei Priya Sharma</small>
-                <a href="blog-details.html?id=defense-principles" class="text-danger fw-bold small text-uppercase">Read <i class="bi bi-chevron-right"></i></a>
-              </div>
-            </div>
-          </div>
+          <!-- Populated by blog-data.js -->
         </div>
       </div>
     </section>
 
-    <!-- SECTION 06: DOJO CTA -->
+    <!-- SECTION 04: DOJO CTA -->
     <section class="py-combat bg-surface text-center">
       <div class="container">
-        <div class="section-marker justify-content-center">// 06 &bull; BECOME THE PRACTITIONER</div>
+        <div class="section-marker justify-content-center">// 04 &bull; BECOME THE PRACTITIONER</div>
         <h2 class="display-4 fw-bold text-uppercase mb-3">BUILD YOUR DISCIPLINE ON OUR MAT.</h2>
         <p class="lead text-secondary mx-auto mb-4" style="max-width: 600px;">
           Put philosophy into practice. Reserve your white uniform and join Master Arjun for your introductory trial class.
@@ -253,26 +328,27 @@
   <!-- GLOBAL FOOTER -->
   <footer class="combat-footer">
     <div class="container">
-      <div class="row g-5">
+      <div class="row g-4 g-lg-5 mb-5">
         <!-- Col 1: Brand & Bio -->
         <div class="col-lg-4">
-          <a class="navbar-brand mb-3 d-inline-flex align-items-center" href="index.html">
-            <img src="assets/images/logo.svg" alt="KAI Martial Arts Logo" width="44" height="44" class="brand-logo-img">
+          <a class="navbar-brand mb-3 d-inline-flex" href="index.html">
+            <img src="assets/images/logo.svg" alt="KAI Martial Arts" width="40" height="40" class="brand-logo-img">
             <div>
               <span>KAI</span>
               <span class="brand-sub">MARTIAL ARTS</span>
             </div>
           </a>
           <p class="text-secondary small mb-4">
-            KAI Martial Arts Academy is an internationally accredited martial arts center dedicated to authentic traditional Karate, Olympic Taekwondo, and practical reality-based self-defense.
+            A traditional &amp; modern combat institute committed to developing physical mastery, emotional calm under pressure, and ethical leadership in adults and children.
           </p>
-          <div class="d-flex gap-3">
-            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="btn-combat-outline btn-combat-sm px-3" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" class="btn-combat-outline btn-combat-sm px-3" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
-            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="btn-combat-outline btn-combat-sm px-3" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <div class="d-flex gap-2">
+            <a href="#" class="social-icon" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="#" class="social-icon" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-icon" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
           </div>
         </div>
 
+        <!-- Col 2: Quick Links -->
         <div class="col-6 col-lg-2">
           <h5 class="footer-heading">Academy</h5>
           <ul class="footer-links">
@@ -280,11 +356,12 @@
             <li><a href="programs.html">Our Programs</a></li>
             <li><a href="instructors.html">Grandmasters</a></li>
             <li><a href="schedule.html">Class Schedule</a></li>
-            <li><a href="pricing.html">Tuition & Pricing</a></li>
-            <li><a href="home-2.html">Home 2 (Fight Poster)</a></li>
+            <li><a href="pricing.html">Tuition &amp; Pricing</a></li>
+            <li><a href="home-2.html">Home 2 (Services)</a></li>
           </ul>
         </div>
 
+        <!-- Col 3: Programs -->
         <div class="col-6 col-lg-3">
           <h5 class="footer-heading">Disciplines</h5>
           <ul class="footer-links">
@@ -297,40 +374,59 @@
           </ul>
         </div>
 
+        <!-- Col 4: Academy Info -->
         <div class="col-lg-3">
-          <h5 class="footer-heading">The Dojo</h5>
-          <p class="small text-secondary mb-2"><i class="bi bi-geo-alt-fill text-danger me-2"></i> 448 Combat Way, Dojo District, Suite 100</p>
-          <p class="small text-secondary mb-2"><i class="bi bi-telephone-fill text-danger me-2"></i> +1 (555) 839-2041</p>
-          <p class="small text-secondary mb-2"><i class="bi bi-envelope-fill text-danger me-2"></i> info@kaimartialarts.com</p>
-          <p class="small text-secondary mb-3"><i class="bi bi-clock-fill text-danger me-2"></i> Mon - Sat: 06:00 AM - 09:30 PM</p>
-          
+                    <h5 class="footer-heading">The Dojo</h5>
+          <div class="combat-footer-contact">
+            <div class="combat-footer-contact-item">
+              <i class="bi bi-geo-alt-fill"></i>
+              <span>448 Combat Way, Dojo District, Suite 100</span>
+            </div>
+            <div class="combat-footer-contact-item">
+              <i class="bi bi-telephone-fill"></i>
+              <a href="tel:+15558392041" class="text-secondary text-decoration-none">+1 (555) 839-2041</a>
+            </div>
+            <div class="combat-footer-contact-item">
+              <i class="bi bi-envelope-fill"></i>
+              <a href="mailto:info@kaimartialarts.com" class="text-secondary text-decoration-none">info@kaimartialarts.com</a>
+            </div>
+            <div class="combat-footer-contact-item">
+              <i class="bi bi-clock-fill"></i>
+              <span>Mon - Sat: 06:00 AM - 09:30 PM</span>
+            </div>
+          </div> 
+
           <div class="mt-3">
             <span class="d-block small text-primary fw-bold mb-2">DOJO NEWSLETTER</span>
-            <div class="input-group">
-              <input type="email" class="form-control form-combat-control py-2" placeholder="Your email..." aria-label="Email address">
-              <button class="btn btn-combat btn-combat-sm" type="button"><i class="bi bi-send-fill"></i></button>
-            </div>
+            <form class="footer-newsletter-form input-group" novalidate>
+              <input type="email" class="form-control form-combat-control py-2 footer-newsletter-input" placeholder="Enter your email" aria-label="Email address" required>
+              <button class="btn btn-combat btn-combat-sm" type="submit" aria-label="Subscribe to Dojo Newsletter"><i class="bi bi-send-fill"></i></button>
+            </form>
+            <div class="footer-newsletter-feedback small mt-2" style="display: none;"></div>
           </div>
         </div>
       </div>
 
+      <!-- Bottom Bar -->
       <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center">
-        <p class="mb-2 mb-md-0 text-secondary">&copy; <span class="current-year">2026</span> KAI Martial Arts Academy. All Rights Reserved. Built for ThemeForest & TemplateMonster.</p>
+        <p class="mb-2 mb-md-0 text-secondary">&copy; <span class="current-year">2026</span> KAI Martial Arts Academy. All Rights Reserved.</p>
         <div class="d-flex gap-3 text-secondary">
           <a href="privacy.html" class="text-secondary small">Privacy Policy</a>
           <span>&bull;</span>
           <a href="terms.html" class="text-secondary small">Terms of Training</a>
           <span>&bull;</span>
-          <a href="contact.html" class="text-secondary small">Support & Mat Rules</a>
+          <a href="contact.html" class="text-secondary small">Support &amp; Mat Rules</a>
         </div>
       </div>
     </div>
   </footer>
 
+  <!-- Back to Top Button -->
   <button class="back-to-top" type="button" aria-label="Back to Top">
     <i class="bi bi-arrow-up"></i>
   </button>
 
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/theme.js"></script>
   <script src="assets/js/rtl.js"></script>

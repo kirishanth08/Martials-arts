@@ -1,7 +1,7 @@
 /**
  * RTL / LTR CONTROLLER (Vanilla JS)
  * Manages Direction toggling with localStorage persistence.
- * Toggle button strictly shows text: "LTR | RTL"
+ * Toggle button strictly shows text: "RTL"
  */
 (function () {
   'use strict';
@@ -32,13 +32,14 @@
   function updateButtons(dir) {
     const buttons = document.querySelectorAll('.rtl-toggle-btn');
     buttons.forEach((btn) => {
-      btn.setAttribute('aria-label', `Switch text direction. Current: ${dir.toUpperCase()}`);
-      // Strictly use text LTR | RTL as specified in Master Prompt
-      btn.innerHTML = `<span class="fw-bold">LTR | RTL</span>`;
+      btn.setAttribute('aria-label', `Switch text direction. Current mode: ${dir.toUpperCase()}`);
+      btn.setAttribute('title', `Current: ${dir.toUpperCase()} (Click to switch to ${dir === 'rtl' ? 'LTR' : 'RTL'})`);
       if (dir === 'rtl') {
-        btn.classList.add('btn-combat-vermilion');
+        btn.innerHTML = '<span class="opacity-50 small me-1">LTR</span><span class="fw-bold text-warning">RTL</span>';
+        btn.classList.add('active');
       } else {
-        btn.classList.remove('btn-combat-vermilion');
+        btn.innerHTML = '<span class="fw-bold text-white">LTR</span><span class="opacity-50 small ms-1">RTL</span>';
+        btn.classList.remove('active');
       }
     });
   }

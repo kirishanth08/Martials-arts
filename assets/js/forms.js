@@ -81,13 +81,23 @@ document.addEventListener('DOMContentLoaded', () => {
         bookingData.email = emailInput.value.trim();
       }
 
-      // Phone validation
-      if (!phoneInput.value.trim() || phoneInput.value.trim().length < 7) {
-        showError(phoneInput, 'Please enter a valid phone number');
+      // Phone validation: strictly reject letters and validate phone number
+      const phoneVal = phoneInput.value.trim();
+      const digitsOnly = phoneVal.replace(/\D/g, '');
+      const validPhoneChars = /^[0-9+\s\-().]+$/;
+
+      if (!phoneVal) {
+        showError(phoneInput, 'Please enter your phone number');
+        isValid = false;
+      } else if (/[a-zA-Z]/.test(phoneVal)) {
+        showError(phoneInput, 'Letters are not accepted in phone number');
+        isValid = false;
+      } else if (!validPhoneChars.test(phoneVal) || digitsOnly.length < 7 || digitsOnly.length > 15) {
+        showError(phoneInput, 'Please enter a valid phone number (7-15 digits)');
         isValid = false;
       } else {
         clearError(phoneInput);
-        bookingData.phone = phoneInput.value.trim();
+        bookingData.phone = phoneVal;
       }
 
       const ageSelect = document.getElementById('trialAge');
@@ -192,6 +202,15 @@ document.addEventListener('DOMContentLoaded', () => {
       finalSuccessCard.classList.remove('d-none');
     }
   });
+
+  // Restrict phone input space to disallow letters
+  const trialPhoneInput = document.getElementById('trialPhone');
+  if (trialPhoneInput) {
+    trialPhoneInput.addEventListener('input', (e) => {
+      // Disallow letters, allow digits, spaces, plus, minus, parentheses, dots
+      e.target.value = e.target.value.replace(/[a-zA-Z]/g, '');
+    });
+  }
 
   // Default initial date to tomorrow
   const dateInput = document.getElementById('trialDate');

@@ -709,8 +709,12 @@ button.badge-combat:hover *,
   -webkit-backdrop-filter: blur(18px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
   padding: 0.95rem 0;
+  position: -webkit-sticky !important;
   position: sticky !important;
   top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
   z-index: 1050 !important;
   transition: all var(--transition-medium);
 }
@@ -931,27 +935,69 @@ button.badge-combat:hover *,
   }
 }
 
+.nav-actions-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  flex-shrink: 0;
+}
+
+.nav-cta-btn {
+  white-space: nowrap !important;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 0.8rem !important;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.45rem 0.95rem !important;
+  border-radius: var(--radius-sm);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 38px;
+  line-height: 1;
+}
+
 .nav-util-group {
   display: flex;
   align-items: center;
   gap: 0.75rem;
 }
 
-.theme-toggle-btn,
+.theme-toggle-btn {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff !important;
+  font-size: 1.15rem;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-fast);
+  flex-shrink: 0;
+}
+
 .rtl-toggle-btn {
   background: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: #ffffff !important;
   font-family: var(--font-display);
-  font-size: 0.8rem;
+  font-size: 0.82rem;
   font-weight: 800;
-  padding: 0.45rem 0.85rem;
+  letter-spacing: 0.05em;
+  height: 40px;
+  padding: 0 0.85rem;
   border-radius: var(--radius-sm);
   cursor: pointer;
   display: inline-flex;
   align-items: center;
-  gap: 0.45rem;
+  justify-content: center;
   transition: all var(--transition-fast);
+  flex-shrink: 0;
 }
 
 .theme-toggle-btn:hover,
@@ -1768,9 +1814,11 @@ button.badge-combat:hover *,
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: #ffffff !important;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.35rem;
   position: relative;
   padding-bottom: 0.6rem;
+  display: inline-block;
+  line-height: 1.2;
 }
 
 .footer-heading::after {
@@ -1790,15 +1838,19 @@ button.badge-combat:hover *,
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
 }
 
 .footer-links li {
-  margin-bottom: 0.85rem;
+  margin: 0;
+  line-height: 1.5;
 }
 
 .footer-links a {
   color: #cbd5e1 !important;
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   font-weight: 500;
   text-decoration: none;
   transition: all var(--transition-fast);
@@ -1813,9 +1865,49 @@ button.badge-combat:hover *,
   text-shadow: 0 0 8px var(--accent-primary-glow);
 }
 
-/* Contact Info Icons & Text */
-.combat-footer .bi {
+/* Contact Info in Footer */
+.combat-footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  margin-bottom: 1.25rem;
+}
+
+.combat-footer-contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  font-size: 0.92rem;
+  color: #cbd5e1 !important;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.combat-footer-contact-item i {
+  width: 18px;
+  height: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
   color: var(--accent-primary) !important;
+  font-size: 0.95rem;
+}
+
+/* Contact Info Icons & Text (exclude buttons) */
+.combat-footer .bi:not(.btn-combat *):not(.btn-combat) {
+  color: var(--accent-primary) !important;
+}
+
+/* Ensure icons inside btn-combat are always visible dark charcoal / black in all themes */
+.btn-combat .bi,
+.btn-combat i,
+.combat-footer .btn-combat .bi,
+.combat-footer .btn-combat i,
+.combat-footer .btn-combat:hover .bi,
+.combat-footer .btn-combat:hover i {
+  color: #0b0f14 !important;
 }
 
 /* Newsletter Label & Form */
@@ -1827,8 +1919,78 @@ button.badge-combat:hover *,
   text-transform: uppercase;
 }
 
+/* Footer Newsletter Form Styling (Unified in all themes & LTR/RTL) */
+.footer-newsletter-form {
+  display: flex !important;
+  align-items: stretch !important;
+  position: relative;
+  width: 100%;
+}
+
+.footer-newsletter-form .footer-newsletter-input {
+  height: 46px !important;
+  background: rgba(255, 255, 255, 0.06) !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+  color: #ffffff !important;
+  font-size: 0.9rem !important;
+  padding: 0.6rem 1rem !important;
+  border-top-left-radius: 8px !important;
+  border-bottom-left-radius: 8px !important;
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  border-right: none !important;
+}
+
+.footer-newsletter-form .footer-newsletter-input::placeholder {
+  color: rgba(255, 255, 255, 0.45) !important;
+}
+
+.footer-newsletter-form .footer-newsletter-input:focus {
+  border-color: var(--accent-primary) !important;
+  box-shadow: 0 0 12px var(--accent-primary-glow) !important;
+  outline: none !important;
+}
+
+.footer-newsletter-form .btn-combat {
+  height: 46px !important;
+  min-width: 52px !important;
+  padding: 0 1.25rem !important;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  border-top-right-radius: 8px !important;
+  border-bottom-right-radius: 8px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border: none !important;
+  box-shadow: none !important;
+  background: linear-gradient(135deg, #00ff88 0%, #00e5ff 100%) !important;
+}
+
+.footer-newsletter-form .btn-combat i,
+.footer-newsletter-form .btn-combat .bi {
+  color: #0b0f14 !important;
+  font-size: 1.15rem !important;
+  line-height: 1 !important;
+  transition: transform var(--transition-fast);
+}
+
+.footer-newsletter-form .btn-combat:hover i,
+.footer-newsletter-form .btn-combat:hover .bi {
+  transform: translateX(2px);
+  color: #000000 !important;
+}
+
 /* Social Buttons */
 .combat-footer .btn-combat-outline {
+  width: 42px !important;
+  height: 42px !important;
+  padding: 0 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: var(--radius-sm) !important;
+  font-size: 1.1rem !important;
   color: #ffffff !important;
   border-color: rgba(255, 255, 255, 0.2) !important;
   background: rgba(255, 255, 255, 0.05);
@@ -2409,4 +2571,74 @@ button.badge-combat:hover *,
 }
 
 
+
+
+/* Clean Desktop Alignment at 992px - 1199px (e.g. 1024px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .combat-navbar .nav-link {
+    font-size: 0.82rem !important;
+    padding: 0.45rem 0.55rem !important;
+    letter-spacing: 0.03em !important;
+  }
+  .combat-navbar .nav-actions-wrap {
+    gap: 0.45rem !important;
+  }
+  .combat-navbar .theme-toggle-btn {
+    width: 36px !important;
+    height: 36px !important;
+    font-size: 1rem !important;
+  }
+  .combat-navbar .rtl-toggle-btn {
+    height: 36px !important;
+    padding: 0 0.65rem !important;
+    font-size: 0.78rem !important;
+  }
+  .combat-navbar .nav-cta-btn {
+    padding: 0.4rem 0.8rem !important;
+    font-size: 0.78rem !important;
+  }
+  .combat-navbar .navbar-brand span:not(.brand-sub) {
+    font-size: 1.55rem !important;
+  }
+  .combat-navbar .brand-logo-img {
+    width: 38px !important;
+    height: 38px !important;
+  }
+}
+
+/* Ensure hamburger icon strictly appears ONLY in mobile mode (< 992px) */
+@media (min-width: 992px) {
+  .combat-navbar .navbar-toggler {
+    display: none !important;
+  }
+}
+@media (max-width: 991.98px) {
+  .combat-navbar .navbar-toggler {
+    display: inline-flex !important;
+  }
+}
+
+/* Card Heading Alignment Utilities */
+.virtue-title {
+  min-height: 2.85rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.step-card-title {
+  min-height: 2.75rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Footer Newsletter Feedback */
+.footer-newsletter-feedback.success {
+  color: var(--accent-primary) !important;
+  display: block !important;
+}
+
+.footer-newsletter-feedback.error {
+  color: #ff4d4f !important;
+  display: block !important;
+}
 
