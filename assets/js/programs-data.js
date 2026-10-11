@@ -425,7 +425,7 @@ document.addEventListener('DOMContentLoaded', () => {
     scheduleBody.innerHTML = program.schedule.map(row => `
       <tr>
         <td class="fw-bold">${row.day}</td>
-        <td><span class="badge bg-danger-subtle text-danger px-2 py-1">${row.time}</span></td>
+        <td><span class="time-badge">${row.time}</span></td>
         <td class="text-secondary">${row.level}</td>
         <td class="text-warning">${row.dojo}</td>
       </tr>

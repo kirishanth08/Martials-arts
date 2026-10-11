@@ -49,10 +49,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // 4. Close Mobile Navbar Collapse on Link Click
+  // 4. Close Mobile Navbar Collapse on Link Click (excluding dropdown toggles so menus can open on mobile)
   const navCollapse = document.querySelector('.navbar-collapse');
   if (navCollapse) {
-    navLinks.forEach(link => {
+    const regularNavLinks = document.querySelectorAll(
+      '.combat-navbar .nav-link:not(.dropdown-toggle), .combat-navbar .dropdown-item, .mobile-nav-drawer-actions a'
+    );
+    regularNavLinks.forEach(link => {
       link.addEventListener('click', () => {
         if (window.innerWidth < 992 && navCollapse.classList.contains('show')) {
           const bsCollapse = bootstrap.Collapse.getInstance(navCollapse);

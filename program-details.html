@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" data-theme="dark" dir="ltr">
 <head>
   <meta charset="UTF-8">
@@ -28,16 +28,16 @@
       </a>
 
             <!-- Controls outside hamburger (Theme, RTL, CTA, and Toggler) -->
-      <div class="d-flex align-items-center gap-2 order-lg-last nav-actions-wrap">
+            <div class="d-flex align-items-center gap-2 order-lg-last nav-actions-wrap">
         <button class="theme-toggle-btn" type="button" aria-label="Toggle Light/Dark Theme" title="Toggle Light/Dark Theme">
           <i class="bi bi-sun-fill text-warning"></i>
         </button>
         
-        <button class="rtl-toggle-btn" type="button" aria-label="Toggle Text Direction" title="Toggle Text Direction">
-          <span class="fw-bold">RTL</span>
+        <button class="rtl-toggle-btn d-none d-lg-inline-flex" type="button" aria-label="Toggle Text Direction" title="Toggle Text Direction">
+          <i class="bi bi-arrow-left-right"></i>
         </button>
 
-        <a href="contact.html" class="btn-combat btn-combat-sm nav-cta-btn">Trial</a>
+        <a href="contact.html" class="btn-combat btn-combat-sm nav-cta-btn d-none d-lg-inline-flex">Trial</a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#combatNavContent" aria-controls="combatNavContent" aria-expanded="false" aria-label="Toggle navigation">
           <i class="bi bi-list fs-2"></i>
@@ -120,6 +120,15 @@
           <!-- Contact -->
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
+        <!-- Mobile Drawer Actions (Moved inside hamburger to ensure single-line top navbar) -->
+        <div class="d-lg-none mobile-nav-drawer-actions pt-3 mt-3 border-top border-secondary border-opacity-25 d-flex align-items-center gap-2">
+          <button class="rtl-toggle-btn flex-shrink-0" type="button" aria-label="Toggle Text Direction" title="Toggle Text Direction">
+            <i class="bi bi-arrow-left-right"></i>
+          </button>
+          <a href="contact.html" class="btn-combat btn-combat-sm flex-grow-1 text-center justify-content-center">
+            Book Free Trial <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
       </div>
     </div>
   </nav>
@@ -292,7 +301,7 @@
         <div class="row g-4">
           <div class="col-lg-4">
             <div class="combat-panel h-100">
-              <span class="badge-combat mb-2">BEGINNER (WHITE TO ORANGE)</span>
+              <span class="badge-combat jade mb-2">BEGINNER (WHITE TO ORANGE)</span>
               <h4 class="text-uppercase mb-3">FOUNDATION KYU</h4>
               <p class="text-secondary small mb-3">Tuesdays & Thursdays: 06:30 PM &bull; Saturdays: 09:00 AM</p>
               <ul class="list-unstyled small text-secondary">
@@ -433,25 +442,25 @@
             <tbody id="progScheduleBody">
               <tr>
                 <td class="fw-bold">Monday & Wednesday</td>
-                <td><span class="badge bg-danger-subtle text-danger px-2 py-1">06:30 AM – 07:30 AM</span></td>
+                <td><span class="time-badge">06:30 AM – 07:30 AM</span></td>
                 <td class="text-secondary">All Belts (Morning Kihon)</td>
                 <td class="text-warning">Tatami Alpha</td>
               </tr>
               <tr>
                 <td class="fw-bold">Tuesday & Thursday</td>
-                <td><span class="badge bg-danger-subtle text-danger px-2 py-1">07:00 PM – 08:15 PM</span></td>
+                <td><span class="time-badge">07:00 PM – 08:15 PM</span></td>
                 <td class="text-secondary">Intermediate / Advanced</td>
                 <td class="text-warning">Tatami Alpha</td>
               </tr>
               <tr>
                 <td class="fw-bold">Friday</td>
-                <td><span class="badge bg-danger-subtle text-danger px-2 py-1">06:30 PM – 08:00 PM</span></td>
+                <td><span class="time-badge">06:30 PM – 08:00 PM</span></td>
                 <td class="text-secondary">Continuous Kumite Sparring</td>
                 <td class="text-warning">Tatami Alpha</td>
               </tr>
               <tr>
                 <td class="fw-bold">Saturday</td>
-                <td><span class="badge bg-danger-subtle text-danger px-2 py-1">09:00 AM – 10:30 AM</span></td>
+                <td><span class="time-badge">09:00 AM – 10:30 AM</span></td>
                 <td class="text-secondary">Black Belt Dan Prep & Bunkai</td>
                 <td class="text-warning">Tatami Alpha</td>
               </tr>

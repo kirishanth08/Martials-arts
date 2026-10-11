@@ -34,16 +34,16 @@
       </a>
 
             <!-- Controls outside hamburger (Theme, RTL, CTA, and Toggler) -->
-      <div class="d-flex align-items-center gap-2 order-lg-last nav-actions-wrap">
+            <div class="d-flex align-items-center gap-2 order-lg-last nav-actions-wrap">
         <button class="theme-toggle-btn" type="button" aria-label="Toggle Light/Dark Theme" title="Toggle Light/Dark Theme">
           <i class="bi bi-sun-fill text-warning"></i>
         </button>
         
-        <button class="rtl-toggle-btn" type="button" aria-label="Toggle Text Direction" title="Toggle Text Direction">
-          <span class="fw-bold">RTL</span>
+        <button class="rtl-toggle-btn d-none d-lg-inline-flex" type="button" aria-label="Toggle Text Direction" title="Toggle Text Direction">
+          <i class="bi bi-arrow-left-right"></i>
         </button>
 
-        <a href="contact.html" class="btn-combat btn-combat-sm nav-cta-btn">Trial</a>
+        <a href="contact.html" class="btn-combat btn-combat-sm nav-cta-btn d-none d-lg-inline-flex">Trial</a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#combatNavContent" aria-controls="combatNavContent" aria-expanded="false" aria-label="Toggle navigation">
           <i class="bi bi-list fs-2"></i>
@@ -126,6 +126,15 @@
           <!-- Contact -->
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
+        <!-- Mobile Drawer Actions (Moved inside hamburger to ensure single-line top navbar) -->
+        <div class="d-lg-none mobile-nav-drawer-actions pt-3 mt-3 border-top border-secondary border-opacity-25 d-flex align-items-center gap-2">
+          <button class="rtl-toggle-btn flex-shrink-0" type="button" aria-label="Toggle Text Direction" title="Toggle Text Direction">
+            <i class="bi bi-arrow-left-right"></i>
+          </button>
+          <a href="contact.html" class="btn-combat btn-combat-sm flex-grow-1 text-center justify-content-center">
+            Book Free Trial <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
       </div>
     </div>
   </nav>
@@ -231,7 +240,7 @@
             </p>
           </div>
           <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
-            <a href="gallery.html" class="btn-combat-outline btn-combat-sm">View Full Gallery <i class="bi bi-arrow-right"></i></a>
+            <a href="gallery.html" class="btn-combat btn-combat-sm">View Full Gallery <i class="bi bi-arrow-right"></i></a>
           </div>
         </div>
 
@@ -481,7 +490,7 @@
             </p>
           </div>
           <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
-            <a href="instructors.html" class="btn-combat-outline btn-combat-sm">Meet All Instructors <i class="bi bi-arrow-right"></i></a>
+            <a href="instructors.html" class="btn-combat btn-combat-sm">Meet All Instructors <i class="bi bi-arrow-right"></i></a>
           </div>
         </div>
 
@@ -501,7 +510,7 @@
                 <p class="instructor-desc">
                   18 years of teaching traditional Shotokan Karate. Renowned for his patient, detail-oriented approach that instills foundational discipline and mental focus from day one.
                 </p>
-                <a href="instructor-details.html?id=arjun" class="btn-combat-outline btn-combat-sm instructor-action-btn">
+                <a href="instructor-details.html?id=arjun" class="btn-combat btn-combat-sm instructor-action-btn">
                   View Full Profile <i class="bi bi-arrow-right"></i>
                 </a>
               </div>
@@ -523,7 +532,7 @@
                 <p class="instructor-desc">
                   Former national medalist passionate about developing dynamic kicking agility, competitive sparring balance, and confidence-building athletic conditioning for youth and teens.
                 </p>
-                <a href="instructor-details.html?id=elena" class="btn-combat-outline btn-combat-sm instructor-action-btn">
+                <a href="instructor-details.html?id=elena" class="btn-combat btn-combat-sm instructor-action-btn">
                   View Full Profile <i class="bi bi-arrow-right"></i>
                 </a>
               </div>
@@ -545,7 +554,7 @@
                 <p class="instructor-desc">
                   Specializes in practical situational awareness, empowering women and young practitioners with confident boundary setting, de-escalation tactics, and instinctive defense.
                 </p>
-                <a href="instructor-details.html?id=priya" class="btn-combat-outline btn-combat-sm instructor-action-btn">
+                <a href="instructor-details.html?id=priya" class="btn-combat btn-combat-sm instructor-action-btn">
                   View Full Profile <i class="bi bi-arrow-right"></i>
                 </a>
               </div>

@@ -62,13 +62,20 @@ document.addEventListener('DOMContentLoaded', () => {
       const emailInput = document.getElementById('trialEmail');
       const phoneInput = document.getElementById('trialPhone');
 
-      // Full Name validation
-      if (!nameInput.value.trim()) {
+      // Full Name validation: reject numbers
+      const nameVal = nameInput.value.trim();
+      if (!nameVal) {
         showError(nameInput, 'Please enter your full name');
+        isValid = false;
+      } else if (/[0-9]/.test(nameVal)) {
+        showError(nameInput, 'Full name cannot contain numbers');
+        isValid = false;
+      } else if (!/^[a-zA-Z\s.'-]+$/.test(nameVal) || nameVal.length < 2) {
+        showError(nameInput, 'Please enter a valid name (letters only)');
         isValid = false;
       } else {
         clearError(nameInput);
-        bookingData.fullName = nameInput.value.trim();
+        bookingData.fullName = nameVal;
       }
 
       // Email validation
@@ -202,6 +209,17 @@ document.addEventListener('DOMContentLoaded', () => {
       finalSuccessCard.classList.remove('d-none');
     }
   });
+
+  // Restrict full name input to disallow numbers
+  const trialNameInput = document.getElementById('trialFullName');
+  if (trialNameInput) {
+    trialNameInput.addEventListener('input', (e) => {
+      // Disallow numbers
+      if (/[0-9]/.test(e.target.value)) {
+        e.target.value = e.target.value.replace(/[0-9]/g, '');
+      }
+    });
+  }
 
   // Restrict phone input space to disallow letters
   const trialPhoneInput = document.getElementById('trialPhone');

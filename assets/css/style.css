@@ -533,8 +533,11 @@ a:hover {
   border-left: 4px solid var(--accent-primary);
 }
 
-/* --- 5. FRIENDLY & ATHLETIC BUTTONS --- */
-.btn-combat {
+/* --- 5. UNIFIED ATHLETIC BUTTON SYSTEM --- */
+
+/* 5.1 PRIMARY CTAs (Base & States) */
+.btn-combat,
+.btn-combat-primary {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -544,28 +547,60 @@ a:hover {
   font-weight: 700;
   letter-spacing: 0.01em;
   color: #0b0f14 !important;
-  background: linear-gradient(135deg, #00ff88 0%, #00e5ff 100%);
-  border: none;
+  background: linear-gradient(135deg, #00ff88 0%, #00e5ff 100%) !important;
+  border: 1px solid transparent !important;
   padding: 0.85rem 2rem;
   border-radius: var(--radius-sm);
   position: relative;
   overflow: hidden;
   box-shadow: 0 4px 18px var(--accent-primary-glow);
-  transition: all var(--transition-fast);
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1), background 0.25s ease, color 0.25s ease, border-color 0.25s ease !important;
   cursor: pointer;
   z-index: 1;
 }
 
-.btn-combat:hover,
-.btn-combat:hover *,
-.btn-combat:hover i,
-.btn-combat:hover span {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(0, 255, 136, 0.5);
-  color: #000000 !important;
+[data-theme="light"] .btn-combat,
+[data-theme="light"] .btn-combat-primary {
+  background: linear-gradient(135deg, #00c868 0%, #00b4d8 100%) !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 16px rgba(0, 168, 89, 0.28);
 }
 
-.btn-combat-outline {
+/* UNIFIED PRIMARY CTA HOVER - SAME ANIMATION & COLOR SITEWIDE */
+.btn-combat:hover,
+.btn-combat:focus,
+.btn-combat-primary:hover,
+.btn-combat-primary:focus {
+  transform: translateY(-3px) scale(1.02) !important;
+  background: linear-gradient(135deg, #00ff88 0%, #00f0ff 100%) !important;
+  color: #000000 !important;
+  box-shadow: 0 10px 28px rgba(0, 255, 136, 0.55), 0 0 18px rgba(0, 229, 255, 0.4) !important;
+}
+
+[data-theme="light"] .btn-combat:hover,
+[data-theme="light"] .btn-combat:focus,
+[data-theme="light"] .btn-combat-primary:hover,
+[data-theme="light"] .btn-combat-primary:focus {
+  background: #00a859 !important;
+  color: #ffffff !important;
+  box-shadow: 0 10px 25px rgba(0, 168, 89, 0.45) !important;
+  transform: translateY(-3px) scale(1.02) !important;
+}
+
+.btn-combat:hover *,
+.btn-combat:focus *,
+.btn-combat-primary:hover *,
+.btn-combat-primary:focus * {
+  color: inherit !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+/* 5.2 SECONDARY CTAs (Base & States) */
+.btn-combat-outline,
+.btn-combat-ghost,
+.btn-combat-secondary {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -574,66 +609,93 @@ a:hover {
   font-size: 0.98rem;
   font-weight: 600;
   letter-spacing: 0.01em;
-  color: var(--text-primary) !important;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid var(--border-color);
+  color: #ffffff !important;
+  background: rgba(255, 255, 255, 0.06) !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.3) !important;
   padding: 0.85rem 2rem;
   border-radius: var(--radius-sm);
   backdrop-filter: blur(8px);
-  transition: all var(--transition-fast);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1), background 0.25s ease, color 0.25s ease, border-color 0.25s ease !important;
+  cursor: pointer;
 }
 
-.btn-combat-outline:hover,
-.btn-combat-outline:hover *,
-.btn-combat-outline:hover i,
-.btn-combat-outline:hover span {
-  border-color: var(--accent-primary) !important;
-  color: #000000 !important;
-  background: var(--accent-primary) !important;
-  box-shadow: 0 0 16px var(--accent-primary-glow) !important;
-  transform: translateY(-2px);
+[data-theme="light"] .btn-combat-outline,
+[data-theme="light"] .btn-combat-ghost,
+[data-theme="light"] .btn-combat-secondary {
+  color: #0f172a !important;
+  background: #ffffff !important;
+  border: 1.5px solid rgba(15, 23, 42, 0.22) !important;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.06);
 }
 
-/* Ensure outline buttons in dark hero / header / CTA / footer sections have bright contrast */
-.combat-hero .btn-combat-outline,
-.hero-combat .btn-combat-outline,
-.page-header-combat .btn-combat-outline,
-.cta-combat .btn-combat-outline,
+/* Ensure outline buttons in dark hero / header / CTA / footer sections stay legible */
 .combat-footer .btn-combat-outline,
-[data-theme="light"] .combat-hero .btn-combat-outline,
-[data-theme="light"] .hero-combat .btn-combat-outline,
-[data-theme="light"] .page-header-combat .btn-combat-outline,
-[data-theme="light"] .cta-combat .btn-combat-outline,
 [data-theme="light"] .combat-footer .btn-combat-outline {
   color: #ffffff !important;
-  border-color: rgba(255, 255, 255, 0.45) !important;
-  background: rgba(255, 255, 255, 0.1) !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+  border-color: rgba(255, 255, 255, 0.3) !important;
 }
 
-.combat-hero .btn-combat-outline:hover,
-.hero-combat .btn-combat-outline:hover,
-.page-header-combat .btn-combat-outline:hover,
-.cta-combat .btn-combat-outline:hover,
-.combat-footer .btn-combat-outline:hover,
-.combat-hero .btn-combat-outline:hover *,
-.hero-combat .btn-combat-outline:hover *,
-.page-header-combat .btn-combat-outline:hover *,
-.cta-combat .btn-combat-outline:hover *,
-.combat-footer .btn-combat-outline:hover *,
-[data-theme="light"] .combat-hero .btn-combat-outline:hover,
-[data-theme="light"] .hero-combat .btn-combat-outline:hover,
-[data-theme="light"] .page-header-combat .btn-combat-outline:hover,
-[data-theme="light"] .cta-combat .btn-combat-outline:hover,
-[data-theme="light"] .combat-footer .btn-combat-outline:hover,
-[data-theme="light"] .combat-hero .btn-combat-outline:hover *,
-[data-theme="light"] .hero-combat .btn-combat-outline:hover *,
-[data-theme="light"] .page-header-combat .btn-combat-outline:hover *,
-[data-theme="light"] .cta-combat .btn-combat-outline:hover *,
-[data-theme="light"] .combat-footer .btn-combat-outline:hover * {
+/* UNIFIED SECONDARY CTA HOVER - SAME ANIMATION & COLOR SITEWIDE */
+.btn-combat-outline:hover,
+.btn-combat-outline:focus,
+.btn-combat-ghost:hover,
+.btn-combat-ghost:focus,
+.btn-combat-secondary:hover,
+.btn-combat-secondary:focus {
+  transform: translateY(-3px) scale(1.02) !important;
   background: #00ff88 !important;
   border-color: #00ff88 !important;
   color: #000000 !important;
-  box-shadow: 0 0 16px rgba(0, 255, 136, 0.6) !important;
+  box-shadow: 0 8px 24px rgba(0, 255, 136, 0.45) !important;
+}
+
+[data-theme="light"] .btn-combat-outline:hover,
+[data-theme="light"] .btn-combat-outline:focus,
+[data-theme="light"] .btn-combat-ghost:hover,
+[data-theme="light"] .btn-combat-ghost:focus,
+[data-theme="light"] .btn-combat-secondary:hover,
+[data-theme="light"] .btn-combat-secondary:focus {
+  transform: translateY(-3px) scale(1.02) !important;
+  background: #00a859 !important;
+  border-color: #00a859 !important;
+  color: #ffffff !important;
+  box-shadow: 0 8px 22px rgba(0, 168, 89, 0.35) !important;
+}
+
+.btn-combat-outline:hover *,
+.btn-combat-outline:focus *,
+.btn-combat-ghost:hover *,
+.btn-combat-ghost:focus *,
+.btn-combat-secondary:hover *,
+.btn-combat-secondary:focus * {
+  color: inherit !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Strictly ensure icons and arrows inside buttons never have backgrounds or box-shadows */
+.btn-combat i,
+.btn-combat .bi,
+.btn-combat-outline i,
+.btn-combat-outline .bi,
+.btn-combat-ghost i,
+.btn-combat-ghost .bi,
+.btn-combat:hover i,
+.btn-combat:hover .bi,
+.btn-combat-outline:hover i,
+.btn-combat-outline:hover .bi,
+.btn-combat * i,
+.btn-combat * .bi,
+.btn-combat-outline * i,
+.btn-combat-outline * .bi {
+  background: transparent !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
 }
 
 .btn-combat-sm {
@@ -873,7 +935,8 @@ button.badge-combat:hover *,
 }
 
 .combat-navbar .dropdown:hover .dropdown-toggle::after,
-.combat-navbar .dropdown.show .dropdown-toggle::after {
+.combat-navbar .dropdown.show .dropdown-toggle::after,
+.combat-navbar .dropdown-toggle.show::after {
   transform: rotate(180deg);
 }
 
@@ -985,12 +1048,10 @@ button.badge-combat:hover *,
   background: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: #ffffff !important;
-  font-family: var(--font-display);
-  font-size: 0.82rem;
-  font-weight: 800;
-  letter-spacing: 0.05em;
+  font-size: 1.15rem;
+  width: 40px;
   height: 40px;
-  padding: 0 0.85rem;
+  padding: 0;
   border-radius: var(--radius-sm);
   cursor: pointer;
   display: inline-flex;
@@ -2324,10 +2385,11 @@ button.badge-combat:hover *,
 }
 
 .hero-services-banner .btn-combat-outline:hover {
-  background: #ffffff !important;
-  color: #0b111e !important;
-  border-color: #ffffff !important;
-  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.25);
+  background: #00ff88 !important;
+  color: #000000 !important;
+  border-color: #00ff88 !important;
+  box-shadow: 0 0 16px rgba(0, 255, 136, 0.6) !important;
+  transform: translateY(-2px);
 }
 
 .hero-services-banner .hero-media-panel {
@@ -2399,10 +2461,11 @@ button.badge-combat:hover *,
 }
 
 [data-theme="light"] .hero-services-banner .btn-combat-outline:hover {
-  background: #0f172a !important;
+  background: #00a859 !important;
   color: #ffffff !important;
-  border-color: #0f172a !important;
-  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.2);
+  border-color: #00a859 !important;
+  box-shadow: 0 4px 14px rgba(0, 168, 89, 0.35) !important;
+  transform: translateY(-2px);
 }
 
 [data-theme="light"] .hero-services-banner .hero-media-panel {
@@ -2641,4 +2704,165 @@ button.badge-combat:hover *,
   color: #ff4d4f !important;
   display: block !important;
 }
+
+/* --- 14. CLIENT ISSUE FIXES & ENHANCEMENTS --- */
+
+/* Contact Page Transit & Parking Real Map Box */
+.transit-map-panel {
+  min-height: 420px;
+  background: linear-gradient(135deg, #15171b 0%, #0c0d0f 100%);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+}
+
+.real-map-wrapper {
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-color);
+  background: #111418;
+  overflow: hidden;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.25);
+}
+
+.real-map-wrapper iframe {
+  border: 0;
+  display: block;
+  width: 100%;
+}
+
+[data-theme="dark"] .real-map-wrapper iframe {
+  filter: contrast(1.05) saturate(1.1);
+}
+
+.transit-map-title {
+  color: #ffffff;
+}
+
+.transit-map-desc {
+  color: #94a9be;
+}
+
+[data-theme="light"] .transit-map-panel {
+  background: #ffffff !important;
+  border-color: rgba(15, 23, 42, 0.16) !important;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08) !important;
+}
+
+[data-theme="light"] .real-map-wrapper {
+  border-color: rgba(15, 23, 42, 0.12) !important;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.06);
+}
+
+[data-theme="light"] .transit-map-title {
+  color: #0f172a !important;
+}
+
+[data-theme="light"] .transit-map-desc {
+  color: #334155 !important;
+}
+
+/* Home Page 2 Service Breakdown Cards Alignment */
+.service-deep-title-wrap {
+  min-height: 3.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.service-deep-desc {
+  min-height: 4.85rem;
+  margin-bottom: 1rem;
+}
+
+.service-metrics-row {
+  min-height: 5.25rem;
+  margin-bottom: 1rem;
+}
+
+.service-deep-body .service-checklist {
+  flex-grow: 1;
+  margin-bottom: 1.25rem;
+}
+
+.service-deep-footer {
+  margin-top: auto !important;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Program Class Section Badges & Label Contrast */
+.badge.bg-danger-subtle,
+.bg-danger-subtle {
+  background-color: rgba(239, 68, 68, 0.18) !important;
+  color: #ff5252 !important;
+  border: 1px solid rgba(239, 68, 68, 0.35) !important;
+  font-weight: 700;
+}
+
+[data-theme="light"] .badge.bg-danger-subtle,
+[data-theme="light"] .bg-danger-subtle {
+  background-color: rgba(220, 38, 38, 0.1) !important;
+  color: #b91c1c !important;
+  border: 1px solid rgba(220, 38, 38, 0.25) !important;
+  font-weight: 700;
+}
+
+/* Blog Page Card Text on Image Readability */
+.blog-card-media::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.6) 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.blog-card-media .blog-card-badge,
+.blog-card-media .badge-combat,
+[data-theme="light"] .blog-card-media .badge-combat {
+  background: rgba(11, 15, 20, 0.92) !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  backdrop-filter: blur(8px) !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8) !important;
+  font-weight: 700 !important;
+  z-index: 2 !important;
+}
+
+.blog-card-media .badge-combat.vermilion,
+[data-theme="light"] .blog-card-media .badge-combat.vermilion {
+  color: #00ff88 !important;
+  border-color: rgba(0, 255, 136, 0.45) !important;
+}
+
+.blog-card-media .badge-combat.gold,
+[data-theme="light"] .blog-card-media .badge-combat.gold {
+  color: #00e5ff !important;
+  border-color: rgba(0, 229, 255, 0.45) !important;
+}
+
+.blog-card-media .badge-combat.jade,
+[data-theme="light"] .blog-card-media .badge-combat.jade {
+  color: #00ff88 !important;
+  border-color: rgba(0, 255, 136, 0.45) !important;
+}
+
+.blog-card-media .badge-combat.cobalt,
+[data-theme="light"] .blog-card-media .badge-combat.cobalt {
+  color: #38bdf8 !important;
+  border-color: rgba(56, 189, 248, 0.45) !important;
+}
+
+.blog-card-readtime {
+  background: rgba(11, 15, 20, 0.92) !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  backdrop-filter: blur(8px) !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8) !important;
+  z-index: 2 !important;
+}
+
 

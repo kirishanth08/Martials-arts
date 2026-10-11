@@ -28,16 +28,16 @@
       </a>
 
             <!-- Controls outside hamburger (Theme, RTL, CTA, and Toggler) -->
-      <div class="d-flex align-items-center gap-2 order-lg-last nav-actions-wrap">
+            <div class="d-flex align-items-center gap-2 order-lg-last nav-actions-wrap">
         <button class="theme-toggle-btn" type="button" aria-label="Toggle Light/Dark Theme" title="Toggle Light/Dark Theme">
           <i class="bi bi-sun-fill text-warning"></i>
         </button>
         
-        <button class="rtl-toggle-btn" type="button" aria-label="Toggle Text Direction" title="Toggle Text Direction">
-          <span class="fw-bold">RTL</span>
+        <button class="rtl-toggle-btn d-none d-lg-inline-flex" type="button" aria-label="Toggle Text Direction" title="Toggle Text Direction">
+          <i class="bi bi-arrow-left-right"></i>
         </button>
 
-        <a href="contact.html" class="btn-combat btn-combat-sm nav-cta-btn">Trial</a>
+        <a href="contact.html" class="btn-combat btn-combat-sm nav-cta-btn d-none d-lg-inline-flex">Trial</a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#combatNavContent" aria-controls="combatNavContent" aria-expanded="false" aria-label="Toggle navigation">
           <i class="bi bi-list fs-2"></i>
@@ -120,6 +120,15 @@
           <!-- Contact -->
           <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
         </ul>
+        <!-- Mobile Drawer Actions (Moved inside hamburger to ensure single-line top navbar) -->
+        <div class="d-lg-none mobile-nav-drawer-actions pt-3 mt-3 border-top border-secondary border-opacity-25 d-flex align-items-center gap-2">
+          <button class="rtl-toggle-btn flex-shrink-0" type="button" aria-label="Toggle Text Direction" title="Toggle Text Direction">
+            <i class="bi bi-arrow-left-right"></i>
+          </button>
+          <a href="contact.html" class="btn-combat btn-combat-sm flex-grow-1 text-center justify-content-center">
+            Book Free Trial <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
       </div>
     </div>
   </nav>
@@ -189,7 +198,7 @@
                   <div class="row g-3">
                     <div class="col-md-6 form-combat-group">
                       <label for="trialFullName" class="form-combat-label">Full Name *</label>
-                      <input type="text" class="form-combat-control" id="trialFullName" placeholder="e.g. Marcus Aurelius" required>
+                      <input type="text" class="form-combat-control" id="trialFullName" placeholder="e.g. Marcus Aurelius" pattern="[a-zA-Z\s.'-]+" title="Please enter letters only (no numbers)" required>
                       <div class="invalid-feedback small text-danger mt-1"></div>
                     </div>
                     <div class="col-md-6 form-combat-group">
@@ -452,14 +461,38 @@
             </div>
           </div>
           <div class="col-lg-6">
-            <!-- Stylized Combat Map Embed Placeholder -->
-            <div class="combat-panel p-4 text-center border-danger" style="min-height: 380px; background: linear-gradient(135deg, #15171b 0%, #0c0d0f 100%); display: flex; flex-direction: column; justify-content: center; align-items: center;">
-              <i class="bi bi-map-fill text-danger display-4 mb-3"></i>
-              <h5  class="text-uppercase mb-1">INTERACTIVE DOJO MAP</h5>
-              <p class="text-secondary small mb-3">448 Combat Way, Metropolis NY 10012</p>
-              <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="btn-combat btn-combat-sm">
-                Open in Google Maps <i class="bi bi-box-arrow-up-right ms-1"></i>
-              </a>
+            <!-- REAL INTERACTIVE DOJO MAP SECTION -->
+            <div class="combat-panel p-3 p-md-4 border-danger transit-map-panel h-100 d-flex flex-column">
+              <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-3">
+                <div>
+                  <h5 class="text-uppercase mb-0 transit-map-title fs-6">
+                    <i class="bi bi-geo-alt-fill text-danger me-1"></i> Interactive Dojo Location
+                  </h5>
+                  <small class="text-secondary transit-map-desc">448 Combat Way, Dojo District, Metropolis NY 10012</small>
+                </div>
+                <span class="badge-combat jade"><i class="bi bi-broadcast me-1"></i> Live GPS</span>
+              </div>
+              
+              <!-- Real Google Map Embed -->
+              <div class="real-map-wrapper position-relative flex-grow-1 overflow-hidden rounded-3 mb-3" style="min-height: 280px;">
+                <iframe 
+                  title="KAI Martial Arts Academy Dojo Map Location"
+                  src="https://maps.google.com/maps?q=448+Broadway,+New+York,+NY+10013&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+                  width="100%" 
+                  height="100%" 
+                  style="border:0; min-height: 280px; width: 100%; display: block;" 
+                  allowfullscreen="" 
+                  loading="lazy" 
+                  referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+              </div>
+
+              <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 pt-2 border-top border-secondary border-opacity-25">
+                <span class="small text-muted"><i class="bi bi-info-circle me-1"></i> Free 2-Hour Student Parking in Rear Lot</span>
+                <a href="https://maps.google.com/?q=448+Broadway,+New+York,+NY+10013" target="_blank" rel="noopener noreferrer" class="btn-combat btn-combat-sm">
+                  Get Directions <i class="bi bi-box-arrow-up-right ms-1"></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>

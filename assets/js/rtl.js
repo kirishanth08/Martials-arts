@@ -35,10 +35,10 @@
       btn.setAttribute('aria-label', `Switch text direction. Current mode: ${dir.toUpperCase()}`);
       btn.setAttribute('title', `Current: ${dir.toUpperCase()} (Click to switch to ${dir === 'rtl' ? 'LTR' : 'RTL'})`);
       if (dir === 'rtl') {
-        btn.innerHTML = '<span class="opacity-50 small me-1">LTR</span><span class="fw-bold text-warning">RTL</span>';
+        btn.innerHTML = '<i class="bi bi-arrow-left-right text-warning"></i>';
         btn.classList.add('active');
       } else {
-        btn.innerHTML = '<span class="fw-bold text-white">LTR</span><span class="opacity-50 small ms-1">RTL</span>';
+        btn.innerHTML = '<i class="bi bi-arrow-left-right"></i>';
         btn.classList.remove('active');
       }
     });

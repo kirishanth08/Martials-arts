@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" data-theme="dark" dir="ltr">
 <head>
   <meta charset="UTF-8">
@@ -28,16 +28,16 @@
       </a>
 
             <!-- Controls outside hamburger (Theme, RTL, CTA, and Toggler) -->
-      <div class="d-flex align-items-center gap-2 order-lg-last nav-actions-wrap">
+            <div class="d-flex align-items-center gap-2 order-lg-last nav-actions-wrap">
         <button class="theme-toggle-btn" type="button" aria-label="Toggle Light/Dark Theme" title="Toggle Light/Dark Theme">
           <i class="bi bi-sun-fill text-warning"></i>
         </button>
         
-        <button class="rtl-toggle-btn" type="button" aria-label="Toggle Text Direction" title="Toggle Text Direction">
-          <span class="fw-bold">RTL</span>
+        <button class="rtl-toggle-btn d-none d-lg-inline-flex" type="button" aria-label="Toggle Text Direction" title="Toggle Text Direction">
+          <i class="bi bi-arrow-left-right"></i>
         </button>
 
-        <a href="contact.html" class="btn-combat btn-combat-sm nav-cta-btn">Trial</a>
+        <a href="contact.html" class="btn-combat btn-combat-sm nav-cta-btn d-none d-lg-inline-flex">Trial</a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#combatNavContent" aria-controls="combatNavContent" aria-expanded="false" aria-label="Toggle navigation">
           <i class="bi bi-list fs-2"></i>
@@ -120,6 +120,15 @@
           <!-- Contact -->
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
+        <!-- Mobile Drawer Actions (Moved inside hamburger to ensure single-line top navbar) -->
+        <div class="d-lg-none mobile-nav-drawer-actions pt-3 mt-3 border-top border-secondary border-opacity-25 d-flex align-items-center gap-2">
+          <button class="rtl-toggle-btn flex-shrink-0" type="button" aria-label="Toggle Text Direction" title="Toggle Text Direction">
+            <i class="bi bi-arrow-left-right"></i>
+          </button>
+          <a href="contact.html" class="btn-combat btn-combat-sm flex-grow-1 text-center justify-content-center">
+            Book Free Trial <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
       </div>
     </div>
   </nav>
@@ -337,7 +346,7 @@
         <div class="row g-4">
           <div class="col-lg-4">
             <div class="combat-panel h-100">
-              <span class="badge-combat mb-3">TIER 1 &bull; 0 TO 6 MONTHS</span>
+              <span class="badge-combat jade mb-3">TIER 1 &bull; 0 TO 6 MONTHS</span>
               <h4 class="mb-2 text-uppercase">FOUNDATION & ETIQUETTE</h4>
               <p class="text-secondary small mb-3">Focus is 100% on stance structure, basic striking mechanics, safe falling techniques (ukemi), and dojo etiquette.</p>
               <div class="p-2 bg-subtle border border-secondary border-opacity-25 small text-secondary">
